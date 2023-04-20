@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="font-display p-0 bg-gray-50">
+    <section class="cart flex flex-col max-w-5xl mx-auto p-5 md:p-10 gap-4 md:gap-7 rounded-lg bg-white shadow">
+        <div class="flex gap-3 items-center justify-center">
+            <span class="flex w-7 h-7 md:w-10 md:h-10 rounded-full bg-violet-700 items-center justify-center">
+                <svg class="w-3 h-3 md:w-5 md:h-5" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.984375C0 0.438867 0.421543 0 0.945518 0H2.73806C3.60479 0 4.37302 0.525 4.73153 1.3125H20.9235C21.9597 1.3125 22.7161 2.33789 22.4442 3.37969L20.829 9.62637C20.4941 10.9143 19.3713 11.8125 18.0909 11.8125H6.725L6.93774 12.9814C7.02441 13.4449 7.41444 13.7812 7.8675 13.7812H19.2255C19.7495 13.7812 20.1711 14.2201 20.1711 14.7656C20.1711 15.3111 19.7495 15.75 19.2255 15.75H7.8675C6.50438 15.75 5.3343 14.741 5.08216 13.3506L3.0493 2.23535C3.02172 2.07949 2.89171 1.96875 2.73806 1.96875H0.945518C0.421543 1.96875 0 1.52988 0 0.984375ZM5.04276 19.0312C5.04276 18.7727 5.09168 18.5167 5.18671 18.2778C5.28174 18.039 5.42103 17.8219 5.59663 17.6391C5.77223 17.4563 5.9807 17.3113 6.21013 17.2124C6.43956 17.1134 6.68546 17.0625 6.9338 17.0625C7.18213 17.0625 7.42804 17.1134 7.65747 17.2124C7.8869 17.3113 8.09536 17.4563 8.27096 17.6391C8.44656 17.8219 8.58585 18.039 8.68089 18.2778C8.77592 18.5167 8.82483 18.7727 8.82483 19.0312C8.82483 19.2898 8.77592 19.5458 8.68089 19.7847C8.58585 20.0235 8.44656 20.2406 8.27096 20.4234C8.09536 20.6062 7.8869 20.7512 7.65747 20.8501C7.42804 20.9491 7.18213 21 6.9338 21C6.68546 21 6.43956 20.9491 6.21013 20.8501C5.9807 20.7512 5.77223 20.6062 5.59663 20.4234C5.42103 20.2406 5.28174 20.0235 5.18671 19.7847C5.09168 19.5458 5.04276 19.2898 5.04276 19.0312ZM18.28 17.0625C18.7815 17.0625 19.2625 17.2699 19.6172 17.6391C19.9718 18.0083 20.1711 18.5091 20.1711 19.0312C20.1711 19.5534 19.9718 20.0542 19.6172 20.4234C19.2625 20.7926 18.7815 21 18.28 21C17.7785 21 17.2975 20.7926 16.9429 20.4234C16.5882 20.0542 16.389 19.5534 16.389 19.0312C16.389 18.5091 16.5882 18.0083 16.9429 17.6391C17.2975 17.2699 17.7785 17.0625 18.28 17.0625Z" fill="white"/>
+                    </svg>
+                    
+            </span>
+            <h2 class="text-base md:text-lg font-medium md:font-semibold text-black py-2">
+                Your Cart
+            </h2>
+        </div>
+        <div class="flex flex-col gap-2 md:gap-3">
+            <div class="grid grid-flow-col md:grid-cols-2 rounded-xl bg-gray-100 p-2 md:p-3 gap-2 md:gap-10 items-start justify-between">
+                <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
+                    Item
+                </h3>
+                <span class="flex items-center justify-between">
+                    <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
+                        Promo Code
+                    </h3>
+                    <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
+                        Price
+                    </h3>
+                </span>
+                </h3>
+            </div>
+            <div class="flex flex-col gap-3 md:gap-6 px-0 md:px-4 pb-8 border-b">
+                <h2 class="text-base md:text-lg font-medium text-violet-700">
+                    Service
+                </h2>
+                <div class="flex flex-col md:flex-row gap-2.5 px-2 items-start justify-between">
+                    <div class="flex flex-col items-start">
+                        <h3 class="text-xs md:text-sm font-medium text-black py-2.5">
+                            Consultation Booking
+                        </h3>
+                        <div class="flex gap-10 items-center justify-between">
+                            <h3 class="flex flex-col text-2xs md:text-sm font-medium text-gray-500">
+                                <span>
+                                    Nimra Jalil Kiyani - Advocate High Court Rawalpindi
+                                </span>
+                                <span>
+                                    At Office
+                                </span>
+                                <span>
+                                    on Friday, 01 May 022,09:15 am
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="flex gap-1 justify-between">
+                            <input type="text" id="first_name"
+                                class="bg-gray-100 border border-gray-200 text-black text-sm font-medium rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                                placeholder="" required>
+                            <a href="#" class="text-xs md:text-sm font-medium text-gray-300 w-full p-2.5">
+                                Apply Promo
+                            </a>
+                        </span>
+                        <h3 class="text-xs md:text-sm font-medium text-black py-2.5 px-1">
+                            Rs 1,300
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl bg-gray-100 p-2.5 md:p-5 justify-center md:justify-between">
+                <div>
+
+                </div>
+                <div class="flex flex-col rounded-xl bg-white px-2.5 pt-2.5 pb-5 md:px-5 md:pt-5 md:pb-10 gap-16 justify-between">
+                    <div class="flex flex-col gap-2 pb-4 border-b">
+                        <div class="flex gap-10 justify-between">
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                Discount
+                            </h3>
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                Rs 0
+                        </div>
+                        <div class="flex gap-10 justify-between">
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                Sub Total
+                            </h3>
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                Rs 1,300
+                        </div>
+                        <div class="flex gap-10 justify-between">
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                GST 10%
+                            </h3>
+                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
+                                Rs 0
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="">
+                        <div class="flex gap-10 justify-between">
+                            <h3 class="text-sm md:text-lg font-semibold text-black">
+                                Grand Monthly Total
+                            </h3>
+                            <h3 class="text-sm md:text-lg font-semibold text-black">
+                                Rs 1,300
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#"
+            class="flex text-xs md:text-sm font-medium text-white rounded-lg bg-green-500 hover:bg-green-600 mx-auto px-5 py-2.5 items-center justify-center">
+            Confirm Booking
+        </a>
+    </section>
+</body>
+
+</html>

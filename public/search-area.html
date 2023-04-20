@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Search-Area</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.0/dist/cdn.min.js"></script>
+
+   <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="search-area.css">
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="font-display">
+          <section class="search flex flex-wrap flex-col justify-center items-center mt-10 bg-slate-200">
+                <span class="flex flex-col items-center gap-6">
+                    <h1 class="txt text-lg sm:text-2xl font-normal font-urdu text-gray-600" dir="rtl">
+                        پاکستان کی پہلی پروفیشنل آن لائن وکلاء سروس!
+                    </h1>
+                    <h1 class="text-base sm:text-3xl font-semibold text-gray-600 text-center">
+                        Get instant legal help from verified lawyers across Pakistan
+                    </h1>
+                </span>
+            <div class="flex w-6/12 px-6 py-3 h-14 mt-14 justify-between rounded-full bg-white shadow-md items-center mb-10">
+                <div x-data="{ open: false }">
+                    <button @click="open = ! open">
+                        <h3 class="text-sm sm:text-base font-medium text-gray-400 gap-16">
+                            Search by Law area
+                        </h3>
+                    </button>
+                 
+                    <div x-show="open">
+                       <div>
+                        <div class="container1">
+                            <div class="group1">
+                                <div class="law area">Law Area</div>
+                                <div class="see all">See all</div>
+                            </div>
+                            <div class="group2">
+                                <div class="item1">Tenant Law</div>
+                                <div class="item1">Finance Law</div>
+                                <div class="item1">Company Law</div>
+                                <div class="item1">Stock Exchange Law</div>
+                                <div class="item1">Banking Law</div>
+                                <div class="item1">Partnership</div>
+                            </div>
+                    
+                            <div class="group3">
+                                <div class="item1">Constitutional</div>
+                                <div class="item1">Partnership</div>
+                                <div class="item1">Contract Law</div>
+                                <div class="item1">Intellectual Property</div>
+                                <div class="item1">Transport</div>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="container2">
+                            <div class="group4">
+                                <div class="lawyers & law firm">Lawyers & Law Firm</div>
+                                <div class="see all">See all</div>
+                            </div>
+                            <div class="group5">
+                                <div class="item2">Saiqa Haleema</div>
+                                <div class="item2">Raja Aslam Kiyani</div>
+                                <div class="item2">Muhammad Raheem</div>
+                                <div class="item2">Saima Safdar</div>
+                    
+                            </div>
+                    
+                            <div class="group6">
+                                <div class="item2">Yasir Hafeez</div>
+                                <div class="item2">Royal Advocate LTD</div>
+                                <div class="item2">Saima Safdar</div>
+                    
+                            </div>
+                            <div class="group7">
+                                <div class="item2">Tanveer & Rihab Lawyers</div>
+                                <div class="item2">Rawalpindi Law Helpers pvt</div>
+                                <div class="item2">Saima Haleema</div>
+                    
+                            </div>
+                    
+                        </div>
+                        <div class="container3">
+                            <div class="group8">
+                                <div class="city">City</div>
+                                <div class="see all">See all</div>
+                            </div>
+                            <div class="group9">
+                                <div class="item3">Karachi</div>
+                                <div class="item3">Islamabad</div>
+                                <div class="item3">Lahore</div>
+                                <div class="item3">Muzaffrabad</div>
+                                <div class="item3">Peshawar</div>
+                                <div class="item3">Faisalabad</div>
+                                <div class="item3">Multan</div>
+                                <div class="item3">Gilgit Baltistan</div>
+                            </div>
+                        </div>
+                        <div class="container4">
+                                    <div class="group10">
+                                        <div class="courts">Courts</div>
+                                        <div class="see all">See all</div>
+                                    </div>
+                                    <div class="group11">
+                                        <div class="item4">Supreme Court</div>
+                                        <div class="item4">Islamabad High Court</div>
+                                        <div class="item4">Lahore High Court</div>
+                                        <div class="item4">Karachi High Court</div>
+                                        <div class="item4">Peshawar High Court</div>
+                                    </div>
+                        </div>
+                        <div class="container5">
+                                        <div class="group12">
+                                            <div class="image"></div><img src="images/Logo Icon/Logo.svg" alt="">
+                                        </div>
+                        </div>
+                       </div>
+                    </div>
+                </div>
+                
+                
+                <span class="">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24.2797 22.7203L17.6469 16.0875C19.1094 14.3813 19.9578 12.1734 19.9578 9.75C19.9578 4.36406 15.5924 0 10.2078 0C4.82329 0 0.5 4.36547 0.5 9.75C0.5 15.1345 4.86501 19.5 10.2078 19.5C12.6303 19.5 14.8414 18.6113 16.5453 17.1492L23.1781 23.782C23.3656 23.925 23.5578 24 23.75 24C23.9422 24 24.1338 23.9268 24.2802 23.7803C24.575 23.4891 24.575 23.0109 24.2797 22.7203ZM10.25 18C5.66095 18 2.00001 14.2969 2.00001 9.75C2.00001 5.20312 5.66095 1.5 10.25 1.5C14.8391 1.5 18.5 5.16094 18.5 9.75C18.5 14.3391 14.7969 18 10.25 18Z"
+                            fill="#6D28D9" />
+                    </svg>
+
+                </span>
+            </div>
+        </section>
+
+</body>
+
+</html>

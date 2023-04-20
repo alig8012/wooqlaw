@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Certificates-Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+ 
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Demo styles -->
+  <style>
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body class="font-display">
+
+  <section class="certificates flex w-full flex-col gap-2">
+    <div class="flex items-start p-2.5">
+        <h2 class="font-medium text-lg text-gray-500">
+            Certificates
+        </h2>
+    </div>
+      <!-- Swiper -->
+      <div class="swiper certificates-swiper flex font-medium text-base bg-gray-50 py-7 pr-5 pl-12 rounded-lg">
+        <div class="swiper-wrapper flex items-center">
+          <div class="swiper-slide">
+            <img src="images/State_emblem_of_Pakistan 1.png" alt="State_emblem_of_Pakistan">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/meezan-bank.png" alt="meezan-bank">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/groona.png" alt="groona">
+          </div>
+          <div class="swiper-slide">
+            <img src="images/system.png" alt="system">
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-button-next-certificates"></div>
+        <div class="swiper-button-prev swiper-button-prev-certificates"></div>
+
+      </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".certificates-swiper", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+
+ // Navigation arrows
+ navigation: {
+        nextEl: '.swiper-button-next-certificates',
+        prevEl: '.swiper-button-prev-certificates',
+      },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>City-Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <!-- Demo styles -->
+  <style>
+    
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+  </style>
+</head>
+
+<body class="font-display">
+
+  <section class="cities flex flex-wrap flex-col justify-center items-center">
+
+        <div class="flex flex-col items-center gap-3 mt-8">
+            <h2 class="text-base sm:text-2xl font-normal font-urdu text-gray-600" dir="rtl">
+                آپ کا وکیل، آپ کا شہر!
+            </h2>
+            <h2 class="text-lg sm:text-3xl font-semibold text-gray-600 text-center">
+                Search lawyers by practice area
+            </h2>
+          </div>
+
+      <!-- Swiper -->
+      <div class="swiper city-swiper mt-8">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide">
+            <div class="flex justify-center relative">
+              <div>
+                  <img src="images/islamabad.png" alt="islamabad">
+              </div>
+              <div class="flex flex-col items-center pb-2 bottom-5 absolute">
+                  <span class="flex text-xs font-semibold text-gray-700 rounded-full bg-gray-300 w-6 h-6 items-center justify-center">
+                      14
+                  </span>
+                  <h3 class="text-base font-semibold text-white">
+                      Islamabad
+                  </h3>
+                  <h3 class="text-base font-normal font-urdu text-white">
+                      اسلام آباد
+                  </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="flex justify-center relative">
+              <div>
+                  <img src="images/karachi.png" alt="karachi">
+              </div>
+              <div class="flex flex-col items-center pb-2 bottom-5 absolute">
+                  <span class="flex text-xs font-semibold text-gray-700 rounded-full bg-gray-300 w-6 h-6 items-center justify-center">
+                      02
+                  </span>
+                  <h3 class="text-base font-semibold text-white">
+                    Karachi
+                  </h3>
+                  <h3 class="text-base font-normal font-urdu text-white">
+                    کراچی
+                  </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="flex justify-center relative">
+              <div>
+                  <img src="images/lahore.png" alt="lahore">
+              </div>
+              <div class="flex flex-col items-center pb-2 bottom-5 absolute">
+                  <span class="flex text-xs font-semibold text-gray-700 rounded-full bg-gray-300 w-6 h-6 items-center justify-center">
+                      02
+                  </span>
+                  <h3 class="text-base font-semibold text-white">
+                    Lahore
+                  </h3>
+                  <h3 class="text-base font-normal font-urdu text-white">
+                    لاہور
+                  </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="flex justify-center relative">
+              <div>
+                  <img src="images/peshawar.png" alt="peshawar">
+              </div>
+              <div class="flex flex-col items-center pb-2 bottom-5 absolute">
+                  <span class="flex text-xs font-semibold text-gray-700 rounded-full bg-gray-300 w-6 h-6 items-center justify-center">
+                      0
+                  </span>
+                  <h3 class="text-base font-semibold text-white">
+                    Peshawar
+                  </h3>
+                  <h3 class="text-base font-normal font-urdu text-white">
+                    پشاور
+                  </h3>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="swiper-slide">
+            <div class="flex justify-center relative">
+              <div>
+                  <img src="images/rawalpindi.png" alt="rawalpindi">
+              </div>
+              <div class="flex flex-col items-center pb-2 bottom-5 absolute">
+                  <span class="flex text-xs font-semibold text-gray-700 rounded-full bg-gray-300 w-6 h-6 items-center justify-center">
+                      0
+                  </span>
+                  <h3 class="text-base font-semibold text-white">
+                    Rawalpindi
+                  </h3>
+                  <h3 class="text-base font-normal font-urdu text-white">
+                    راولپنڈی
+                  </h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      <div class="flex mt-8 justify-center">
+        <div class="flex gap-3">
+          <span class="swiper-button-prev-city">
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 2.38498e-07C14.6957 1.75244e-07 9.60859 2.15981 5.85786 6.00431C2.10714 9.84881 3.09295e-07 15.0631 2.4446e-07 20.5C1.79625e-07 25.9369 2.10714 31.1512 5.85786 34.9957C9.60859 38.8402 14.6957 41 20 41C25.3043 41 30.3914 38.8402 34.1421 34.9957C37.8929 31.1512 40 25.9369 40 20.5C40 15.0631 37.8929 9.84881 34.1421 6.00431C30.3914 2.15982 25.3043 3.01751e-07 20 2.38498e-07ZM28.75 19.2188C29.0815 19.2188 29.3995 19.3537 29.6339 19.594C29.8683 19.8343 30 20.1602 30 20.5C30 20.8398 29.8683 21.1657 29.6339 21.406C29.3995 21.6463 29.0815 21.7813 28.75 21.7813L14.2675 21.7813L19.635 27.2804C19.8697 27.521 20.0016 27.8473 20.0016 28.1875C20.0016 28.5277 19.8697 28.854 19.635 29.0946C19.4003 29.3352 19.0819 29.4704 18.75 29.4704C18.4181 29.4704 18.0997 29.3352 17.865 29.0946L10.365 21.4071C10.2486 21.2881 10.1562 21.1467 10.0932 20.9911C10.0302 20.8354 9.99777 20.6685 9.99777 20.5C9.99777 20.3315 10.0302 20.1646 10.0932 20.0089C10.1562 19.8533 10.2486 19.7119 10.365 19.5929L17.865 11.9054C18.0997 11.6648 18.4181 11.5296 18.75 11.5296C19.0819 11.5296 19.4003 11.6648 19.635 11.9054C19.8697 12.146 20.0016 12.4723 20.0016 12.8125C20.0016 13.1527 19.8697 13.479 19.635 13.7196L14.2675 19.2188L28.75 19.2188Z" fill="#52525B"/>
+              </svg>
+              
+          </span>
+            <a href="#" class="flex text-lg font-medium text-white rounded-lg bg-gray-600 hover:bg-gray-700 w-28 h-10 justify-center items-center">
+                View All
+            </a>
+            <span class="swiper-button-next-city">
+              <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.5 41C25.9369 41 31.1512 38.8402 34.9957 34.9957C38.8402 31.1512 41 25.9369 41 20.5C41 15.0631 38.8402 9.84881 34.9957 6.00431C31.1512 2.15981 25.9369 -6.58427e-07 20.5 -8.96083e-07C15.0631 -1.13374e-06 9.84881 2.15981 6.00431 6.00431C2.15981 9.84881 -6.58427e-07 15.0631 -8.96083e-07 20.5C-1.13374e-06 25.9369 2.15981 31.1512 6.00431 34.9957C9.8488 38.8402 15.0631 41 20.5 41ZM11.5312 21.7812C11.1914 21.7812 10.8655 21.6463 10.6253 21.406C10.385 21.1657 10.25 20.8398 10.25 20.5C10.25 20.1602 10.385 19.8343 10.6253 19.594C10.8655 19.3537 11.1914 19.2187 11.5312 19.2187L26.3758 19.2187L20.8741 13.7196C20.6335 13.479 20.4984 13.1527 20.4984 12.8125C20.4984 12.4723 20.6335 12.146 20.8741 11.9054C21.1147 11.6648 21.441 11.5296 21.7812 11.5296C22.1215 11.5296 22.4478 11.6648 22.6884 11.9054L30.3759 19.5929C30.4952 19.7119 30.5899 19.8533 30.6545 20.0089C30.719 20.1646 30.7523 20.3315 30.7523 20.5C30.7523 20.6685 30.719 20.8354 30.6545 20.9911C30.5899 21.1467 30.4952 21.2881 30.3759 21.4071L22.6884 29.0946C22.4478 29.3352 22.1215 29.4704 21.7812 29.4704C21.441 29.4704 21.1147 29.3352 20.8741 29.0946C20.6335 28.854 20.4984 28.5277 20.4984 28.1875C20.4984 27.8473 20.6335 27.521 20.8741 27.2804L26.3758 21.7812L11.5312 21.7812Z" fill="#52525B"/>
+                </svg>
+                
+            </span>
+        </div>
+      </div>
+      </div>
+  </section>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".city-swiper", {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      
+ // Navigation arrows
+ navigation: {
+    nextEl: '.swiper-button-next-city',
+    prevEl: '.swiper-button-prev-city',
+  },
+
+      breakpoints: {
+        640: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

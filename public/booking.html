@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+<body class="font-display p-4">
+    <section class="booking w-full px-5 py-9 rounded-xl bg-white drop-shadow items-start justify-center">
+        <div class="flex flex-col max-w-3xl mx-auto gap-5">
+            <a href="#" class="flex border border-gray-200 rounded-lg w-fit px-3 py-2 gap-2 items-center">
+                <span class="flex w-4 h-4">
+                    <svg class="w-4 h-4" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 8.49992H14Z" fill="#1F2A37"/>
+                        <path d="M6.66667 13.1666L2 8.49992M2 8.49992L6.66667 3.83325M2 8.49992H14" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        
+                </span>
+                <span class="text-sm font-medium text-gray-800">
+                    Back
+                </span>
+            </a>
+            <div class="flex flex-col w-full p-5 gap-7 rounded-xl bg-gray-50">
+                    <h2 class="flex text-base md:text-lg font-medium text-violet-700">
+                        Booking Summary
+                    </h2>
+                    <div class="flex flex-col w-full bg-gray-50 gap-8">
+                        <div class="flex flex-col md:grid md:grid-cols-3 items-start gap-4">
+                            <h3 class="flex text-sm md:text-base font-medium text-gray-600">
+                                Lawyer
+                            </h3>
+                            <div class="flex flex-col">
+                                <h2 class="text-sm md:text-base font-normal md:font-medium text-black col-span-2">
+                                    Nimra Jalil Kiyani
+                                </h2>
+                                <h3 class="text-xs md:text-sm font-normal md:font-normal text-gray-600 col-span-2">
+                                    Advocate High Court
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="flex flex-col md:grid md:grid-cols-3 items-start gap-4">
+                            <h3 class="flex text-sm md:text-base font-medium text-gray-600">
+                                Appointment Date& Time
+                            </h3>
+                                <h2 class="text-sm md:text-base font-normal md:font-medium text-black col-span-2">
+                                Fri, 01 May 022, 09:00 AM-09:30 AM
+                                </h2>
+                        </div>
+                        <div class="flex flex-col md:grid md:grid-cols-3 items-start gap-4">
+                            <h3 class="flex text-sm md:text-base font-medium text-gray-600">
+                                Location/Branch
+                            </h3>
+                                <h2 class="text-sm md:text-base font-normal md:font-medium text-black col-span-2">
+                                Islamabad, Office 234, Second Floor, Akbar PLaza, Jinaah Avenue
+                                </h2>
+                        </div>
+                    </div>
+            </div>
+            <div class="flex flex-col w-full p-5 gap-7 rounded-xl bg-gray-50">
+                <h2 class="flex text-base md:text-lg font-medium text-gray-600">
+                    Select Consultation Mode
+                </h2>
+                    <div class="flex flex-col w-full gap-7">
+                        <div class="flex flex-col items-start">
+                            <span class="">
+                                <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-violet-700">
+                                <label for="default-radio-1" class="ml-2 text-sm font-medium text-gray-900">Phone</label>
+                            </span>
+                            <span class="text-xs font-normal text-gray-500 pl-7">
+                                Talk to your lawyer on phone
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <span class="">
+                                <input id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-violet-700">
+                                <label for="default-radio-2" class="ml-2 text-sm font-medium text-gray-900">Video</label>
+                            </span>
+                            <span class="text-xs font-normal text-gray-500 pl-7">
+                                Book video call with lawyer on online video platform i.e. Zoom, Teams
+                            </span>
+                        </div>
+                        <div class="flex flex-col items-start">
+                            <span class="">
+                                <input id="default-radio-3" type="radio" value="" name="default-radio" class="w-4 h-4 text-violet-700">
+                                <label for="default-radio-3" class="ml-2 text-sm font-medium text-gray-900">At Office</label>
+                            </span>
+                            <span class="text-xs font-normal text-gray-500 pl-7">
+                                Consult lawyer at his/her office
+                            </span>
+                        </div>
+                    </div>
+            </div>
+            <a href="#" class="flex rounded-lg bg-violet-700 gap-2 px-5 py-2.5 mx-auto items-center justify-center">
+            <span class="text-sm font-medium text-white">
+                Proceed to checkout
+            </span>
+            <span class="w-4 h-4">
+                <svg class="w-4 h-4" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 0.5C1.23478 0.5 0.98043 0.605357 0.792893 0.792893C0.605357 0.98043 0.5 1.23478 0.5 1.5C0.5 1.76522 0.605357 2.01957 0.792893 2.20711C0.98043 2.39464 1.23478 2.5 1.5 2.5H2.72L3.025 3.722C3.02803 3.73607 3.03136 3.75007 3.035 3.764L4.393 9.194L3.5 10.086C2.24 11.346 3.132 13.5 4.914 13.5H13.5C13.7652 13.5 14.0196 13.3946 14.2071 13.2071C14.3946 13.0196 14.5 12.7652 14.5 12.5C14.5 12.2348 14.3946 11.9804 14.2071 11.7929C14.0196 11.6054 13.7652 11.5 13.5 11.5H4.914L5.914 10.5H12.5C12.6857 10.4999 12.8676 10.4481 13.0255 10.3504C13.1834 10.2528 13.311 10.1131 13.394 9.947L16.394 3.947C16.4702 3.79458 16.5061 3.62522 16.4985 3.45501C16.4908 3.28479 16.4398 3.11935 16.3502 2.97439C16.2606 2.82944 16.1355 2.70977 15.9867 2.62674C15.8379 2.54372 15.6704 2.50009 15.5 2.5H4.78L4.47 1.257C4.41583 1.04075 4.29095 0.848809 4.11521 0.711655C3.93946 0.574502 3.72293 0.500006 3.5 0.5H1.5ZM14.5 16C14.5 16.3978 14.342 16.7794 14.0607 17.0607C13.7794 17.342 13.3978 17.5 13 17.5C12.6022 17.5 12.2206 17.342 11.9393 17.0607C11.658 16.7794 11.5 16.3978 11.5 16C11.5 15.6022 11.658 15.2206 11.9393 14.9393C12.2206 14.658 12.6022 14.5 13 14.5C13.3978 14.5 13.7794 14.658 14.0607 14.9393C14.342 15.2206 14.5 15.6022 14.5 16ZM5 17.5C5.39782 17.5 5.77936 17.342 6.06066 17.0607C6.34196 16.7794 6.5 16.3978 6.5 16C6.5 15.6022 6.34196 15.2206 6.06066 14.9393C5.77936 14.658 5.39782 14.5 5 14.5C4.60218 14.5 4.22064 14.658 3.93934 14.9393C3.65804 15.2206 3.5 15.6022 3.5 16C3.5 16.3978 3.65804 16.7794 3.93934 17.0607C4.22064 17.342 4.60218 17.5 5 17.5Z" fill="white"/>
+                    </svg>
+                    
+            </span>
+            </a>
+        </div>
+        
+    </section>
+</body>
+</html>

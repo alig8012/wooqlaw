@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Appointment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+<body class="font-display p-4 bg-gray-50">
+    <section class="appointment flex flex-col max-w-2xl mx-auto p-10 gap-8 rounded-lg bg-white shadow">
+        <div class="flex flex-col gap-4 items-center justify-center">
+            <span class="w-10 md:w-20 h:10 md:h-20">
+                <svg class="w-10 md:w-20 h:10 md:h-20" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M39.9984 55.7484C38.2102 57.5367 35.2898 57.5367 33.5016 55.7484L23.0016 45.2484C21.2133 43.4602 21.2133 40.5398 23.0016 38.7516C24.7898 36.9633 27.7102 36.9633 29.4984 38.7516L36.75 46.0031L54.5016 28.2516C56.2898 26.4633 59.2102 26.4633 60.9984 28.2516C62.7867 30.0398 62.7867 32.9602 60.9984 34.7484L39.9984 55.7484ZM84 42C84 65.1984 65.1984 84 42 84C18.8016 84 0 65.1984 0 42C0 18.8016 18.8016 0 42 0C65.1984 0 84 18.8016 84 42ZM42 7.875C23.1492 7.875 7.875 23.1492 7.875 42C7.875 60.8508 23.1492 76.125 42 76.125C60.8508 76.125 76.125 60.8508 76.125 42C76.125 23.1492 60.8508 7.875 42 7.875Z" fill="#22C55E"/>
+                    </svg>
+                    
+            </span>
+            <h2 class="text-base md:text-2xl font-semibold text-green-500 text-center">
+                Your Appointment is Booked!
+            </h2>
+        </div>
+        <div class="flex flex-col max-w-2xl rounded-xl bg-gray-50 shadow gap-2 p-8 items-start">
+            <div class="flex flex-col md:grid md:grid-cols-3 md:items-center w-full">
+                <h3 class="flex text-xs md:text-sm font-medium text-gray-500 p-1 gap-1 md:p-2 md:gap-2">
+                    Lawyer
+                </h3>
+                <div class="flex gap-2 py-1 items-center">
+                    <span class="w-8 h-8">
+                        <img class="w-8 h-8" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                    </span>
+                    <h2 class="text-sm md:text-base font-normal md:font-medium text-black py-1 col-span-2">
+                        Saiqa Haleema
+                    </h2>
+                </div>
+            </div>
+            <div class="flex flex-col md:grid md:grid-cols-3 md:items-center w-full">
+                <h3 class="flex text-xs md:text-sm font-medium text-gray-500 p-1 gap-1 md:p-2 md:gap-2">
+                    Date & Time
+                </h3>
+                <h2 class="text-sm md:text-base font-normal md:font-medium text-black p-2 gap-2 col-span-2">
+                    Friday 24, March 2023 at 4:30 PM
+                </h2>
+            </div>
+            <div class="flex flex-col md:grid md:grid-cols-3 md:items-center w-full">
+                <h3 class="flex text-xs md:text-sm font-medium text-gray-500 p-1 gap-1 md:p-2 md:gap-2">
+                    Video Meeting Link
+                </h3>
+                    <a href="#" class="text-sm font-medium text-blue-500 p-2 gap-2 text-clip overflow-hidden col-span-2">
+                        https://us05web.zoom.us/s/88538606833?zak=eyJ0eXAiOiJKV1QiLCJzdiI6IjAwMDAwMSIsInptX3NrbSI6InptX28ybSIsImFsZyI6IkhTMjU2In0.eyJhdWQiOiJjbGllbnRzbSIsInVpZCI6IlJWSXk0LW9NU1pLaHNTMkxJUmtkTXciLCJpc3MiOiJ3ZWIiLCJzayI6IjAiLCJzdHkiOjEwMCwid2NkIjoidXMwNSIsImNsdCI6MCwibW51bSI6Ijg4NTM4NjA2ODMzIiwiZXhwIjoxNjc4Mzc0MDYyLCJpYXQiOjE2NzgzNjY4NjIsImFpZCI6InpCWjBYblFuU3JTSVdjbF9QeVpYVFEiLCJjaWQiOiIifQ.ilzTwWX-kDFYl_9dQYZpxvh5PGTW58YwSePfYrLu5HU
+                    </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart-1 flex flex-col max-w-5xl mx-auto p-10 gap-20 rounded-lg bg-white shadow mt-16">
+        <div class="flex gap-3 items-center justify-center">
+            <span class="flex w-10 h-10 rounded-full bg-violet-700 items-center justify-center">
+                <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0.984375C0 0.438867 0.421543 0 0.945518 0H2.73806C3.60479 0 4.37302 0.525 4.73153 1.3125H20.9235C21.9597 1.3125 22.7161 2.33789 22.4442 3.37969L20.829 9.62637C20.4941 10.9143 19.3713 11.8125 18.0909 11.8125H6.725L6.93774 12.9814C7.02441 13.4449 7.41444 13.7812 7.8675 13.7812H19.2255C19.7495 13.7812 20.1711 14.2201 20.1711 14.7656C20.1711 15.3111 19.7495 15.75 19.2255 15.75H7.8675C6.50438 15.75 5.3343 14.741 5.08216 13.3506L3.0493 2.23535C3.02172 2.07949 2.89171 1.96875 2.73806 1.96875H0.945518C0.421543 1.96875 0 1.52988 0 0.984375ZM5.04276 19.0312C5.04276 18.7727 5.09168 18.5167 5.18671 18.2778C5.28174 18.039 5.42103 17.8219 5.59663 17.6391C5.77223 17.4563 5.9807 17.3113 6.21013 17.2124C6.43956 17.1134 6.68546 17.0625 6.9338 17.0625C7.18213 17.0625 7.42804 17.1134 7.65747 17.2124C7.8869 17.3113 8.09536 17.4563 8.27096 17.6391C8.44656 17.8219 8.58585 18.039 8.68089 18.2778C8.77592 18.5167 8.82483 18.7727 8.82483 19.0312C8.82483 19.2898 8.77592 19.5458 8.68089 19.7847C8.58585 20.0235 8.44656 20.2406 8.27096 20.4234C8.09536 20.6062 7.8869 20.7512 7.65747 20.8501C7.42804 20.9491 7.18213 21 6.9338 21C6.68546 21 6.43956 20.9491 6.21013 20.8501C5.9807 20.7512 5.77223 20.6062 5.59663 20.4234C5.42103 20.2406 5.28174 20.0235 5.18671 19.7847C5.09168 19.5458 5.04276 19.2898 5.04276 19.0312ZM18.28 17.0625C18.7815 17.0625 19.2625 17.2699 19.6172 17.6391C19.9718 18.0083 20.1711 18.5091 20.1711 19.0312C20.1711 19.5534 19.9718 20.0542 19.6172 20.4234C19.2625 20.7926 18.7815 21 18.28 21C17.7785 21 17.2975 20.7926 16.9429 20.4234C16.5882 20.0542 16.389 19.5534 16.389 19.0312C16.389 18.5091 16.5882 18.0083 16.9429 17.6391C17.2975 17.2699 17.7785 17.0625 18.28 17.0625Z" fill="white"/>
+                    </svg>
+                    
+            </span>
+            <h2 class="text-lg font-semibold text-black py-2">
+                Your Cart
+            </h2>
+        </div>
+        <div class="flex flex-col gap-5 items-center">
+            <span class="">
+                <svg width="166" height="149" viewBox="0 0 166 149" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_180575_143622)">
+                    <path d="M28.7148 32.4531C28.7148 29.9946 30.7411 28 33.2387 28H46.8101C48.9777 28 50.8438 29.5196 51.2585 31.62L62.6246 90.3438H120.699C123.206 90.3438 125.223 92.3291 125.223 94.7969C125.223 97.2646 123.206 99.25 120.699 99.25H58.7039C56.7059 99.25 54.8398 97.7285 54.4252 95.6318L43.0666 36.9062H33.2387C30.7411 36.9062 28.7148 34.9116 28.7148 32.4531ZM70.9371 114.094C70.9371 119.011 66.8845 123 61.8894 123C56.8944 123 52.8418 119.011 52.8418 114.094C52.8418 109.177 56.8944 105.188 61.8894 105.188C66.8845 105.188 70.9371 109.177 70.9371 114.094ZM107.128 114.094C107.128 109.177 111.18 105.188 116.175 105.188C121.17 105.188 125.223 109.177 125.223 114.094C125.223 119.011 121.17 123 116.175 123C111.18 123 107.128 119.011 107.128 114.094Z" fill="#D4D4D8"/>
+                    <path opacity="0.4" d="M51.541 33.9375H130.84C134.666 33.9375 137.72 37.6948 136.645 41.4818L126.467 77.1143C125.731 79.6748 123.356 81.4375 120.661 81.4375H60.8902L51.541 33.9375Z" fill="#D4D4D8"/>
+                    </g>
+                    <path d="M95.1948 0L93.9468 46.56H84.8268L83.5788 0H95.1948ZM89.7228 67.392C87.7388 67.392 86.0748 66.72 84.7308 65.376C83.3868 64.032 82.7148 62.368 82.7148 60.384C82.7148 58.4 83.3868 56.736 84.7308 55.392C86.0748 54.048 87.7388 53.376 89.7228 53.376C91.6428 53.376 93.2748 54.048 94.6188 55.392C95.9628 56.736 96.6348 58.4 96.6348 60.384C96.6348 62.368 95.9628 64.032 94.6188 65.376C93.2748 66.72 91.6428 67.392 89.7228 67.392Z" fill="#D4D4D8"/>
+                    <ellipse cx="83" cy="139.5" rx="83" ry="9.5" fill="url(#paint0_radial_180575_143622)"/>
+                    <defs>
+                    <radialGradient id="paint0_radial_180575_143622" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(83 139.5) rotate(90) scale(9.5 83)">
+                    <stop stop-color="#E8E8E8"/>
+                    <stop offset="1" stop-color="white" stop-opacity="0"/>
+                    </radialGradient>
+                    <clipPath id="clip0_180575_143622">
+                    <rect width="108.571" height="95" fill="white" transform="translate(28.7148 28)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                    
+            </span>
+            <h3 class="text-base font-medium text-gray-400">
+                Your Cart is Empty
+            </h3>
+        </div>
+    </section>
+</body>
+</html>
