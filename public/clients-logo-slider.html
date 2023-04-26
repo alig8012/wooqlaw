@@ -34,23 +34,23 @@
 
   <section class="clients-logo flex w-full flex-col gap-2">
     <div class="flex items-start p-2.5">
-        <h2 class="font-medium text-lg text-gray-500">
+        <h2 class="font-medium text-base md:text-lg text-gray-500 p-2 md:p-3">
           Clients Logo
         </h2>
     </div>
       <!-- Swiper -->
-      <div class="swiper clients-swiper flex font-medium text-base bg-gray-50 py-7 pr-5 pl-12 rounded-lg">
+      <div class="swiper clients-swiper flex bg-gray-50 p-5 rounded-lg">
         <div class="swiper-wrapper flex items-center">
-          <div class="swiper-slide">
+          <div class="swiper-slide flex items-center justify-center">
             <img src="images/gdpr.png" alt="gdpr">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide flex items-center justify-center">
             <img src="images/fbr.png" alt="fbr">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide flex items-center justify-center">
             <img src="images/secp.png" alt="secp">
           </div>
-          <div class="swiper-slide">
+          <div class="swiper-slide flex items-center justify-center">
             <img src="images/govt1.png" alt="govt1">
           </div>
         </div>
@@ -67,8 +67,8 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".clients-swiper", {
-      slidesPerView: 2,
-      spaceBetween: 10,
+      slidesPerView: 1,
+      spaceBetween: 20,
 
  // Navigation arrows
  navigation: {
