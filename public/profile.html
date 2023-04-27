@@ -419,11 +419,11 @@
                                         <!-- View Contact -->
                                         <div class="w-full">
                                             <div x-data="{ open: false}">
-                                                <button :class="open ? 'bg-orange-500 rounded-t-lg' : 'bg-white rounded-b-lg'" class="container flex  shadow-md p-5 gap-2 items-center justify-between"
+                                                <button :class="open ? 'bg-orange-500 rounded-t-lg' : 'bg-white rounded-b-lg'" class="container flex shadow-md p-5 gap-2 items-center justify-between"
                                                     x-on:click="open = !open">
                                                     <div class="hidden-no flex flex-col p-2 items-start">
-                                                        <span class="font-medium text-base text-gray-900" x-show="!open">03 * * * * * * * * *</span>
-                                                        <h2 class="contact flex font-medium" :class="open ? 'text-white text-base' : 'text-orange-500 text-lg'" x-text="open ? 'Contact Number': 'View Contact Number'"></h2>
+                                                        <span class="font-medium text-sm md:text-base text-gray-900" x-show="!open">03 * * * * * * * * *</span>
+                                                        <h2 class="contact flex font-medium" :class="open ? 'text-white text-sm md:text-base' : 'text-orange-500 text-sm md:text-lg'" x-text="open ? 'Contact Number': 'View Contact Number'"></h2>
                                                     </div>
                                                     <span class="phone-logo flex">
                                                         <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -517,7 +517,7 @@
                                             <!-- Header -->
                                             <div class="header flex rounded-t-lg justify-between items-center bg-[#0EA5E9] px-5 py-5" x-show="open">
                                                 <div class="title">
-                                                    <a href="#" class="text-[#FFFFFF] font-medium text-lg font-display">Email Inquiry</a>
+                                                    <a href="#" class="text-white font-medium text-sm md:text-lg">Email Inquiry</a>
                                                 </div>
                                                 <div class="icon">
                                                     <a href="#"><div class="icon bg-[#E0F2FE] w-10 h-10 flex justify-center items-center rounded-md hover:bg-gray-100">
