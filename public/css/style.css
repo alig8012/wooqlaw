@@ -1119,6 +1119,7 @@ select {
 .gap-8 {
   gap: 2rem;
 }
+<<<<<<< HEAD
 .gap-9 {
   gap: 2.25rem;
 }
@@ -1138,6 +1139,8 @@ select {
 .divide-dashed > :not([hidden]) ~ :not([hidden]) {
   border-style: dashed;
 }
+=======
+>>>>>>> b526e67d12d5211abc67f2f8a169ec54f5b85d33
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1405,9 +1408,6 @@ select {
 .p-10 {
   padding: 2.5rem;
 }
-.p-12 {
-  padding: 3rem;
-}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1521,10 +1521,6 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
-}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1539,6 +1535,9 @@ select {
 }
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+.pb-3 {
+  padding-bottom: 0.75rem;
 }
 .pb-32 {
   padding-bottom: 8rem;
@@ -1561,9 +1560,6 @@ select {
 .pl-10 {
   padding-left: 2.5rem;
 }
-.pl-12 {
-  padding-left: 3rem;
-}
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1582,9 +1578,6 @@ select {
 .pr-3 {
   padding-right: 0.75rem;
 }
-.pr-5 {
-  padding-right: 1.25rem;
-}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -1602,9 +1595,6 @@ select {
 }
 .pt-5 {
   padding-top: 1.25rem;
-}
-.pt-9 {
-  padding-top: 2.25rem;
 }
 .text-left {
   text-align: left;
@@ -2298,6 +2288,10 @@ select {
     align-items: center;
   }
 
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
+
   .md\:justify-center {
     justify-content: center;
   }
@@ -2342,12 +2336,20 @@ select {
     padding: 2.5rem;
   }
 
+  .md\:p-12 {
+    padding: 3rem;
+  }
+
   .md\:p-2 {
     padding: 0.5rem;
   }
 
   .md\:p-3 {
     padding: 0.75rem;
+  }
+
+  .md\:p-4 {
+    padding: 1rem;
   }
 
   .md\:p-5 {
