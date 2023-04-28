@@ -176,7 +176,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col md:flex-row w-full p-3 md:p-4 gap-2 md:gap-5 rounded-b-xl bg-gray-100 items-center">
+                <div class="flex flex-col md:flex-row w-full p-2 md:p-4 gap-2 md:gap-5 rounded-b-xl bg-gray-100 items-center">
                 <a href="#" class="flex w-full h-16 rounded-lg drop-shadow bg-white hover:bg-violet-200 p-5 items-center justify-between">
                     <span class="flex flex-col gap-1">
                         <h3 class="text-2xs md:text-xs font-light text-emerald-600">
@@ -213,7 +213,7 @@
         <section class="profile-tabs container">
             <div class="w-full rounded-xl shadow bg-white justify-between">
             <div class="border-b border-gray-100">
-                <ul class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 text-center px-5 pt-3 gap-2" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
+                <ul class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 text-center px-2 md:px-5 pt-2 md:pt-3 gap-2" id="myTab" data-tabs-toggle="#myTabContent" role="tablist">
                     <li class="flex grow-0 shrink-0 basis-auto" role="presentation">
                         <button class="inline-block px-3 py-5 border-b-2 border-transparent rounded-t-lg hover:text-violet-700 hover:border-violet-700" id="overview-tab" data-tabs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="false">Overview</button>
                     </li>
@@ -248,8 +248,8 @@
             </div>
             <div id="myTabContent">
                 <div class="hidden" id="overview" role="tabpanel" aria-labelledby="overview-tab">
-                    <div class="grid grid-cols-1 md:grid-cols-3 md:p-5 gap-5 w-full">
-                        <section class="about md:col-span-2 flex flex-col gap-10 p-2.5 items-start w-full">
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-2 md:p-5 gap-5 w-full">
+                        <section class="about md:col-span-2 flex flex-col gap-10 p-2 items-start w-full">
                                 <!-- About -->
                                 <div class="flex flex-col w-full gap-2">
                                    <h2 class="font-medium text-base md:text-lg text-gray-500 p-2 md:p-3">
@@ -414,11 +414,11 @@
                                   </div>
                               </section>
                         </section>
-                        <section class="view-contact flex flex-col md:col-span-1 items-start mt-9 gap-2.5 w-full">
+                        <section class="view-contact flex flex-col md:col-span-1 items-start mt-3 md:mt-9 gap-2.5 w-full">
                                         <!-- View Contact -->
                                         <div class="w-full">
                                             <div x-data="{ open: false}">
-                                                <button :class="open ? 'bg-orange-500 rounded-t-lg' : 'bg-white rounded-b-lg'" class="container flex shadow-md p-5 gap-2 items-center justify-between"
+                                                <button :class="open ? 'bg-orange-500 rounded-t-lg' : 'bg-white rounded-b-lg'" class="container flex shadow-md p-2 md:p-5 gap-2 items-center justify-between"
                                                     x-on:click="open = !open">
                                                     <div class="hidden-no flex flex-col p-2 items-start">
                                                         <span class="font-medium text-sm md:text-base text-gray-900" x-show="!open">03 * * * * * * * * *</span>
@@ -514,7 +514,7 @@
                                         <!-- Inquiry -->
                                         <div class="flex flex-col w-full">
                                             <!-- Header -->
-                                            <div class="header flex rounded-t-lg justify-between items-center bg-[#0EA5E9] px-5 py-5" x-show="open">
+                                            <div class="header flex rounded-t-lg justify-between items-center bg-[#0EA5E9] p-2 md:p-5" x-show="open">
                                                 <div class="title">
                                                     <a href="#" class="text-white font-medium text-sm md:text-lg">Email Inquiry</a>
                                                 </div>
@@ -527,7 +527,7 @@
                                                 </div>
                                             </div>
                                             <!-- INQUIRY FORM  -->
-                                            <div class="Inquiry-form w-full p-5 bg-gray-50 rounded-b-lg justify-center">
+                                            <div class="Inquiry-form w-full p-2 md:p-5 bg-gray-50 rounded-b-lg justify-center">
                                                 <!-- ********CASE-DETAILS******** Portion-1 -->
                                                 <div x-data="{ open: false }">
                                                 <span  x-show="!open">
@@ -2103,7 +2103,7 @@
             </div>    
         </section>
         <section class="faqs container">
-            <div class="w-full p-5 rounded-xl shadow bg-white">
+            <div class="w-full p-2 md:p-5 rounded-xl shadow bg-white">
             <h2 class="text-lg font-medium text-gray-500">
                 FAQs
             </h2>
@@ -2170,7 +2170,7 @@
             </div>
         </section>
         <section class="recommendations container">
-            <div class="bg-white rounded-lg p-5">
+            <div class="bg-white rounded-lg p-2 md:p-5">
                 <div class="main-frame gap-2 mb-10">
                     <div class="flex flex-wrap justify-between mb-8">
                         <div class="title text-lg text-[#6B7280]"><a href="#">Recommendations</a></div>
