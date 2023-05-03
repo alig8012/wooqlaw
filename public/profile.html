@@ -514,12 +514,12 @@
                                         <!-- Inquiry -->
                                         <div class="flex flex-col w-full">
                                             <!-- Header -->
-                                            <div class="header flex rounded-t-lg justify-between items-center bg-[#0EA5E9] p-2 md:p-5" x-show="open">
+                                            <div class="header flex rounded-t-lg justify-between items-center bg-blue-500 p-2 md:p-5" x-show="open">
                                                 <div class="title">
                                                     <a href="#" class="text-white font-medium text-sm md:text-lg">Email Inquiry</a>
                                                 </div>
                                                 <div class="icon">
-                                                    <a href="#"><div class="icon bg-[#E0F2FE] w-10 h-10 flex justify-center items-center rounded-md hover:bg-gray-100">
+                                                    <a href="#"><div class="icon bg-blue-100 w-10 h-10 flex justify-center items-center rounded-md hover:bg-gray-100">
                                                         <svg width="24" height="120" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                             <path d="M2.875 2.125C2.47969 2.125 2.15625 2.44375 2.15625 2.83333V3.81172L9.90527 10.0805C10.8352 10.8331 12.1693 10.8331 13.0992 10.0805L20.8438 3.81172V2.83333C20.8438 2.44375 20.5203 2.125 20.125 2.125H2.875ZM2.15625 6.56094V14.1667C2.15625 14.5562 2.47969 14.875 2.875 14.875H20.125C20.5203 14.875 20.8438 14.5562 20.8438 14.1667V6.56094L14.4648 11.7229C12.7398 13.1174 10.2557 13.1174 8.53516 11.7229L2.15625 6.56094ZM0 2.83333C0 1.27057 1.28926 0 2.875 0H20.125C21.7107 0 23 1.27057 23 2.83333V14.1667C23 15.7294 21.7107 17 20.125 17H2.875C1.28926 17 0 15.7294 0 14.1667V2.83333Z" fill="#0EA5E9"/>
                                                             </svg>
@@ -562,7 +562,7 @@
                                                                 id="file_input" type="file">
                                                         </div>
                                                         <!-- INPUT _ 4 -->
-                                                        <label for="subject" class="Label-2 block mb-2 text-[#6B7280] text-xs mt-3">
+                                                        <label for="subject" class="Label-2 block mb-2 text-gray-500 text-xs mt-3">
                                                             <a href="#">
                                                                 A note for extra info
                                                             </a>
@@ -605,7 +605,7 @@
                                                             </div>
                                                             <div class="image-detail flex flex-col gap-1">
                                                                 <span class="description font-medium text-xs">Stamp Paper Photo</span>
-                                                                <span class="file-size text -[#71717A] text-2xs">Size 3.4MB</span>
+                                                                <span class="file-size text-gray-500 text-2xs">Size 3.4MB</span>
                                                             </div>
                                                             <span class="cross-Icon absolute mb-14 right-0 hover:bg-red-800 rounded-full">
                                                                 <a href="#">
@@ -621,10 +621,10 @@
                                                     </form>
                                                     <!-- ************CONTACT-DETAILS**************Portion-2 -->
                                                 <div class="flex border mt-3 mb-5">
-
                                                 </div>
-                                                    <label for="email" class="Label-1 mb-2 text-lg font-medium text-gray-500">Contact Details</label>
-                                    
+                                                    <label for="email" class="Label-1 mb-2 text-lg font-medium text-gray-500">
+                                                        Contact Details
+                                                    </label>
                                                     <!-- Form 2 -->
                                                     <form>
                                                         <!--F2 Input_1 -->
@@ -651,9 +651,7 @@
                                                                 class="shadow-sm bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                                                                 placeholder="Email address" required>
                                                         </div>
-                                    
                                                         <div class="button flex justify-center" x-on:click="open = !open">
-                                                            
                                                             <button class="text-white w-96 bg-blue-500 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">submit
                                                             </button>
                                                         </div>
@@ -685,10 +683,10 @@
                                                                 account.</span>
                                                         </div>
                                                         <div class="creat-account-on-num text-center mt-5">
-                                                            <Span class="text-base text-gray-600">Would you like to create an account against this mobile number<span class="phone-num text-[#6D28D9]"> 03340123561? </span></Span>
+                                                            <Span class="text-base text-gray-600">Would you like to create an account against this mobile number<span class="phone-num text-violet-700"> 03340123561? </span></Span>
                                                         </div>
                                                         <div class="button mt-5">
-                                                            <button class="bg-[#6D28D9] rounded-lg w-full px-2.5 py-5 text-white text-sm font-medium">Create Number</button>
+                                                            <button class="bg-violet-700 rounded-lg w-full px-2.5 py-5 text-white text-sm font-medium">Create Number</button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1967,7 +1965,7 @@
                     <div class="main-frame bg-gray-50 rounded-xl py-5">
                         <!-- Content -->
                         <div class="Content flex flex-col flex-wrap justify-center items-center gap-5">
-                            <div class="profile-photo text-lg text-[#6B7280]"><a href="#">
+                            <div class="profile-phot"><a href="#">
                                     <img src="images/Ellipse 291.png" alt="Profile Picture">
                                 </a></div>
                             <div class="details flex flex-col items-center">
@@ -1997,7 +1995,7 @@
                     <div class="main-frame bg-gray-50 rounded-xl">
                         <!-- Content -->
                         <div class="Content flex flex-col flex-wrap justify-center items-center py-5 gap-5">
-                            <div class="profile-photo text-lg text-[#6B7280]"><a href="#">
+                            <div class="profile-photo"><a href="#">
                                     <img src="images/Ellipse 291.png" alt="Profile Picture">
                                 </a></div>
                             <div class="heading font-medium text-base">Write a Recommendation</div>
@@ -2082,7 +2080,7 @@
                     <div class="bg-gray-50 rounded-xl py-5 gap-5">
                         <!-- Content -->
                         <div class="flex flex-col flex-wrap justify-center items-center gap-5">
-                            <div class="profile-photo text-lg text-[#6B7280]"><a href="#">
+                            <div class="profile-photo"><a href="#">
                                     <img src="images/Ellipse 291.png" alt="Profile Picture">
                                 </a></div>
                             <div class="details flex flex-col items-center">
