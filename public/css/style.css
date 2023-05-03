@@ -2331,6 +2331,10 @@ select {
     padding: 1.25rem;
   }
 
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
