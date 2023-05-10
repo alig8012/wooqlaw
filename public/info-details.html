@@ -20,68 +20,43 @@
 
   </head>
 
-<body class="font-display p-4 bg-white">
+<body class="font-display p-4">
     <section class="info-details">
-      <div class="max-w-2xl mx-auto p-5 rounded-xl bg-gray-50 drop-shadow">
-        <div id="faqs" data-accordion="collapse" data-active-classes="bg-white text-gray-900" data-inactive-classes="text-gray-500">
-            <h2 id="faqs-heading-1">
-                <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200" data-accordion-target="#faqs-body-1" aria-expanded="false" aria-controls="faqs-body-1">
-                  <span>Can I use FlowBite in open-source projects?</span>
+      <div class="w-56 mx-auto p-3 gap-5 rounded-xl bg-gray-50 drop-shadow">
+        <div id="availability" data-accordion="collapse" data-active-classes="text-gray-900" data-inactive-classes="text-gray-500">
+            <h2 id="availability-heading-1">
+                <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500" data-accordion-target="#availability-body-1" aria-expanded="false" aria-controls="availability-body-1">
+                  <span class="flex gap-1 items-center">
+                    <span>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_181369_171152)">
+                        <path d="M13.3333 8.77565C13.0917 8.53398 12.6917 8.53398 12.45 8.77565L8.825 12.4007L7.5 11.0757C7.25833 10.834 6.85833 10.834 6.61667 11.0757C6.375 11.3173 6.375 11.7173 6.61667 11.959L8.23333 13.5757C8.55833 13.9007 9.08333 13.9007 9.40833 13.5757L13.325 9.65898C13.575 9.41732 13.575 9.01732 13.3333 8.77565ZM15.8333 2.50065H15V1.66732C15 1.20898 14.625 0.833984 14.1667 0.833984C13.7083 0.833984 13.3333 1.20898 13.3333 1.66732V2.50065H6.66667V1.66732C6.66667 1.20898 6.29167 0.833984 5.83333 0.833984C5.375 0.833984 5 1.20898 5 1.66732V2.50065H4.16667C3.24167 2.50065 2.50833 3.25065 2.50833 4.16732L2.5 15.834C2.5 16.7507 3.24167 17.5007 4.16667 17.5007H15.8333C16.75 17.5007 17.5 16.7507 17.5 15.834V4.16732C17.5 3.25065 16.75 2.50065 15.8333 2.50065ZM15 15.834H5C4.54167 15.834 4.16667 15.459 4.16667 15.0007V6.66732H15.8333V15.0007C15.8333 15.459 15.4583 15.834 15 15.834Z" fill="#4B5563"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_181369_171152">
+                        <rect width="20" height="20" fill="white"/>
+                        </clipPath>
+                        </defs>
+                      </svg>
+                        
+                    </span>
+                    <h3>
+                      Availability
+                    </h3>
+                  </span>
                   <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                 </button>
             </h2>
-            <div id="faqs-body-1" class="hidden" aria-labelledby="faqs-heading-1">
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-base font-normal text-gray-500">Generally, it is accepted to use FlowBite in open-source projects, as long as it is not a UI library, a theme, a template, a page-builder that would be considered as an alternative to FlowBite itself. With that being said, feel free to use this design kit for your open-source projects.</p>
-                <p class="text-base font-normal text-gray-500">Find out more information by <a href="/docs/getting-started/introduction/" class="text-base font-medium text-blue-600 hover:underline">reading the license.</a></p>
-              </div>
-            </div>
-            <h2 id="faqs-heading-2">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200" data-accordion-target="#faqs-body-2" aria-expanded="false" aria-controls="faqs-body-2">
-                <span>Where can I access my download files?</span>
-                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-              </button>
-            </h2>
-            <div id="faqs-body-2" class="hidden" aria-labelledby="faqs-heading-2">
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">Flowbite is first conceptualized and designed using the Figma software so everything you see in the library has a design equivalent in our Figma file.</p>
-                <p class="text-gray-500">Check out the <a href="https://flowbite.com/figma/" class="text-blue-600 hover:underline">Figma design system</a> based on the utility classes from Tailwind CSS and components from Flowbite.</p>
-              </div>
-            </div>
-            <h2 id="faqs-heading-3">
-              <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200" data-accordion-target="#faqs-body-3" aria-expanded="false" aria-controls="faqs-body-3">
-                <span>Can I use FlowBite for commercial purposes?</span>
-                <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-              </button>
-            </h2>
-            <div id="faqs-body-3" class="hidden" aria-labelledby="faqs-heading-3">
-              <div class="py-5 border-b border-gray-200">
-                <p class="mb-2 text-gray-500">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                <p class="mb-2 text-gray-500">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                <p class="mb-2 text-gray-500">Learn more about these technologies:</p>
-                <ul class="pl-5 text-gray-500 list-disc">
-                  <li><a href="https://flowbite.com/pro/" class="text-blue-600 hover:underline">Flowbite Pro</a></li>
-                  <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 hover:underline">Tailwind UI</a></li>
-                </ul>
-              </div>
-            </div>
-            <h2 id="faqs-heading-4">
-                <button type="button" class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500" data-accordion-target="#faqs-body-4" aria-expanded="false" aria-controls="faqs-body-4">
-                  <span>What about browser support?</span>
-                  <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                </button>
-            </h2>
-            <div id="faqs-body-4" class="hidden" aria-labelledby="faqs-heading-4">
-                <div class="py-5 border-b border-gray-200">
-                  <p class="mb-2 text-gray-500">The main difference is that the core components from Flowbite are open source under the MIT license, whereas Tailwind UI is a paid product. Another difference is that Flowbite relies on smaller and standalone components, whereas Tailwind UI offers sections of pages.</p>
-                  <p class="mb-2 text-gray-500">However, we actually recommend using both Flowbite, Flowbite Pro, and even Tailwind UI as there is no technical reason stopping you from using the best of two worlds.</p>
-                  <p class="mb-2 text-gray-500">Learn more about these technologies:</p>
-                  <ul class="pl-5 text-gray-500 list-disc">
-                    <li><a href="https://flowbite.com/pro/" class="text-blue-600 hover:underline">Flowbite Pro</a></li>
-                    <li><a href="https://tailwindui.com/" rel="nofollow" class="text-blue-600 hover:underline">Tailwind UI</a></li>
-                  </ul>
+            <div class="flex flex-col gap-4">
+                <div id="availability-body-1" class="hidden" aria-labelledby="availability-heading-1">
+                    <input id="availability-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
+                    <label for="availability-checkbox" class="ml-2 text-sm font-medium text-gray-900">Near me</label>
                 </div>
-            </div>
+
+
+               
+            
+            
         </div>
       </div>
     </section>
