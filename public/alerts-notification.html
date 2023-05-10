@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <title>Alerts-Notification</title>
+</head>
+
+    <body class="font-display p-4 bg-gray-50">
+        <section class="alerts-notification">
+            <div class="max-w-3xl mx-auto p-4 mb-4 bg-white rounded-lg shadow sm:p-6 xl:p-8 xl:mb-0">
+                <div class="flow-root">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800">
+                        Alerts & Notification Preferences
+                    </h3>
+                    <p class="text-xs md:text-sm font-normal text-gray-500">
+                        You caen set up Themesberg to get notifications
+                    </p>
+                    <div class="divide-y divide-gray-200">
+                        <!-- Items -->
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Client Enquiry
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Client Appointment
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Live Chat & Video Call
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Client Recommendations 
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Court Hearing
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Case Hearing with No Future Date 
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Appointment & Event Reminders
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Reminders
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Due Payments
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-between items-start md:items-center py-4 gap-2">
+                            <div class="flex flex-col flex-grow">
+                                <div class="text-base md:text-lg font-semibold text-gray-900">
+                                    Inbox (Email, Message)
+                                </div>
+                                <div class="text-sm md:text-base font-normal text-gray-500">
+                                    Get Themsberg news, announcements, and product updates
+                                </div>
+                            </div>
+                            <select id="alert" class="text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg block w-40 p-2.5 focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select All</option>
+                                <option value="1">1</option>
+                            </select>
+                        </div>
+                        <div class="py-4">
+                            <button type="button" class="text-sm font-medium text-white text-center rounded-lg mr-2 px-3 py-2 inline-flex items-center bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300">
+                                Save all
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flow Bite Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+        
+    </body>
+</html>
