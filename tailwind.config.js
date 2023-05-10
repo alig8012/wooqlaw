@@ -23,7 +23,7 @@ module.exports = {
         '3xs': ['0.5rem', '0.625rem'], // 8px
       }
       "colors": {
-        "primary1": "#ffffff"
+        "primary0": "#ffffff"
       }
     },
   },
