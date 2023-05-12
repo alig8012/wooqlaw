@@ -5,6 +5,10 @@
   <meta charset="utf-8" />
   <title>Info-Details</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
   
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
   
@@ -71,8 +75,9 @@
               </div>
               <div class="flex gap-2 items-center">
                 <input id="availability5-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
-              <div class="w-full">
-                <input id="availability5-date" datepicker type="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-5 p-2" placeholder="Custom date">
+              <div x-data="{ date : new Date().toISOString().split('T')[0] }" class="w-full">
+                <input id="availability5-date" x-bind:value="date" type="date" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 
+                focus:border-blue-500 block w-full pl-5 p-2" placeholder="Custom date">
               </div>
               </div>
             </div>
