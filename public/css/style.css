@@ -981,6 +981,9 @@ select {
 .w-6\/12 {
   width: 50%;
 }
+.w-60 {
+  width: 15rem;
+}
 .w-7 {
   width: 1.75rem;
 }
@@ -999,12 +1002,6 @@ select {
 }
 .w-full {
   width: 100%;
-}
-.w-auto {
-  width: auto;
-}
-.w-60 {
-  width: 15rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1032,12 +1029,6 @@ select {
 }
 .max-w-sm {
   max-width: 24rem;
-}
-.max-w-xs {
-  max-width: 20rem;
-}
-.max-w-full {
-  max-width: 100%;
 }
 .shrink-0 {
   flex-shrink: 0;
