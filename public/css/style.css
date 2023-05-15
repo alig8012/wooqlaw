@@ -2418,6 +2418,10 @@ select {
     gap: 2rem;
   }
 
+  .md\:gap-36 {
+    gap: 9rem;
+  }
+
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
