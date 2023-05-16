@@ -719,20 +719,14 @@ select {
 .right-0 {
   right: 0px;
 }
+.top-0 {
+  top: 0px;
+}
 .top-1 {
   top: 0.25rem;
 }
 .top-1\/2 {
   top: 50%;
-}
-.bottom-2\.5 {
-  bottom: 0.625rem;
-}
-.right-2 {
-  right: 0.5rem;
-}
-.right-2\.5 {
-  right: 0.625rem;
 }
 .-z-10 {
   z-index: -10;
@@ -815,6 +809,9 @@ select {
 }
 .mr-2 {
   margin-right: 0.5rem;
+}
+.mr-4 {
+  margin-right: 1rem;
 }
 .mt-1 {
   margin-top: 0.25rem;
@@ -1310,10 +1307,6 @@ select {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-.border-blue-700 {
-  --tw-border-opacity: 1;
-  border-color: rgb(29 78 216 / var(--tw-border-opacity));
-}
 .bg-\[\#FFF0F1\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 240 241 / var(--tw-bg-opacity));
@@ -1434,10 +1427,6 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(202 138 4 / var(--tw-bg-opacity));
 }
-.bg-blue-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-}
 .bg-\[url\(\/img\/grid\.svg\)\] {
   background-image: url(/img/grid.svg);
 }
@@ -1482,6 +1471,9 @@ select {
 }
 .bg-center {
   background-position: center;
+}
+.fill-current {
+  fill: currentColor;
 }
 .p-0 {
   padding: 0px;
@@ -1668,6 +1660,9 @@ select {
 }
 .pr-1 {
   padding-right: 0.25rem;
+}
+.pr-16 {
+  padding-right: 4rem;
 }
 .pr-2 {
   padding-right: 0.5rem;
@@ -2159,19 +2154,9 @@ select {
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
   }
 
-  .dark\:bg-blue-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(37 99 235 / var(--tw-bg-opacity));
-  }
-
   .dark\:text-white {
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-gray-400 {
-    --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity));
   }
 
   .dark\:placeholder-gray-400::-moz-placeholder {
@@ -2184,11 +2169,6 @@ select {
     color: rgb(156 163 175 / var(--tw-placeholder-opacity));
   }
 
-  .dark\:hover\:bg-blue-700:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-  }
-
   .dark\:focus\:border-blue-500:focus {
     --tw-border-opacity: 1;
     border-color: rgb(59 130 246 / var(--tw-border-opacity));
@@ -2197,11 +2177,6 @@ select {
   .dark\:focus\:ring-blue-500:focus {
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
-  }
-
-  .dark\:focus\:ring-blue-800:focus {
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(30 64 175 / var(--tw-ring-opacity));
   }
 }
 
