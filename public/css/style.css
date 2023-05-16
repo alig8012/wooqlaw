@@ -921,6 +921,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-32 {
+  height: 8rem;
+}
 .min-h-\[252px\] {
   min-height: 252px;
 }
@@ -1655,6 +1658,9 @@ select {
 .pr-4 {
   padding-right: 1rem;
 }
+.pr-5 {
+  padding-right: 1.25rem;
+}
 .pt-10 {
   padding-top: 2.5rem;
 }
@@ -2241,6 +2247,14 @@ select {
     margin-top: 2.25rem;
   }
 
+  .md\:mt-14 {
+    margin-top: 3.5rem;
+  }
+
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2398,6 +2412,10 @@ select {
     gap: 0.5rem;
   }
 
+  .md\:gap-28 {
+    gap: 7rem;
+  }
+
   .md\:gap-3 {
     gap: 0.75rem;
   }
@@ -2418,10 +2436,6 @@ select {
     gap: 2rem;
   }
 
-  .md\:gap-36 {
-    gap: 9rem;
-  }
-
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -2434,6 +2448,11 @@ select {
     border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
   }
 
+  .md\:divide-black > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(0 0 0 / var(--tw-divide-opacity));
+  }
+
   .md\:divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgb(209 213 219 / var(--tw-divide-opacity));
@@ -2441,6 +2460,11 @@ select {
 
   .md\:rounded-full {
     border-radius: 9999px;
+  }
+
+  .md\:bg-gray-200 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   }
 
   .md\:p-10 {
