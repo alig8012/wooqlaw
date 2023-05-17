@@ -24,275 +24,164 @@
 </head>
 
 <body class="font-display p-0 bg-gray-50">
-    <section class="jobs flex flex-col max-w-5xl mx-auto p-5 md:p-10 gap-4 md:gap-7 rounded-lg bg-white shadow">
-        <div class="flex gap-5 items-center justify-center">
-            <span class="flex w-7 md:w-12 items-center justify-center">
-                <svg class="w-7 md:w-12" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_180816_146731)">
-                    <path d="M25.3008 25.9777C25.3008 20.3657 29.9367 15.8125 35.6508 15.8125C41.3648 15.8125 46.0008 20.3657 46.0008 25.9777C46.0008 31.5897 41.3648 36.1429 35.6508 36.1429C29.9367 36.1429 25.3008 31.5897 25.3008 25.9777ZM40.488 24.5164C40.9408 24.0788 40.9408 23.3587 40.488 22.9211C40.0423 22.4763 39.3092 22.4763 38.8636 22.9211L34.5008 27.206L32.438 25.18C31.9923 24.7353 31.2592 24.7353 30.8136 25.18C30.3608 25.6177 30.3608 26.3377 30.8136 26.7754L33.6886 29.599C34.1342 30.0438 34.8673 30.0438 35.313 29.599L40.488 24.5164Z" fill="#673AB7"/>
-                    <path d="M0 1.6942C0 0.758859 0.772656 0 1.725 0H6.9C7.72656 0 8.43813 0.578145 8.59625 1.37724L8.70406 2.25893H38.9419C40.4009 2.25893 41.5653 3.68841 41.1556 5.12918L38.64 13.8995C37.6841 13.6736 36.6778 13.5536 35.65 13.5536C30.7338 13.5536 26.4716 16.3066 24.38 20.3304H12.2691L12.9303 23.7188H23.2084C23.0072 24.4529 22.9353 25.2082 22.9353 25.9777C22.9353 26.3589 23.0144 26.733 23.0503 27.1071H11.4353C10.6734 27.1071 9.96187 26.5283 9.80375 25.7306L5.47256 3.38839H1.725C0.772656 3.38839 0 2.63024 0 1.6942ZM16.1 32.7545C16.1 34.6251 14.5547 36.1429 12.65 36.1429C10.7453 36.1429 9.2 34.6251 9.2 32.7545C9.2 30.8838 10.7453 29.3661 12.65 29.3661C14.5547 29.3661 16.1 30.8838 16.1 32.7545Z" fill="#673AB7"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_180816_146731">
-                    <rect width="46" height="36.1429" fill="white"/>
-                    </clipPath>
-                    </defs>
-                </svg>
-                    
-            </span>
-            <h2 class="text-base md:text-2xl font-medium md:font-bold text-black py-2">
-                Summary
-            </h2>
-        </div>
-        <div class="flex flex-col gap-8 md:gap-16">
-            <div class="grid grid-flow-col md:grid-cols-2 rounded-xl bg-gray-100 p-2 md:p-3 gap-2 md:gap-10 items-start justify-between">
-                <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
-                    Item
+    <section class="jobs">
+    <div class="flex flex-col md:flex-row max-w-screen-2xl mx-auto p-2 md:p-20 gap-3 md:gap-12 rounded-lg bg-white shadow">
+        <div class="flex flex-col gap-2 md:gap-5">
+            <div class="flex rounded-t-xl bg-purple-100 p-2 md:p-3 gap-2 md:gap-10 items-center justify-between">
+                <div class="flex gap-8 items-center">
+                <span class="flex gap-2 items-center">
+                <h2 class="flex w-12 h-12 rounded-full bg-yellow-400 text-base md:text-xl font-medium text-black p-3">
+                    SS
+                </h2>
+                <h3 class="text-xs md:text-base font-medium text-black">
+                    Saima Safdar
                 </h3>
-                <span class="flex items-center justify-between">
-                    <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
-                        Promo Code
-                    </h3>
-                    <h3 class="text-xs md:text-sm font-medium text-gray-500 p-2.5">
-                        Price
-                    </h3>
                 </span>
-                </h3>
+                <h2 class="text-base md:text-xl font-medium text-black">
+                    Title: Property inheritance case for my house
+                </h2>
+                </div>
+                <div class="flex flex-col items-end">
+                    <h3 class="text-2xs md:text-xs font-normal text-black">
+                        Posted on
+                    </h3>
+                    <h3 class="text-xs md:text-sm font-normal text-black">
+                        Today, 10:23 PM
+                    </h3>
+                </div>
             </div>
             <div class="flex flex-col gap-3 md:gap-6 pb-8 border-b">
-                <h2 class="text-base md:text-lg font-medium text-violet-700">
-                    Package
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-between">
-                        <h3 class="text-xs md:text-sm font-medium text-black py-2.5">
-                            wooqlaw Subscription (free package)
-                        </h3>
-                    <div class="flex gap-3 md:gap-7 items-center justify-between">
-                        <span class="flex gap-2 justify-between">
-                            <input type="text" id="first_name"
-                                class="bg-gray-100 border border-gray-200 text-black text-sm font-medium rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="APRIL23" required>
-                            <a href="#" class="text-xs md:text-sm font-medium text-blue-500 w-full p-2.5 items-start">
-                                Apply
-                            </a>
-                        </span>
-                        <span class="p-1 gap-1">
-                            <h3 class="text-xs md:text-sm font-medium text-black">
-                                Rs750/month
-                            </h3>
-                            <h3 class="text-2xs md:text-xs font-medium text-gray-500 text-right line-through">
-                                Rs1500/month
-                            </h3>
-                        </span>
-                    </div>
+                <div class="grid grid-rows-2 gap-6">
+                <div class="flex gap-20">
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Lahore
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Prefered City
+                        </h2>
+                    </span>
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Male
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Lawyer gender
+                        </h2>
+                    </span>
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Urdu
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Lawyer Language
+                        </h2>
+                    </span>
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            1-5 Years
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Lawyer Experience
+                        </h2>
+                    </span>
+                </div>
+                <div class="flex gap-20">
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Yes
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Are you in prison?
+                        </h2>
+                    </span>
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Yes
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Is your case in the court?
+                        </h2>
+                    </span>
+                    <span class="flex flex-col items-center">
+                        <h2 class="text-xs md:text-base font-semibold text-violet-700">
+                            Lahore High Court
+                        </h2>
+                        <h2 class="text-xs md:text-base font-normal text-gray-500">
+                            Court Name:
+                        </h2>
+                    </span>
+                </div>
                 </div>
             </div>
-            <div class="flex flex-col gap-3 md:gap-6 pb-8">
-                <h2 class="text-base md:text-lg font-medium text-violet-700">
-                    Add-ons
-                </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-between">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-1">
-                            <h3 class="text-xs md:text-sm font-medium text-black py-2.5">
-                                wooqlaw inbuilt video consultation platform
-                            </h3>
-                            <span class="p-2">
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_180816_146770)">
-                                    <path d="M7 0.642822C3.13359 0.642822 0 3.77642 0 7.64282C0 11.5092 3.13359 14.6428 7 14.6428C10.8664 14.6428 14 11.5092 14 7.64282C14 3.77642 10.8664 0.642822 7 0.642822ZM7 13.3303C3.86367 13.3303 1.3125 10.7789 1.3125 7.64282C1.3125 4.50677 3.86367 1.95532 7 1.95532C10.1363 1.95532 12.6875 4.50677 12.6875 7.64282C12.6875 10.7789 10.1363 13.3303 7 13.3303ZM8.09375 9.83032H7.65625V7.42407C7.65625 7.06313 7.36367 6.76782 7 6.76782H6.125C5.76406 6.76782 5.46875 7.06313 5.46875 7.42407C5.46875 7.78501 5.76406 8.08032 6.125 8.08032H6.34375V9.83032H5.90625C5.54531 9.83032 5.25 10.1256 5.25 10.4866C5.25 10.8475 5.54531 11.1428 5.90625 11.1428H8.09375C8.45605 11.1428 8.75 10.8489 8.75 10.4866C8.75 10.1243 8.45742 9.83032 8.09375 9.83032ZM7 5.89282C7.48316 5.89282 7.875 5.50099 7.875 5.01782C7.875 4.53466 7.48316 4.14282 7 4.14282C6.51684 4.14282 6.125 4.53384 6.125 5.01782C6.125 5.50181 6.51602 5.89282 7 5.89282Z" fill="#A1A1AA"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_180816_146770">
-                                    <rect width="14" height="14" fill="white" transform="translate(0 0.642822)"/>
-                                    </clipPath>
-                                    </defs>
-                            </svg>
-                                    
-                            </span>
-                        </div>
-                        <h3 class="text-2xs md:text-xs font-normal text-gray-500">
-                            Simplicity with ease of use, ready to use
-                        </h3>
-                    </div>
-                    <div class="flex gap-3 md:gap-7 items-center justify-between">
-                        <span class="flex gap-2 justify-between">
-                            <input type="text" id="first_name"
-                                class="bg-gray-100 border border-gray-200 text-black text-sm font-medium rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="" required>
-                            <a href="#" class="text-xs md:text-sm font-medium text-red-500 w-full p-2.5">
-                                Remove
-                            </a>
-                        </span>
-                            <h3 class="text-xs md:text-sm font-medium text-black p-2.5">
-                                $0.002 / min
-                            </h3>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start justify-between">
-                    <div class="flex flex-col gap-2">
-                        <div class="flex items-center gap-1">
-                            <h3 class="text-xs md:text-sm font-medium text-black py-2.5">
-                                SMS subscription
-                            </h3>
-                            <span class="p-2">
-                                <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <g clip-path="url(#clip0_180816_146770)">
-                                    <path d="M7 0.642822C3.13359 0.642822 0 3.77642 0 7.64282C0 11.5092 3.13359 14.6428 7 14.6428C10.8664 14.6428 14 11.5092 14 7.64282C14 3.77642 10.8664 0.642822 7 0.642822ZM7 13.3303C3.86367 13.3303 1.3125 10.7789 1.3125 7.64282C1.3125 4.50677 3.86367 1.95532 7 1.95532C10.1363 1.95532 12.6875 4.50677 12.6875 7.64282C12.6875 10.7789 10.1363 13.3303 7 13.3303ZM8.09375 9.83032H7.65625V7.42407C7.65625 7.06313 7.36367 6.76782 7 6.76782H6.125C5.76406 6.76782 5.46875 7.06313 5.46875 7.42407C5.46875 7.78501 5.76406 8.08032 6.125 8.08032H6.34375V9.83032H5.90625C5.54531 9.83032 5.25 10.1256 5.25 10.4866C5.25 10.8475 5.54531 11.1428 5.90625 11.1428H8.09375C8.45605 11.1428 8.75 10.8489 8.75 10.4866C8.75 10.1243 8.45742 9.83032 8.09375 9.83032ZM7 5.89282C7.48316 5.89282 7.875 5.50099 7.875 5.01782C7.875 4.53466 7.48316 4.14282 7 4.14282C6.51684 4.14282 6.125 4.53384 6.125 5.01782C6.125 5.50181 6.51602 5.89282 7 5.89282Z" fill="#A1A1AA"/>
-                                    </g>
-                                    <defs>
-                                    <clipPath id="clip0_180816_146770">
-                                    <rect width="14" height="14" fill="white" transform="translate(0 0.642822)"/>
-                                    </clipPath>
-                                    </defs>
-                            </svg>
-                                    
-                            </span>
-                        </div>
-                        <h3 class="text-2xs md:text-xs font-normal text-gray-500">
-                            Simplicity with ease of use, ready to use
-                        </h3>
-                    </div>
-                    <div class="flex gap-3 md:gap-7 items-center justify-between">
-                        <span class="flex gap-2 justify-between">
-                            <input type="text" id="first_name"
-                                class="bg-gray-100 border border-gray-200 text-black text-sm font-medium rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                                placeholder="" required>
-                            <a href="#" class="text-xs md:text-sm font-medium text-red-500 w-full p-2.5">
-                                Remove
-                            </a>
-                        </span>
-                            <h3 class="text-xs md:text-sm font-medium text-black p-2.5">
-                                $2 / month
-                            </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 rounded-xl bg-gray-100 p-2.5 md:p-5 gap-20 justify-center md:justify-between">
-                <div class="flex flex-col gap-7">
+            <div class="flex rounded-xl bg-gray-100 p-2.5 md:p-5 gap-20 justify-center md:justify-between">
                 <div class="flex flex-col gap-2">
-                <h2 class="text-base md:text-lg font-semibold text-black p-1">
-                    Billing Details
+                <h2 class="text-base md:text-xl font-normal text-black p-1">
+                    Details
                 </h2>
                 <span class="flex flex-col gap-1">
-                <h2 class="text-xs md:text-sm font-medium text-gray-500 p-1">
-                    When your subscription starts we'll charge you monthly amount of purchased products at the end of every month. Charges will be included on each recuring monthly invoice. You'll be notified before any price changes. 
-                </h2>
+                <p class="text-xs md:text-base font-medium text-black p-1">
+                    (i) Order under this section should be passed at conclusion of trial.
+                    (ii) The Court may make such order (with or without any condition) for the disposal, by
+                    destruction, confiscation or delivery to any person claiming to be entitled to.
+                    (iii) But, the Court has to make such order engaging that person to restore such property to the
+                    Court if the order made under sub- section (1) is modified or set aside on appeal or revision.
+                    However, if property is livestock or is subject to speedy and natural decay, this condition to
+                    wait until lapse of appeal time does not arise.
+                    (iv) While passing order under this section, ‘’APPEAL TIME’ is to be kept in mind.
+                    (v) Under this section, a Court of Session may direct the property to be delivered to the Chief
+                    Judicial Magistrate, who shall thereupon deal with it in the manner provided in sections 457,
+                    458 and 459.
+                    (vi) It is pertinent to mention that Section 452 Criminal Procedure Code, property includes the
+                    same which is converted or exchanged, whether immediately or otherwise.
+                    SECTION 453 : –PAYMENT TO THE INNOCENT PURCHASER OF MONEY FOUND
+                    ON ACCUSED:
+                </p>
                 <a href="#" class="text-xs md:text-sm font-medium text-blue-500 underline p-1">
-                    Learn more about canceling  
+                    View More  
                 </a>
-                <h2 class="text-xs md:text-sm font-medium text-gray-500 p-1">
-                    The Microsoft Customer Agreement your organization signed and privacy statement govern this purchase.
-                </h2>
                 </span>
                 </div>
-                <div class="flex flex-col gap-6 px-1">
-                    <span class="flex text-xs md:text-sm font-medium gap-3 items-center">
-                        <input id="default-checkbox1" type="checkbox" value="" class="w-4 h-4 text-violet-700 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
-                        <label for="default-checkbox1" class="text-black">I agree to
-                            <a href="#" class="text-blue-500">
-                                term & condition
-                            </a>
-                            and billing policy.
-                            <span class="text-red-500">
-                                *
-                            </span>
-                        </label>
-                    </span>
-                    <span class="flex text-xs md:text-sm font-medium gap-3 items-center">
-                        <input id="default-checkbox1" type="checkbox" value="" class="w-4 h-4 text-violet-700 border-gray-300 rounded focus:ring-blue-500 focus:ring-2">
-                        <label for="default-checkbox1" class="text-black">I agree to pay Rs 100 now & remaining charges ( Estimated. Rs 3320) at the end of this subscription on 29 March, 2023
-                            <span class="text-red-500">
-                                *
-                            </span>
-                        </label>
-                    </span>
-                </div>
-                </div>
-                <div class="flex flex-col rounded-xl bg-white px-2.5 pt-2.5 pb-5 md:px-5 md:pt-5 md:pb-10 gap-16 justify-between">
-                    <div class="flex flex-col gap-2 pb-4 border-b">
-                        <div class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                Discount
-                            </h3>
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                Rs 0
-                        </div>
-                        <div class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                Sub Total
-                            </h3>
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                Rs 1,300
-                        </div>
-                        <div class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                GST 10%
-                            </h3>
-                            <h3 class="text-sm md:text-base font-medium text-gray-500 p-2.5">
-                                Rs 0
-                            </h3>
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-lg font-semibold text-black">
-                                Grand Monthly Total
-                            </h3>
-                            <h3 class="text-sm md:text-lg font-semibold text-black">
-                                Rs 1,300
-                        </div>
-                    </div>
-                </div>
             </div>
-
-
-            <div class="p-2 md:p-5">      
-                <ol class="relative border-l border-violet-500">                  
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-violet-500 rounded-full mt-1.5 -left-1.5 border border-white">
-                        </div>
-                        <time class="mb-1 text-xs md:text-sm font-medium leading-none text-gray-500">
-                            Trial Starting on
-                        </time>
-                        <span class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-base font-medium text-black">
-                                Mon 16, May 2023
-                            </h3>
-                            <h2 class="mb-4 text-sm md:text-lg font-medium text-emerald-600">
-                                Free
-                            </h2>
-                        </span>
-                    </li>
-                    <li class="mb-10 ml-4">
-                        <div class="absolute w-3 h-3 bg-violet-500 rounded-full mt-1.5 -left-1.5 border border-white">
-                        </div>
-                        <time class="mb-1 text-xs md:text-sm font-medium leading-none text-gray-500">
-                            Paid Subscription Starting on
-                        </time>
-                        <span class="flex gap-10 justify-between">
-                            <h3 class="text-sm md:text-base font-medium text-black">
-                                Mon 16, Jun 2023
-                            </h3>
-                            <h2 class="mb-4 text-sm md:text-lg font-medium text-black">
-                                PKR 15,300
-                            </h2>
-                        </span>
-                    </li>
-                </ol>
-            </div>
-
-
+        </div>
+        <div class="flex flex-col rounded-xl bg-gray-100 px-2.5 pt-2.5 pb-5 md:px-5 md:pt-5 md:pb-10 gap-16 justify-between">
+        <div class="flex flex-col p-2 md:p-5">
+            <span class="flex flex-col gap-5 border-b">
+                <h2 class="text-base md:text-xl font-normal text-black">
+                    Activities on this job
+                </h2>
+                <span class="flex gap-2">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.38021 7.83984L3.46354 10.6523C3.12174 10.9819 3.12174 11.5158 3.46354 11.8455C3.80534 12.1753 4.35896 12.1751 4.70094 11.8455L6.125 10.473V14.0625C6.125 14.5283 6.51693 14.9062 7 14.9062C7.48307 14.9062 7.875 14.5283 7.875 14.0625V10.473L9.29797 11.8452C9.46823 12.0129 9.69062 12.0938 9.91667 12.0938C10.1427 12.0938 10.3644 12.0113 10.5354 11.8466C10.8772 11.517 10.8772 10.9831 10.5354 10.6534L7.6187 7.84086C7.27708 7.51289 6.72292 7.51289 6.38021 7.83984ZM13.3182 3.28289L10.5973 0.658828C10.1573 0.237023 9.56302 0 8.94687 0H2.33333C1.04453 0 0 1.00723 0 2.25L0.000236979 15.75C0.000236979 16.9924 1.04477 18 2.33357 18H11.6667C12.95 18 14 16.9875 14 15.75V4.87266C14 4.27852 13.7557 3.70547 13.3182 3.28289ZM12.25 15.75C12.25 16.0606 11.9888 16.3125 11.6667 16.3125H2.33406C2.01184 16.3125 1.75073 16.0606 1.75073 15.75L1.75 2.25457C1.75 1.94393 2.01119 1.69207 2.33333 1.69207H8.16667V4.5C8.16667 5.12121 8.68911 5.625 9.33333 5.625H12.2172V15.75H12.25Z" fill="#673AB7"/>
+                    </svg>
+                    <h3 class="text-xs md:text-sm font-normal text-black mb-7">
+                        5 Proposals in total
+                    </h3>
+                </span>
+            </span>
+        <ol class="relative border-l border-gray-200 mt-7">                  
+            <li class="mb-10 ml-6 gap-3 items-center justify-center">            
+                <span class="absolute flex w-10 h-10 bg-gray-300 rounded-full -left-5 ring-2 items-center justify-center ring-white">
+                    <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.38021 7.83984L3.46354 10.6523C3.12174 10.9819 3.12174 11.5158 3.46354 11.8455C3.80534 12.1753 4.35896 12.1751 4.70094 11.8455L6.125 10.473V14.0625C6.125 14.5283 6.51693 14.9062 7 14.9062C7.48307 14.9062 7.875 14.5283 7.875 14.0625V10.473L9.29797 11.8452C9.46823 12.0129 9.69062 12.0938 9.91667 12.0938C10.1427 12.0938 10.3644 12.0113 10.5354 11.8466C10.8772 11.517 10.8772 10.9831 10.5354 10.6534L7.6187 7.84086C7.27708 7.51289 6.72292 7.51289 6.38021 7.83984ZM13.3182 3.28289L10.5973 0.658828C10.1573 0.237023 9.56302 0 8.94687 0H2.33333C1.04453 0 0 1.00723 0 2.25L0.000236979 15.75C0.000236979 16.9924 1.04477 18 2.33357 18H11.6667C12.95 18 14 16.9875 14 15.75V4.87266C14 4.27852 13.7557 3.70547 13.3182 3.28289ZM12.25 15.75C12.25 16.0606 11.9888 16.3125 11.6667 16.3125H2.33406C2.01184 16.3125 1.75073 16.0606 1.75073 15.75L1.75 2.25457C1.75 1.94393 2.01119 1.69207 2.33333 1.69207H8.16667V4.5C8.16667 5.12121 8.68911 5.625 9.33333 5.625H12.2172V15.75H12.25Z" fill="#757575"/>
+                    </svg>
+                </span>
+                <h3 class="flex text-sm font-normal text-gray-500">
+                    Proposal Sent
+                </h3>
+            </li>
+        </ol>
         </div>
         <a href="#"
-            class="flex text-sm md:text-base font-medium text-white rounded-lg bg-green-500 hover:bg-green-600 mx-auto px-24 py-5 items-center justify-center">
-            Check out
+            class="flex text-sm md:text-base font-medium text-white rounded-lg bg-violet-600 hover:bg-violet-700 mx-auto px-24 py-5 items-center justify-center">
+            Send Proposal
         </a>
+        </div>
+    </div>
     </section>
 
     <!-- Flow Bite Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
-  
 </body>
 
 </html>
