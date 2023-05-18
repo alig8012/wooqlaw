@@ -26,7 +26,7 @@
 <body class="font-display p-0 md:p-4 bg-gray-50">
     <!-- jobs -->
     <section class="jobs">
-    <div class="flex flex-col p-2 md:p-20 gap-4 max-w-screen-2xl mx-auto rounded-lg bg-white shadow">
+    <div class="flex flex-col flex-wrap p-2 md:p-12 gap-4 w-full mx-auto rounded-lg bg-white shadow">
     <!-- Breadcrumb -->
     <div class="">
         <nav class="flex" aria-label="Breadcrumb">
@@ -51,10 +51,10 @@
             </ol>
             </nav>
     </div>
-    <!-- Title: Property inheritance case for my house -->
-    <div class="flex flex-col md:flex-row max-w-5xl gap-2 md:gap-12">
-        <div class="flex flex-col gap-2 md:gap-5">
-        <div class="flex rounded-t-xl bg-purple-100 p-2 md:p-3 gap-2 md:gap-10 items-center justify-between">
+    <div class="grid grid-cols-1 md:grid-cols-4 flex-wrap w-full gap-2 md:gap-12">
+        <div class="flex flex-col flex-wrap gap-2 md:gap-5 col-span-1 md:col-span-3">
+        <!-- Title Property inheritance case for my house -->
+        <div class="flex flex-wrap rounded-t-xl bg-purple-100 p-2 md:p-3 gap-2 md:gap-10 items-center justify-between">
             <div class="flex gap-8 items-center">
             <span class="flex gap-2 items-center">
             <h2 class="flex w-12 h-12 rounded-full bg-yellow-400 text-base md:text-xl font-medium text-black p-3">
@@ -78,8 +78,7 @@
             </div>
         </div>
         <!-- information -->
-        <div class="flex flex-col gap-3 md:gap-6">
-            <div class="flex gap-20">
+        <div class="grid grid-cols-2 md:grid-cols-4 flex-wrap w-full gap-2 md:gap-6">
                 <span class="flex flex-col items-center">
                     <h2 class="text-xs md:text-base font-semibold text-violet-700">
                         Lahore
@@ -112,8 +111,6 @@
                         Lawyer Experience
                     </h2>
                 </span>
-            </div>
-            <div class="flex gap-20">
                 <span class="flex flex-col items-center">
                     <h2 class="text-xs md:text-base font-semibold text-violet-700">
                         Yes
@@ -138,19 +135,15 @@
                         Court Name:
                     </h2>
                 </span>
-                <span class="">
-
-                </span>
-            </div>
         </div>
         <!-- Details -->
-        <div class="flex bg-gray-100 p-2.5 md:p-5 gap-20 border-t pt-3 justify-center md:justify-between">
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-wrap bg-gray-100 p-2.5 md:p-5 gap-20 border-t pt-3 justify-center md:justify-between">
+        <div class="flex flex-col flex-wrap gap-2">
             <h2 class="text-base md:text-xl font-normal text-black p-1">
                 Details
             </h2>
-            <span class="flex flex-col gap-1">
-            <ol type="i" class="text-xs md:text-base font-normal text-black p-1">
+            <span class="">
+            <ol type="i" class="flex flex-col flex-wrap text-xs md:text-base font-normal text-black gap-1 p-1">
                 <li>
                     (i) Order under this section should be passed at conclusion of trial.
                 </li>
@@ -184,7 +177,7 @@
             </ol>
             </span>
         <!-- Attachments: -->
-        <div class="flex gap-4 border-y py-3 items-center">
+        <div class="flex flex-wrap gap-4 border-y py-3 items-center">
         <label for="attachments">
             <a href="#" class="text-xs md:text-base font-normal text-gray-500">
                 Attachments:
@@ -242,9 +235,9 @@
         </div>
         </div>
         <!-- Activities on this job -->
-        <div class="flex flex-col max-w-xs rounded-xl bg-gray-100 p-2 md:p-4 gap-16 justify-between">
-        <div class="flex flex-col p-2 md:p-5">
-            <span class="flex flex-col gap-5 border-b">
+        <div class="flex flex-col flex-wrap w-full rounded-xl bg-gray-100 p-1 md:p-4 gap-4 md:gap-16 justify-between col-span-1">
+        <div class="flex flex-col flex-wrap p-2 md:p-5">
+            <span class="flex flex-col flex-wrap gap-5 border-b">
                 <h2 class="text-base md:text-xl font-normal text-black">
                     Activities on this job
                 </h2>
