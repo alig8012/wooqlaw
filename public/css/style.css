@@ -688,6 +688,9 @@ select {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .inset-0 {
   inset: 0px;
 }
@@ -722,6 +725,9 @@ select {
 .left-1\/2 {
   left: 50%;
 }
+.left-10 {
+  left: 2.5rem;
+}
 .left-6 {
   left: 1.5rem;
 }
@@ -736,6 +742,33 @@ select {
 }
 .top-1\/2 {
   top: 50%;
+}
+.right-10 {
+  right: 2.5rem;
+}
+.top-5 {
+  top: 1.25rem;
+}
+.top-20 {
+  top: 5rem;
+}
+.top-10 {
+  top: 2.5rem;
+}
+.top-7 {
+  top: 1.75rem;
+}
+.right-20 {
+  right: 5rem;
+}
+.right-5 {
+  right: 1.25rem;
+}
+.right-1 {
+  right: 0.25rem;
+}
+.right-7 {
+  right: 1.75rem;
 }
 .-z-10 {
   z-index: -10;
@@ -927,6 +960,9 @@ select {
 .h-3 {
   height: 0.75rem;
 }
+.h-3\.5 {
+  height: 0.875rem;
+}
 .h-32 {
   height: 8rem;
 }
@@ -972,6 +1008,9 @@ select {
 .w-12 {
   width: 3rem;
 }
+.w-14 {
+  width: 3.5rem;
+}
 .w-2 {
   width: 0.5rem;
 }
@@ -992,6 +1031,9 @@ select {
 }
 .w-3 {
   width: 0.75rem;
+}
+.w-3\.5 {
+  width: 0.875rem;
 }
 .w-36 {
   width: 9rem;
@@ -1747,9 +1789,6 @@ select {
 }
 .pt-3 {
   padding-top: 0.75rem;
-}
-.pt-4 {
-  padding-top: 1rem;
 }
 .pt-5 {
   padding-top: 1.25rem;
@@ -2558,6 +2597,10 @@ select {
     gap: 0.75rem;
   }
 
+  .md\:gap-4 {
+    gap: 1rem;
+  }
+
   .md\:gap-5 {
     gap: 1.25rem;
   }
@@ -2572,10 +2615,6 @@ select {
 
   .md\:gap-8 {
     gap: 2rem;
-  }
-
-  .md\:gap-4 {
-    gap: 1rem;
   }
 
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
@@ -2693,12 +2732,12 @@ select {
     padding-top: 0.75rem;
   }
 
-  .md\:pt-5 {
-    padding-top: 1.25rem;
-  }
-
   .md\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .md\:pt-5 {
+    padding-top: 1.25rem;
   }
 
   .md\:text-start {

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Messaging</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body class="font-display p-0 md:p-4 bg-gray-50">
+    <!-- messaging -->
+    <section class="messaging">
+    <div class="flex flex-col flex-wrap max-w-2xl mx-auto p-5 gap-5 rounded-lg bg-white shadow">
+        <div class="flex border-b border-gray-200 pb-5 items-center justify-between">
+        <span class="flex flex-col gap-1">
+        <h2 class="text-2xl font-semibold text-black">
+            Messaging
+        </h2>
+        <h3 class="text-sm font-medium text-gray-500">
+            Start New Conversation
+        </h3>
+        </span>
+        <span class="flex gap-1">
+            <button type="search" class="p-2.5 rounded-lg bg-gray-100 hover:bg-gray-200">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16.7412 15.6387L12.2908 11.1895C13.254 10.0107 13.7853 8.52656 13.7853 6.90625C13.7853 3.09121 10.6923 0 6.87724 0C3.06218 0 -0.000976562 3.09221 -0.000976562 6.90625C-0.000976562 10.7203 3.09174 13.8125 6.87724 13.8125C8.49766 13.8125 9.98423 13.251 11.1616 12.317L15.612 16.7663C15.798 16.9236 16.0039 17 16.2065 17C16.4091 17 16.6143 16.9222 16.7701 16.7665C17.08 16.4555 17.08 15.9508 16.7412 15.6387ZM1.59321 6.90625C1.59321 3.97707 3.97717 1.59375 6.90713 1.59375C9.8371 1.59375 12.2211 3.97707 12.2211 6.90625C12.2211 9.83543 9.8371 12.2188 6.90713 12.2188C3.97717 12.2188 1.59321 9.83477 1.59321 6.90625Z" fill="#A1A1AA"/>
+                </svg>
+            </button>
+            <button type="search" class="p-2.5 rounded-lg bg-gray-100 hover:bg-gray-200">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.999 7.11111V0H8.88791L11.8124 2.92444L2.92347 11.8133L-0.000976562 8.88889V16H7.11013L4.18569 13.0756L13.0746 4.18667L15.999 7.11111Z" fill="#71717A"/>
+                </svg>
+            </button>
+        </span>
+        </div>
+        <div class="flex flex-col relative">
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+            <div class="flex gap-2 items-center">
+                <a href="#" class="relative">
+                    <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                    <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                </a>
+                <div class="flex flex-col gap-1">
+                <h2 class="text-sm font-semibold text-black">
+                    Nimra Jalil Kiyani
+                </h2>
+                <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                    Discussion on court documents with...
+                    <span>
+                        <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_181731_160778)">
+                            <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_181731_160778">
+                            <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                            
+                    </span>
+                </h3>
+                <h3 class="text-xs font-medium text-gray-400">
+                    I need new copy of following...
+                </h3>
+                </div>
+            </div>
+            <div class="flex flex-col items-end justify-between">
+            <h3 class="text-xs font-medium text-gray-400">
+                10:00 AM
+            </h3>
+            <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                88
+            </h3>
+            </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <div class="flex py-5 hover:bg-violet-100 justify-between">
+                <div class="flex gap-2 items-center">
+                    <a href="#" class="relative">
+                        <img class="w-14 h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
+                        <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
+                    </a>
+                    <div class="flex flex-col gap-1">
+                    <h2 class="text-sm font-semibold text-black">
+                        Nimra Jalil Kiyani
+                    </h2>
+                    <h3 class="flex gap-1 text-xs font-medium text-gray-600">
+                        Discussion on court documents with...
+                        <span>
+                            <svg width="14" height="16" viewBox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_181731_160778)">
+                                <path d="M11.6983 2.52823C10.8379 1.65983 9.44231 1.65983 8.58188 2.52823L2.90513 8.25957C1.52223 9.65666 1.52223 11.9195 2.90513 13.3165C4.28861 14.7136 6.52986 14.7136 7.91364 13.3165L12.408 8.779C12.5913 8.59093 12.8929 8.59093 13.0762 8.779C13.2625 8.96409 13.2625 9.26858 13.0762 9.45366L8.58188 13.9912C6.8285 15.7614 3.96336 15.7614 2.2363 13.9912C0.483719 12.221 0.483748 9.32828 2.2363 7.58491L7.91364 1.85298C9.14367 0.611182 11.1366 0.611182 12.3666 1.85298C13.5966 3.09453 13.5966 5.10717 12.3666 6.34903L6.93199 11.8359C6.09817 12.6777 4.72622 12.6001 3.96336 11.6717C3.35929 10.8507 3.42227 9.73129 4.13486 9.01185L8.62328 4.48027C8.8066 4.29221 9.10819 4.29221 9.29151 4.48027C9.47779 4.66536 9.47779 4.96985 9.29151 5.15494L4.80309 9.68651C4.40688 10.0626 4.39801 10.6597 4.70256 11.0746C5.08695 11.5582 5.8291 11.6 6.26375 11.1612L11.6983 5.67437C12.5588 4.80566 12.5588 3.39694 11.6983 2.52823Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_181731_160778">
+                                <rect width="13.2464" height="15.2844" fill="white" transform="translate(0.441406 0.518921)"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                                
+                        </span>
+                    </h3>
+                    <h3 class="text-xs font-medium text-gray-400">
+                        I need new copy of following...
+                    </h3>
+                    </div>
+                </div>
+                <div class="flex flex-col items-end justify-between">
+                <h3 class="text-xs font-medium text-gray-400">
+                    10:00 AM
+                </h3>
+                <h3 class="flex text-2xs font-semibold text-white rounded-full w-5 h-5 bg-violet-700 items-center justify-center">
+                    88
+                </h3>
+                </div>
+            </div>
+            <a href="#" class="relative">
+                <svg class="top-0 right-10 absolute" width="59" height="57" viewBox="0 0 59 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_dd_181731_160884)">
+                    <ellipse cx="29.5" cy="24.7797" rx="23.5" ry="22.1052" fill="#6D28D9"/>
+                    <path d="M37.9249 26.0692H31.2951V32.056C31.2951 32.7145 30.6985 33.2533 29.9692 33.2533C29.2399 33.2533 28.6432 32.7145 28.6432 32.056V26.0692H22.0135C21.2842 26.0692 20.6875 25.5303 20.6875 24.8718C20.6875 24.2132 21.2842 23.6744 22.0135 23.6744H28.6432V17.6876C28.6432 17.029 29.2399 16.4902 29.9692 16.4902C30.6985 16.4902 31.2951 17.029 31.2951 17.6876V23.6744H37.9249C38.6542 23.6744 39.2509 24.2132 39.2509 24.8718C39.2509 25.5303 38.6542 26.0692 37.9249 26.0692Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_dd_181731_160884" x="0" y="0.674438" width="59" height="56.2104" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="3"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_181731_160884"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"/>
+                    <feBlend mode="normal" in2="effect1_dropShadow_181731_160884" result="effect2_dropShadow_181731_160884"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_181731_160884" result="shape"/>
+                    </filter>
+                    </defs>
+                
+                </svg>
+            </a>
+        </div>
+
+            
+        
+
+
+    </div>
+    </section>
+
+    <!-- Flow Bite Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+</body>
+
+</html>
