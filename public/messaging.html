@@ -6,6 +6,10 @@
     <title>Messaging</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+    <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
 
     <!-- Tailwind CSS-->
@@ -49,13 +53,13 @@
             </a>
         </span>
         </div>
-        <div class="flex flex-col relative">
-            <a href="javascript:;" x-data x-on:click="location.href='conversation.html';" class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
+        <div class="flex flex-col relative" x-data>
+            <a href="javascript:;" x-on:click="location.href='conversation.html';" class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Nimra Jalil Kiyani
@@ -93,10 +97,10 @@
             </a>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/farooq ali.png" alt="farooq ali">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Kamran Saeed
@@ -134,10 +138,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/qasim-muneer.png" alt="qasim-muneer">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-gray-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Zahid Hussain Khan
@@ -163,10 +167,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Saima Parveen
@@ -204,10 +208,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/komal-riaz.png" alt="komal-riaz">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Rimsha Waheed
@@ -245,10 +249,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/saiqa-haleema.png" alt="saiqa-haleema">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Zahida Mehmood
@@ -274,10 +278,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/muhammad-khurshid-choudry.png" alt="muhammad-khurshid-choudry">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-gray-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Hameed Rashid
@@ -315,10 +319,10 @@
             </div>
             <div class="flex px-2 md:px-5 py-2 md:py-3 hover:bg-violet-100 justify-between">
                 <div class="flex gap-2 items-center">
-                    <a href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
+                    <div href="#" class="w-12 h-12 md:w-14 md:h-14 relative">
                         <img class="w-12 h-12 md:w-14 md:h-14 rounded-full" src="images/komal-riaz.png" alt="komal-riaz">
                         <span class="top-0 left-10 absolute w-3.5 h-3.5 bg-green-400 border-2 border-white rounded-full"></span>
-                    </a>
+                    </div>
                     <div class="flex flex-col gap-1">
                         <span class="text-xs md:text-sm font-semibold text-black">
                             Rakha Tervaidi
