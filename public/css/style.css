@@ -2398,6 +2398,10 @@ select {
     height: 9rem;
   }
 
+  .md\:h-4 {
+    height: 1rem;
+  }
+
   .md\:h-5 {
     height: 1.25rem;
   }
@@ -2422,6 +2426,10 @@ select {
     width: 3rem;
   }
 
+  .md\:w-14 {
+    width: 3.5rem;
+  }
+
   .md\:w-2\/3 {
     width: 66.666667%;
   }
@@ -2436,6 +2444,10 @@ select {
 
   .md\:w-36 {
     width: 9rem;
+  }
+
+  .md\:w-4 {
+    width: 1rem;
   }
 
   .md\:w-44 {
@@ -2646,10 +2658,6 @@ select {
     padding: 1.5rem;
   }
 
-  .md\:p-2\.5 {
-    padding: 0.625rem;
-  }
-
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2685,18 +2693,22 @@ select {
     padding-bottom: 3rem;
   }
 
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
 
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
   .md\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-5 {
+    padding-bottom: 1.25rem;
   }
 
   .md\:pr-3 {
@@ -2715,10 +2727,6 @@ select {
     padding-top: 1.25rem;
   }
 
-  .md\:pb-5 {
-    padding-bottom: 1.25rem;
-  }
-
   .md\:text-start {
     text-align: start;
   }
@@ -2726,6 +2734,11 @@ select {
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-2xs {
+    font-size: 0.625rem;
+    line-height: 0.75rem;
   }
 
   .md\:text-3xl {
