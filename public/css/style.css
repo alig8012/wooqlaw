@@ -731,8 +731,8 @@ select {
 .right-0 {
   right: 0px;
 }
-.right-10 {
-  right: 2.5rem;
+.right-5 {
+  right: 1.25rem;
 }
 .top-0 {
   top: 0px;
@@ -742,18 +742,6 @@ select {
 }
 .top-1\/2 {
   top: 50%;
-}
-.right-12 {
-  right: 3rem;
-}
-.right-5 {
-  right: 1.25rem;
-}
-.bottom-3 {
-  bottom: 0.75rem;
-}
-.right-20 {
-  right: 5rem;
 }
 .-z-10 {
   z-index: -10;
@@ -992,9 +980,6 @@ select {
 }
 .w-12 {
   width: 3rem;
-}
-.w-14 {
-  width: 3.5rem;
 }
 .w-2 {
   width: 0.5rem;
@@ -1267,17 +1252,8 @@ select {
 .overflow-hidden {
   overflow: hidden;
 }
-.overflow-visible {
-  overflow: visible;
-}
-.overflow-scroll {
-  overflow: scroll;
-}
 .overflow-x-auto {
   overflow-x: auto;
-}
-.overflow-x-hidden {
-  overflow-x: hidden;
 }
 .truncate {
   overflow: hidden;
@@ -2714,19 +2690,14 @@ select {
     padding-bottom: 3rem;
   }
 
-  .md\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+  .md\:py-3 {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
-  }
-
-  .md\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 
   .md\:pb-10 {
