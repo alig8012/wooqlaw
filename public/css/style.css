@@ -682,6 +682,9 @@ select {
 .collapse {
   visibility: collapse;
 }
+.fixed {
+  position: fixed;
+}
 .absolute {
   position: absolute;
 }
