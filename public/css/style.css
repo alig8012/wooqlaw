@@ -716,6 +716,9 @@ select {
 .bottom-0 {
   bottom: 0px;
 }
+.bottom-1 {
+  bottom: 0.25rem;
+}
 .bottom-2 {
   bottom: 0.5rem;
 }
@@ -890,9 +893,6 @@ select {
 }
 .mt-9 {
   margin-top: 2.25rem;
-}
-.mb-12 {
-  margin-bottom: 3rem;
 }
 .block {
   display: block;
@@ -1279,6 +1279,11 @@ select {
   margin-right: calc(0.25rem * var(--tw-space-x-reverse));
   margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
+.divide-x > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+}
 .divide-y > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-y-reverse: 0;
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
@@ -1291,6 +1296,10 @@ select {
 .divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-divide-opacity));
+}
+.divide-gray-500 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-divide-opacity));
 }
 .overflow-auto {
   overflow: auto;
@@ -2055,6 +2064,9 @@ select {
 .outline {
   outline-style: solid;
 }
+.outline-gray-200 {
+  outline-color: #e5e7eb;
+}
 .outline-white {
   outline-color: #fff;
 }
@@ -2275,6 +2287,11 @@ select {
   --tw-ring-color: rgb(59 130 246 / var(--tw-ring-opacity));
 }
 
+.focus\:ring-gray-100:focus {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(243 244 246 / var(--tw-ring-opacity));
+}
+
 .focus\:ring-gray-300:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
@@ -2445,6 +2462,10 @@ select {
     margin-top: 2.25rem;
   }
 
+  .md\:mr-4 {
+    margin-right: 1rem;
+  }
+
   .md\:flex {
     display: flex;
   }
@@ -2499,6 +2520,10 @@ select {
 
   .md\:h-6 {
     height: 1.5rem;
+  }
+
+  .md\:h-7 {
+    height: 1.75rem;
   }
 
   .md\:min-h-\[428px\] {
@@ -2582,16 +2607,12 @@ select {
     width: 100%;
   }
 
-  .md\:max-w-2xl {
-    max-width: 42rem;
+  .md\:w-7 {
+    width: 1.75rem;
   }
 
   .md\:max-w-3xl {
     max-width: 48rem;
-  }
-
-  .md\:max-w-4xl {
-    max-width: 56rem;
   }
 
   .md\:max-w-xl {
