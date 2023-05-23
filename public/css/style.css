@@ -1274,11 +1274,11 @@ select {
 .gap-8 {
   gap: 2rem;
 }
-.gap-px {
-  gap: 1px;
-}
 .gap-9 {
   gap: 2.25rem;
+}
+.gap-px {
+  gap: 1px;
 }
 .space-x-1 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1765,6 +1765,10 @@ select {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
 }
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+}
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -1772,10 +1776,6 @@ select {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-.py-7 {
-  padding-top: 1.75rem;
-  padding-bottom: 1.75rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
