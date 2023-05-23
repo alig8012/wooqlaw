@@ -2796,6 +2796,10 @@ select {
     padding: 2rem;
   }
 
+  .md\:p-40 {
+    padding: 10rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
