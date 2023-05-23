@@ -6,6 +6,8 @@
     <title>RBA ISBA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
 
     <!-- Tailwind CSS-->
@@ -26,7 +28,7 @@
 <body class="font-display p-0 md:p-4 bg-gray-50">
             <!-- rba-isba -->
     <section class="rba-isba">
-    <div class="grid grid-cols-1 md:grid-cols-2 flex-wrap max-w-4xl mx-auto p-2 md:p-8 bg-white rounded-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 flex-wrap max-w-4xl mx-auto p-2 md:p-8 gap-1 md:gap-28 bg-white rounded-lg">
         <div class="flex flex-col gap-2 md:gap-10">
             <!-- Become a member of RBA -->
             <div class="flex flex-col gap-1 md:gap-2">
@@ -64,20 +66,79 @@
                 <div class="flex gap-2 md:gap-5">
                 <span class="">
                     <input id="yes-radio-1" type="radio" value="" name="yes-radio" class="w-4 h-4 text-violet-700">
-                    <label for="yes-radio-1" class="ml-2 text-sm font-medium text-gray-900">Yes</label>
+                    <label for="yes-radio-1" class="text-sm font-medium text-gray-900">Yes</label>
                 </span>
                 <span class="">
                     <input id="no-radio-1" type="radio" value="" name="no-radio" class="w-4 h-4 text-violet-700">
-                    <label for="no-radio-1" class="ml-2 text-sm font-medium text-gray-900">No</label>
+                    <label for="no-radio-1" class="text-sm font-medium text-gray-900">No</label>
                 </span>
                 </div>
             </div>
             <!-- I Shall:- -->
-            <div class="">
-                <p class="">
+            <div class="flex flex-col gap-2">
+                <h2 class="text-base md:text-xl font-normal text-black      ">
                     I Shall:-
-                   
-                </p>
+                </h2>
+                <span class="">
+                <ol type="i" class="flex flex-col flex-wrap text-xs md:text-base font-normal text-black gap-2  max-w-lg">
+                    <li >
+                        (a) Abide by the memorandom of the association 1982.
+                    </li>
+                    <li>
+                        (a) Pay regularly the prescribed subscription.
+                    </li>
+                    <li>
+                        (c) Notify the change of address
+                    </li>
+                </ol>
+                </span>
+
+
+
+
+
+            </div>
+        </div>
+        <div class="flex flex-col gap-2 md:gap-10">
+            <div class="">
+
+            </div>
+            <!-- Cell No -->
+            <div class="flex flex-col gap-3 md:gap-5 mt-14">
+                <span class="">
+                    <label for="cell no" class="block text-sm font-medium text-gray-900">Cell No</label>
+                    <input type="text" name="cell no" id="cell no" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="" required="">
+                </span>
+                <span class="">
+                    <label for="cnic no" class="block text-sm font-medium text-gray-900">CNIC No</label>
+                    <input type="text" name="cnic no" id="cnic no" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="" required="">
+                </span>
+                <span class="flex flex-col gap-1">
+                    <label for="date of birth" class="block text-sm font-medium text-gray-900">Date of Birth:</label>
+                    <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input datepicker type="text" id="date of birth" class="block w-full pl-10 p-2.5 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Select date">
+                    </div>
+                </span>
+                <span class="flex flex-col gap-1">
+                    <label for="date of enrollment" class="block text-sm font-medium text-gray-900">Date of enrollment:</label>
+                    <div class="relative max-w-sm">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input datepicker type="text" id="date of enrollment" class="block w-full pl-10 p-2.5 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Select date">
+                    </div>
+                </span>
+                <span class="">
+                    <label for="biometric id#" class="block text-sm font-medium text-gray-900">Biometric ID#</label>
+                    <input type="text" name="biometric id#" id="biometric id#" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="" required="">
+                </span>
+                <span class="">
+                    <label for="Signature" class="block text-sm font-medium text-gray-900">Signature:</label>
+                    <input type="text" name="Signature" id="Signature" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="" required="">
+                </span>
             </div>
         </div>
         </div>
@@ -86,6 +147,10 @@
 
     <!-- Flow Bite Script -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+  <!-- Flow Bite Script Date Picker -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/datepicker.min.js"></script>
+
 </body>
 
 </html>
