@@ -170,7 +170,7 @@
         </div>
         <div class="grid grid-col-1 md:grid-cols-2 p-2 md:p-5 gap-2 md:gap-6 rounded-xl bg-white shadow">
         <!-- Cards -->
-        <div class="flex flex-col gap-2 md:gap-4">
+        <div class="flex flex-col flex-wrap gap-2 md:gap-4">
             <div class="flex w-full flex-wrap flex-col items-start p-2 md:p-4 gap-8 relative bg-white border rounded-2xl shadow">
                 <div class="flex flex-col md:flex-row md:items-center p-2 gap-2 justify-between w-full rounded-xl bg-gradient-to-b from-yellow-200">
                     <div class="flex items-center gap-3">
@@ -661,17 +661,31 @@
         </div>
         <!-- Experience -->
         <div class="">
-            <span class="">
+            <span class="flex flex-col gap-2">
                 <label for="experience" class="block text-sm md:text-lg font-medium text-gray-500 p-2.5">Experience</label>
-                <input type="text" name="experience" id="experience" class="shadow-sm bg-gray-50 border border-gray-300 text-sm md:text-base font-medium text-black rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5" placeholder="12 Years" required="">
+                <input type="text" name="experience" id="experience" class="block w-full p-2 md:p-5 shadow-sm bg-gray-50 border border-gray-300 text-sm md:text-base font-medium text-black rounded-lg focus:ring-primary-500 focus:border-primary-500" placeholder="12 Years" required="">
             </span>
         </div>
         <!-- Services -->
-        <div class="flex items-center p-2.5 gap-2">
-            <input id="auto-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
-            <label for="auto-checkbox" class="text-sm font-medium text-gray-900">
-                Auto allocate
-            </label>
+        <div class="flex flex-col md:flex-row flex-wrap w-full p-2 md:p-5 gap:2 md:gap-5 shadow-sm bg-gray-50 border border-gray-300 rounded-lg focus:ring-primary-500 focus:border-primary-500">
+            <div class="flex items-center gap-2">
+                <input id="criminal-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="criminal-checkbox" class="text-sm md:text-base font-medium text-gray-700">
+                    Criminal Law
+                </label>
+            </div>
+            <div class="flex items-center gap-2">
+                <input id="property-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="property-checkbox" class="text-sm md:text-base font-medium text-gray-700">
+                    Property Law
+                </label>
+            </div>
+            <div class="flex items-center gap-2">
+                <input id="family-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500">
+                <label for="family-checkbox" class="text-sm md:text-base font-medium text-gray-700">
+                    Family Law
+                </label>
+            </div>
         </div>
         <!-- Address & Location -->
         <div class="flex flex-col flex-wrap md:flex-row md:divide-x divide-gray-300 min-h-[64px] p-2 bg-white rounded-lg items-start md:items-center justify-start">
