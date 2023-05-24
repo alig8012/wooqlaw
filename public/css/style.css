@@ -1861,6 +1861,9 @@ select {
 .pt-5 {
   padding-top: 1.25rem;
 }
+.pt-4 {
+  padding-top: 1rem;
+}
 .text-left {
   text-align: left;
 }
@@ -2536,6 +2539,10 @@ select {
     height: 1.75rem;
   }
 
+  .md\:h-8 {
+    height: 2rem;
+  }
+
   .md\:min-h-\[428px\] {
     min-height: 428px;
   }
@@ -2621,12 +2628,28 @@ select {
     width: 100%;
   }
 
+  .md\:w-8 {
+    width: 2rem;
+  }
+
   .md\:max-w-3xl {
     max-width: 48rem;
   }
 
   .md\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .md\:max-w-7xl {
+    max-width: 80rem;
+  }
+
+  .md\:max-w-6xl {
+    max-width: 72rem;
+  }
+
+  .md\:max-w-2xl {
+    max-width: 42rem;
   }
 
   .md\:grow {
@@ -2751,6 +2774,11 @@ select {
     border-color: rgb(209 213 219 / var(--tw-divide-opacity));
   }
 
+  .md\:divide-gray-500 > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-opacity: 1;
+    border-color: rgb(107 114 128 / var(--tw-divide-opacity));
+  }
+
   .md\:rounded-full {
     border-radius: 9999px;
   }
@@ -2794,10 +2822,6 @@ select {
 
   .md\:p-8 {
     padding: 2rem;
-  }
-
-  .md\:p-40 {
-    padding: 10rem;
   }
 
   .md\:px-12 {
@@ -2865,6 +2889,16 @@ select {
     padding-bottom: 2rem;
   }
 
+  .md\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+
+  .md\:py-7 {
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+  }
+
   .md\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -2899,6 +2933,10 @@ select {
 
   .md\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .md\:pt-12 {
+    padding-top: 3rem;
   }
 
   .md\:text-start {
