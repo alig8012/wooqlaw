@@ -993,6 +993,9 @@ select {
 .min-h-screen {
   min-height: 100vh;
 }
+.min-h-\[64px\] {
+  min-height: 64px;
+}
 .w-1\/3 {
   width: 33.333333%;
 }
@@ -1772,6 +1775,10 @@ select {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -2757,11 +2764,6 @@ select {
   .md\:divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgb(209 213 219 / var(--tw-divide-opacity));
-  }
-
-  .md\:divide-gray-500 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(107 114 128 / var(--tw-divide-opacity));
   }
 
   .md\:rounded-full {
