@@ -22,26 +22,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap"
     rel="stylesheet">
 
-
 </head>
 
 <body class="font-display p-0 md:p-4 bg-gray-200">
         <!-- Email -->
     <section class="email">
-        <div class="bg-gray-50 dark:bg-gray-900 py-3 sm:py-5">
+        <div class="bg-gray-50 py-3 sm:py-5">
             <div class="px-4 mx-auto max-w-screen-2xl lg:px-12">
-                <div class="relative overflow-hidden bg-white shadow-md dark:bg-gray-800 sm:rounded-lg">
+                <div class="relative overflow-hidden bg-white shadow-md sm:rounded-lg">
                     <div class="flex flex-col px-4 py-3 space-y-3 lg:flex-row lg:items-center lg:justify-between lg:space-y-0 lg:space-x-4">
                         <!-- Create new -->
                             <div x-data >
                                 <div class="relative" x-menu>
-                                    <button class="flex items-center justify-center px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:outline-none" x-menu:button>
+                                    <button class="flex w-full md:w-auto items-center justify-center px-4 py-2 text-sm font-medium text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 focus:outline-none" x-menu:button>
                                         <svg class="h-3.5 w-3.5 mr-2" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                             <path clip-rule="evenodd" fill-rule="evenodd" d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z" />
                                         </svg>
                                         Create New
                                     </button>
-                                    <div x-cloak class="z-10 absolute left-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                    <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
                                         <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
                                             Invoice
                                         </a>
@@ -52,25 +51,25 @@
                                 </div>
                             </div>
                         <!-- Filter -->
-                        <div x-menu>
-                        <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown" class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200" type="button" x-menu:button>
-                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-4 w-4 mr-2 text-gray-400" viewbox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
-                            </svg>
-                            Filter
-                            <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                                <path clip-rule="evenodd" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
-                            </svg>
-                        </button>
-                        <div id="filterDropdown" x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                            <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
-                                Payment
-                            </a>
-                            <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
-                                Download
-                            </a>
-                        </div>
-                        </div>
+                            <div class="relative" x-data="" x-menu>
+                            <button id="filterDropdownButton" data-dropdown-toggle="filterDropdown" class="w-full md:w-auto flex items-center justify-center py-2 px-4 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:ring-gray-200" type="button" x-menu:button>
+                                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="h-4 w-4 mr-2 text-gray-400" viewbox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" />
+                                </svg>
+                                Filter
+                                <svg class="-mr-1 ml-1.5 w-5 h-5" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path clip-rule="evenodd" fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" />
+                                </svg>
+                            </button>
+                            <div id="filterDropdown" x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                    Payment
+                                </a>
+                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                    Download
+                                </a>
+                            </div>
+                            </div>
                     </div>
                     <div class="overflow-x-auto">
                         <table class="w-full text-sm text-left text-gray-500">
@@ -81,7 +80,7 @@
                                     <th scope="col" class="px-4 py-3">Type</th>
                                     <th scope="col" class="px-4 py-3">Details</th>
                                     <th scope="col" class="px-4 py-3">Info</th>
-                                    <th scope="col" class="px-4 py-3 whitespace-nowrap">Attachment</th>
+                                    <th scope="col" class="px-4 py-3">Attachment</th>
                                     <th scope="col" class="px-4 py-3">Tags</th>
                                     <th scope="col" class="px-4 py-3">Date</th>
                                     <th scope="col" class="px-4 py-3"></th>
@@ -116,12 +115,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-3.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
+                                            <div class="flex flex-col gap-1">
+                                            <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                This will be subject of email: This will be body of email which will go only certain characters then.
+                                            </span>
                                             <span class="text-xs font-medium text-gray-800">
                                                 Micheal Gough
                                             </span>
-                                            </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -134,15 +135,23 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
-                                            <span class="p-0.5">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            </span>
-                                            <span class="text-sm font-medium text-gray-900">
-                                                1
-                                            </span>
+                                        <div x-data >
+                                        <div class="relative" x-menu>
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                    1
+                                            </button>
+                                            <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md        bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                    Invoice
+                                                </a>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                    Payment Receipt
+                                                </a>
+                                            </div>
+                                        </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -200,12 +209,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-10.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Jese Leos
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Jese Leos
+                                                </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -221,16 +232,24 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
-                                            <span class="p-0.5">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            </span>
-                                            <span class="text-sm font-medium text-gray-900">
-                                                5
-                                            </span>
-                                        </div>
+                                        <div x-data >
+                                            <div class="relative" x-menu>
+                                                <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                    <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        5
+                                                </button>
+                                                <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md        bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                        Invoice
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
@@ -242,23 +261,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Today, 10:23 PM
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -285,12 +303,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-1.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Bonnie Green
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Bonnie Green
+                                                </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -301,6 +321,7 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
+
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
@@ -312,23 +333,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Yesterday
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -355,12 +375,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-2.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Leslie Livingston
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Leslie Livingston
+                                                </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -373,15 +395,23 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
-                                            <span class="p-0.5">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            </span>
-                                            <span class="text-sm font-medium text-gray-900">
-                                                
-                                            </span>
+                                        <div x-data >
+                                        <div class="relative" x-menu>
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                    
+                                            </button>
+                                            <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md        bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                    Invoice
+                                                </a>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                    Payment Receipt
+                                                </a>
+                                            </div>
+                                        </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -394,23 +424,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Mon 7, May 2023
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -437,12 +466,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-4.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Joseph McFall
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Joseph McFall
+                                                </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -458,6 +489,7 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
+
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
@@ -469,23 +501,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Mon 7, May 2023
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -519,12 +550,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-5.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Robert Brown
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Robert Brown
+                                                </span>
+                                            </div> 
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -540,15 +573,23 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
-                                            <span class="p-0.5">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            </span>
-                                            <span class="text-sm font-medium text-gray-900">
-                                                10
-                                            </span>
+                                        <div x-data >
+                                        <div class="relative" x-menu>
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                    10
+                                            </button>
+                                            <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md        bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                    Invoice
+                                                </a>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                    Payment Receipt
+                                                </a>
+                                            </div>
+                                        </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -564,23 +605,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Today, 10:23 PM
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -609,12 +649,14 @@
                                     <td class="px-2 py-4">
                                         <div class="flex items-center">
                                             <img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/avatar-6.png" alt="iMac Front Image" class="w-auto h-8 mr-3 rounded-full">
-                                            <span class="flex flex-col gap-1 text-xs font-semibold text-black whitespace-nowrap">
-                                            This will be subject of email: This will be body of email which will go only certain characters then.
-                                            <span class="text-xs font-medium text-gray-800">
-                                                Karen Nelson
-                                            </span>
-                                            </span>
+                                            <div class="flex flex-col gap-1">
+                                                <span class="text-xs font-semibold text-black max-w-xs truncate">
+                                                    This will be subject of email: This will be body of email which will go only certain characters then.
+                                                </span>
+                                                <span class="text-xs font-medium text-gray-800">
+                                                    Karen Nelson
+                                                </span>
+                                            </div>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -625,16 +667,24 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
-                                            <span class="p-0.5">
-                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                            </span>
-                                            <span class="text-sm font-medium text-gray-900">
-                                                
-                                            </span>
-                                        </div>
+                                        <div x-data >
+                                            <div class="relative" x-menu>
+                                                <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                    <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    </svg>
+                                                        1
+                                                </button>
+                                                <div x-cloak class="z-10 absolute md:left-0 mt-2 w-40 rounded-md        bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                        Invoice
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
@@ -646,23 +696,22 @@
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
                                         Mon 7, May 2023
                                     </td>
-                                    <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                    <td class="px-2 py-4">
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 hover:bg-gray-200 focus:outline-none h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
