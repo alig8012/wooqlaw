@@ -6,6 +6,10 @@
     <title>Email</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+    <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
 
     <!-- Tailwind CSS-->
@@ -142,8 +146,8 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="flex w-3 h-1 gap-1 bg-gray-100 rounded-lg items-center justify-center">
-                                            <span class="p-1">
+                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
+                                            <span class="p-0.5">
                                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
@@ -167,22 +171,21 @@
                                         Today, 10:23 PM
                                     </td>
                                     <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
-                                        <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
-                                            <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z" />
-                                            </svg>
-                                        </button>
-                                        <div id="dropdown-0" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44">
-                                            <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdown-button-0">
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Show</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Edit</a>
-                                                </li>
-                                            </ul>
-                                            <div class="py-1">
-                                                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Delete</a>
+                                        <div x-data >
+                                            <div x-menu>
+                                                <button class="rounded-md bg-gray-100 h-8 w-8 mx-auto flex items-center justify-center" x-menu:button>
+                                                    <svg class="w-5 h-5" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M6 10a2 2 0 11-4 0 2 2 0 014 0zM12 10a2 2 0 11-4 0 2 2 0 014 0zM16 12a2 2 0 100-4 2 2 0 000 4z"></path>
+                                                    </svg>
+                                                </button>
+                                                <div x-cloak class="z-10 absolute right-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none"  x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">          
+                                                        Payment
+                                                    </a>
+                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-red-900'" class="flex items-center gap-2 text-red-500 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                        Download
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
@@ -230,22 +233,21 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
+                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
+                                            <span class="p-0.5">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                                
+                                            </span>
+                                            <span class="text-sm font-medium text-gray-900">
+                                                5
+                                            </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
                                             <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Medical
-                                            </span>
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Conveyancing
+                                                Pending
                                             </span>
                                         </div>
                                     </td>
@@ -311,27 +313,16 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
-                                            </svg>
-                                                
-                                        </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Medical
-                                            </span>
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Conveyancing
+                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-amber-100 rounded-lg">
+                                                Submitted
                                             </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
-                                        Today, 10:23 PM
+                                        Yesterday
                                     </td>
                                     <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
@@ -394,27 +385,26 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
+                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
+                                            <span class="p-0.5">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
+                                            </span>
+                                            <span class="text-sm font-medium text-gray-900">
                                                 
+                                            </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
                                             <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Medical
-                                            </span>
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Conveyancing
+                                                Pending
                                             </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
-                                        Today, 10:23 PM
+                                        Mon 7, May 2023
                                     </td>
                                     <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
@@ -480,27 +470,16 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
-                                            </svg>
-                                                
-                                        </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Medical
-                                            </span>
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Conveyancing
+                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-amber-100 rounded-lg">
+                                                Submitted
                                             </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
-                                        Today, 10:23 PM
+                                        Mon 7, May 2023
                                     </td>
                                     <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
@@ -573,13 +552,15 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
+                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
+                                            <span class="p-0.5">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
-                                                
+                                            </span>
+                                            <span class="text-sm font-medium text-gray-900">
+                                                10
+                                            </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
@@ -656,27 +637,26 @@
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
-                                        <div class="">
-                                            <svg width="51" height="26" viewBox="0 0 51 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <rect y="0.5" width="51" height="25" rx="6" fill="#F3F4F6"/>
-                                                <path d="M22.1163 9.66661L17.7256 14.0573C17.5983 14.1803 17.4967 14.3274 17.4268 14.4901C17.357 14.6527 17.3202 14.8277 17.3186 15.0047C17.3171 15.1818 17.3508 15.3574 17.4179 15.5212C17.4849 15.6851 17.5839 15.8339 17.7091 15.9591C17.8343 16.0843 17.9832 16.1833 18.147 16.2504C18.3109 16.3174 18.4865 16.3512 18.6635 16.3496C18.8405 16.3481 19.0155 16.3113 19.1782 16.2414C19.3409 16.1715 19.488 16.07 19.611 15.9426L23.887 11.5519C24.3727 11.049 24.6415 10.3754 24.6354 9.67621C24.6294 8.97702 24.3489 8.30819 23.8545 7.81376C23.3601 7.31934 22.6912 7.03889 21.992 7.03282C21.2929 7.02674 20.6192 7.29552 20.1163 7.78128L15.8396 12.1713C15.0894 12.9215 14.668 13.939 14.668 14.9999C14.668 16.0609 15.0894 17.0784 15.8396 17.8286C16.5898 18.5788 17.6074 19.0003 18.6683 19.0003C19.7293 19.0003 20.7468 18.5788 21.497 17.8286L25.6683 13.6666" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                <path d="M37.0337 8.31818V18.5H35.4925V9.85938H35.4329L32.9968 11.4503V9.97869L35.5373 8.31818H37.0337Z" fill="#111928"/>
+                                        <div class="inline-flex px-3 py-1 gap-1 bg-gray-200 rounded-lg items-center justify-center">
+                                            <span class="p-0.5">
+                                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg>
+                                            </span>
+                                            <span class="text-sm font-medium text-gray-900">
                                                 
+                                            </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4">
                                         <div class="flex gap-1 items-center">
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Medical
-                                            </span>
-                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-red-100 rounded-lg">
-                                                Conveyancing
+                                            <span class="text-xs font-medium text-red-800 px-2.5 py-1 bg-amber-100 rounded-lg">
+                                                Submitted
                                             </span>
                                         </div>
                                     </td>
                                     <td class="px-2 py-4 text-xs font-medium text-gray-800">
-                                        Today, 10:23 PM
+                                        Mon 7, May 2023
                                     </td>
                                     <td class="px-2 py-4 font-medium text-gray-900 whitespace-nowrap">
                                         <button id="dropdown-button-0" type="button" data-dropdown-toggle="dropdown-0" class="inline-flex items-center p-1 text-sm font-medium text-center text-gray-500 rounded-lg hover:text-gray-800 hover:bg-gray-200 focus:outline-none">
