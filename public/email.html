@@ -6,6 +6,9 @@
     <title>Email</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
 
+    <!-- alpine/tooltip v1.0 -->
+    <script defer="" src="https://abdurrehmanltl.github.io/wooqlaw-public-html/public/js/alpinetooltip.min.js"></script>
+
     <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
@@ -140,21 +143,28 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
-                                        <div x-data="" x-menu>
-                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
-                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                    1
+                                        <div x-data="">
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-tooltip="{
+                                                content: () => $refs.template.innerHTML,
+                                                allowHTML: true,
+                                                appendTo: $root,
+                                                interactive: true
+                                            }">
+                                            <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                1
                                             </button>
-                                            <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
-                                                    Invoice
-                                                </a>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
-                                                    Payment Receipt
-                                                </a>
-                                            </div>
+                                            <template x-ref="template">
+                                                <div class="w-40 rounded-md bg-white shadow-md">
+                                                    <a href="#a" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">     
+                                                        Invoice
+                                                    </a>
+                                                    <a href="#b" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </template>
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
@@ -236,21 +246,28 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
-                                        <div x-data="" x-menu>
-                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
-                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                    1
+                                        <div x-data="">
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-tooltip="{
+                                                content: () => $refs.template.innerHTML,
+                                                allowHTML: true,
+                                                appendTo: $root,
+                                                interactive: true
+                                            }">
+                                            <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                5
                                             </button>
-                                            <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
-                                                    Invoice
-                                                </a>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
-                                                    Payment Receipt
-                                                </a>
-                                            </div>
+                                            <template x-ref="template">
+                                                <div class="w-40 rounded-md bg-white shadow-md">
+                                                    <a href="#a" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">     
+                                                        Invoice
+                                                    </a>
+                                                    <a href="#b" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </template>
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
@@ -399,21 +416,28 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
-                                        <div x-data="" x-menu>
-                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
-                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                    1
+                                        <div x-data="">
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-tooltip="{
+                                                content: () => $refs.template.innerHTML,
+                                                allowHTML: true,
+                                                appendTo: $root,
+                                                interactive: true
+                                            }">
+                                            <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                1
                                             </button>
-                                            <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
-                                                    Invoice
-                                                </a>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
-                                                    Payment Receipt
-                                                </a>
-                                            </div>
+                                            <template x-ref="template">
+                                                <div class="w-40 rounded-md bg-white shadow-md">
+                                                    <a href="#a" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">     
+                                                        Invoice
+                                                    </a>
+                                                    <a href="#b" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </template>
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
@@ -577,21 +601,28 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
-                                        <div x-data="" x-menu>
-                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
-                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>
-                                                    1
+                                        <div x-data="">
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-tooltip="{
+                                                content: () => $refs.template.innerHTML,
+                                                allowHTML: true,
+                                                appendTo: $root,
+                                                interactive: true
+                                            }">
+                                            <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                
                                             </button>
-                                            <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
-                                                    Invoice
-                                                </a>
-                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
-                                                    Payment Receipt
-                                                </a>
-                                            </div>
+                                            <template x-ref="template">
+                                                <div class="w-40 rounded-md bg-white shadow-md">
+                                                    <a href="#a" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">     
+                                                        Invoice
+                                                    </a>
+                                                    <a href="#b" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">
+                                                        Payment Receipt
+                                                    </a>
+                                                </div>
+                                            </template>
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
@@ -667,22 +698,45 @@
                                         </div>
                                     </td>
                                     <td class="px-4 py-2">
-                                            <div x-data="" x-menu>
-                                                <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
-                                                    <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    </svg>
-                                                        1
-                                                </button>
-                                                <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
-                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                        <!-- <div class="md:relative" x-data="" x-menu>
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-menu:button>
+                                                <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                    1
+                                            </button>
+                                            <div x-cloak class="z-10 absolute middle-0 mt-2 w-40 rounded-md bg-white shadow-md focus-visible:outline-none" x-ref="popover" x-menu:items x-transition.origin.top.right>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">     
+                                                    Invoice
+                                                </a>
+                                                <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                    Payment Receipt
+                                                </a>
+                                            </div>
+                                        </div> -->
+                                        <div x-data="">
+                                            <button class="inline-flex items-center justify-center px-3 py-1 gap-1 text-sm font-medium text-gray-900 rounded-lg bg-gray-200 hover:bg-gray-400 focus:ring-4 focus:ring-gray-300 focus:outline-none" x-tooltip="{
+                                                content: () => $refs.template.innerHTML,
+                                                allowHTML: true,
+                                                appendTo: $root,
+                                                interactive: true
+                                            }">
+                                            <svg class="p-0.5 w-4 h-4" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M9.11631 3.66661L4.72564 8.05728C4.59829 8.18028 4.49672 8.3274 4.42684 8.49007C4.35696 8.65275 4.32018 8.82771 4.31864 9.00475C4.3171 9.18178 4.35084 9.35736 4.41788 9.52122C4.48492 9.68508 4.58392 9.83395 4.70911 9.95914C4.8343 10.0843 4.98317 10.1833 5.14704 10.2504C5.3109 10.3174 5.48647 10.3512 5.66351 10.3496C5.84055 10.3481 6.01551 10.3113 6.17818 10.2414C6.34085 10.1715 6.48798 10.07 6.61097 9.94261L10.887 5.55195C11.3727 5.04901 11.6415 4.3754 11.6354 3.67621C11.6294 2.97702 11.3489 2.30819 10.8545 1.81376C10.3601 1.31934 9.69124 1.03889 8.99204 1.03282C8.29285 1.02674 7.61925 1.29552 7.11631 1.78128L2.83964 6.17128C2.08943 6.92149 1.66797 7.93899 1.66797 8.99995C1.66797 10.0609 2.08943 11.0784 2.83964 11.8286C3.58985 12.5788 4.60735 13.0003 5.66831 13.0003C6.72926 13.0003 7.74676 12.5788 8.49697 11.8286L12.6683 7.66661" stroke="#111928" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                                1
+                                            </button>
+                                            <template x-ref="template">
+                                                <div class="w-40 rounded-md bg-white shadow-md">
+                                                    <a href="#a" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">     
                                                         Invoice
                                                     </a>
-                                                    <a x-menu:item href="#" :class="$menuItem.isActive && 'bg-gray-100 text-gray-900'" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500">
+                                                    <a href="#b" class="flex items-center gap-2 w-full first-of-type:rounded-t-md last-of-type:rounded-b-md px-4 py-2.5 text-left font-normal text-sm hover:bg-gray-100 disabled:text-gray-500 hover:text-gray-900">
                                                         Payment Receipt
                                                     </a>
                                                 </div>
-                                            </div>
+                                            </template>
+                                        </div>
                                     </td>
                                     <td class="px-4 py-2">
                                         <div class="flex gap-1 items-center">

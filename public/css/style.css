@@ -767,9 +767,6 @@ select {
 .z-20 {
   z-index: 20;
 }
-.-z-20 {
-  z-index: -20;
-}
 .col-span-1 {
   grid-column: span 1 / span 1;
 }
@@ -2193,6 +2190,10 @@ select {
           mask-image: linear-gradient(180deg,white,rgba(255,255,255,0));
 }
 
+[x-cloak] {
+  display: none !important;
+}
+
 /* @layer base{
   @font-face{
     font-family:"jameel-noori-nastaleeq";
@@ -2363,6 +2364,11 @@ select {
 .hover\:text-gray-700:hover {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.hover\:text-gray-900:hover {
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary-700:hover {
@@ -2568,11 +2574,6 @@ select {
     padding-bottom: 3rem;
   }
 
-  .sm\:py-5 {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
-
   .sm\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2605,8 +2606,8 @@ select {
     position: absolute;
   }
 
-  .md\:left-0 {
-    left: 0px;
+  .md\:relative {
+    position: relative;
   }
 
   .md\:col-span-1 {
