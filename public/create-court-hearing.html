@@ -118,15 +118,6 @@
                         </h2>
                         <div id="calendar-body-1" class="hidden" aria-labelledby="calendar-heading-1">
                             <div class="flex flex-col p-2 md:p-3 gap-3 md:gap-5">
-                                <div class="flex flex-col gap-2">
-                                    <label for="case-proceeding" class="block text-xs md:text-sm font-medium text-gray-900">
-                                        Case proceeding summary
-                                    </label>
-                                    <textarea id="case-proceeding" rows="4" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write text here ..."></textarea>
-                                </div>
-                                <div class="text-2xs md:text-xs font-normal text-gray-500">
-                                    A note for extra info
-                                </div>
                                 <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                                     <div class="flex flex-col gap-2">
                                         <label for="court" class="block text-xs md:text-sm font-medium text-gray-900">
@@ -140,6 +131,20 @@
                                         </label>
                                         <input type="tel" id="location" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Special court">
                                     </div>
+
+
+                                    <div class="flex flex-col gap-2">
+                                        <label for="select-visibility" class="block text-xs md:text-sm font-medium text-gray-900">
+                                            Select Visibility
+                                        </label>
+                                        <select id="select-visibility" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                          <option selected>Open</option>
+                                          <option value="1">1</option>
+                                          <option value="2">2</option>
+                                        </select>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
