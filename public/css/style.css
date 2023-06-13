@@ -915,6 +915,18 @@ select {
 .mt-9 {
   margin-top: 2.25rem;
 }
+.mb-96 {
+  margin-bottom: 24rem;
+}
+.mb-20 {
+  margin-bottom: 5rem;
+}
+.mb-32 {
+  margin-bottom: 8rem;
+}
+.mb-28 {
+  margin-bottom: 7rem;
+}
 .block {
   display: block;
 }
