@@ -1017,6 +1017,9 @@ select {
 .h-screen {
   height: 100vh;
 }
+.h-\[100dvh\] {
+  height: 100dvh;
+}
 .min-h-\[252px\] {
   min-height: 252px;
 }
