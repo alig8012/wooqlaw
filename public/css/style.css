@@ -918,6 +918,9 @@ select {
 .mt-9 {
   margin-top: 2.25rem;
 }
+.mb-96 {
+  margin-bottom: 24rem;
+}
 .block {
   display: block;
 }
@@ -1010,6 +1013,9 @@ select {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .min-h-\[252px\] {
   min-height: 252px;
