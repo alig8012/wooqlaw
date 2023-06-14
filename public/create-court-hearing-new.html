@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Court Hearing New</title>
+
+    <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+    <!-- Flow Bite Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head> 
+
+<body class="font-display p-0 md:p-4 bg-gray-100">
+    <!-- Create Court Hearing New -->
+    <section class="create-court-hearing-new">
+    <div class="flex flex-col bg-white rounded-lg drop-shadow-md max-w-2xl mx-auto">
+        <div class="flex flex-col">
+            <div class="flex px-3 md:px-6 py-2 md:py-4 justify-between">
+                <span class="text-sm md:text-lg font-semibold text-gray-900">
+                    Create court hearing
+                </span>
+                <a href="#" class="w-3 h-3 p-1">
+                <svg class="w-3 h-3" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0.292787 0.793081C0.480314 0.60561 0.734622 0.500295 0.999786 0.500295C1.26495 0.500295 1.51926 0.60561 1.70679 0.793081L5.99979 5.08608L10.2928 0.793081C10.385 0.697571 10.4954 0.621389 10.6174 0.56898C10.7394 0.516571 10.8706 0.488985 11.0034 0.487831C11.1362 0.486677 11.2678 0.511978 11.3907 0.562259C11.5136 0.61254 11.6253 0.686793 11.7192 0.780686C11.8131 0.874579 11.8873 0.986231 11.9376 1.10913C11.9879 1.23202 12.0132 1.3637 12.012 1.49648C12.0109 1.62926 11.9833 1.76048 11.9309 1.88249C11.8785 2.00449 11.8023 2.11483 11.7068 2.20708L7.41379 6.50008L11.7068 10.7931C11.8889 10.9817 11.9897 11.2343 11.9875 11.4965C11.9852 11.7587 11.88 12.0095 11.6946 12.1949C11.5092 12.3803 11.2584 12.4855 10.9962 12.4878C10.734 12.49 10.4814 12.3892 10.2928 12.2071L5.99979 7.91408L1.70679 12.2071C1.51818 12.3892 1.26558 12.49 1.00339 12.4878C0.741188 12.4855 0.490376 12.3803 0.304968 12.1949C0.11956 12.0095 0.0143906 11.7587 0.0121121 11.4965C0.00983372 11.2343 0.110629 10.9817 0.292787 10.7931L4.58579 6.50008L0.292787 2.20708C0.105316 2.01955 0 1.76525 0 1.50008C0 1.23492 0.105316 0.980609 0.292787 0.793081Z" fill="#111928"/>
+                </svg>
+                </a>
+            </div>
+            <hr>
+            <div class="flex flex-col p-3 md:p-6 gap-2 md:gap-5 mb-28">
+                <!-- Date and Case Hearing No -->
+                <div class="flex flex-col p-2 md:p-4 gap-3 md:gap-7 bg-gray-50 rounded-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div class="flex flex-col gap-2">
+                            <label for="date" class="block text-xs md:text-sm font-medium text-gray-900">
+                                Date
+                            </label>
+                            <div class="relative max-w-sm">
+                                <input datepicker type="date" id="date" class="block w-full px-4 py-3 pl-3 bg-white border border-gray-300 text-sm font-normal text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Select date">
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label for="case-hearing" class="block text-xs md:text-sm font-medium text-gray-900">
+                                Case hearing no
+                            </label>
+                            <input type="tel" id="case-hearing" class="block w-full px-4 py-3 bg-white border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. 1235">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-2">
+                        <label for="case" class="block text-xs md:text-sm font-medium text-gray-900">
+                            Case
+                        </label>
+                        <input type="tel" id="case" class="block w-full px-4 py-3 bg-white border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Rosie property dispute case">
+                    </div>
+                </div>
+               <!-- Advance Options -->
+                <div x-data="{ open: false }" class="bg-white border rounded-lg">
+                    <button x-disclosure x-on:click="open = ! open" type="button" class="flex w-full px-5 py-3 text-xs md:text-base font-medium text-left text-gray-900 bg-gray-100 rounded-lg items-center justify-between" x-disclosure:button>
+                    <span>Advance Options</span>
+                    <svg :class="$disclosure.isOpen && 'rotate-180'" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    </button>
+                    <div x-show="open" class="flex flex-col p-2 md:p-3 gap-3 md:gap-5">
+                        <div class="flex flex-col gap-2">
+                            <label for="case-proceeding" class="block text-xs md:text-sm font-medium text-gray-900">
+                                Case proceeding summary
+                            </label>
+                            <textarea id="case-proceeding" rows="4" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write text here ..."></textarea>
+                        </div>
+                        <div class="text-2xs md:text-xs font-normal text-gray-500">
+                            A note for extra info
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="court" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Court
+                                </label>
+                                <input type="tel" id="court" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Special court">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="location" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Location/Station
+                                </label>
+                                <input type="tel" id="location" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Special court">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calendar Options -->
+                <div x-data="{ open: false }" class="bg-white border rounded-lg">
+                    <button x-disclosure x-on:click="open = ! open" type="button" class="flex w-full px-5 py-3 text-xs md:text-base font-medium text-left text-gray-900 bg-gray-100 rounded-lg items-center justify-between" x-disclosure:button>
+                    <span>Calendar Options</span>
+                    <svg :class="$disclosure.isOpen && 'rotate-180'" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                    </button>
+                    <div x-show="open" class="flex flex-col p-2 md:p-3 gap-3 md:gap-5">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="select-visibility" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Select Visibility
+                                </label>
+                                <select id="select-visibility" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Open</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="color-picker" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Select color
+                                </label>
+                                <input type="color" name="color-picker" id="color-picker" class="block w-full px-4 py-3 h-12 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="set-reminder" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Set reminder
+                                </label>
+                                <select id="set-reminder" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>2 hours before event</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="type" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Type
+                                </label>
+                                <select id="type" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Notification</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- Create Hearing -->
+            <div class="flex p-3 md:p-6 justify-end">
+                <a href="#" class="flex text-xs md:text-sm font-medium text-white rounded-lg bg-violet-700 hover:bg-violet-600 px-3 py-2 gap-2 items-center justify-center">
+                    Create hearing
+                </a>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Flow Bite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+        
+</body>
+</html>
