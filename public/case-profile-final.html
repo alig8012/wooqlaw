@@ -46,6 +46,7 @@
 
 <body class="font-display md:p-4 bg-gray-200">
     <div class="flex flex-col max-w-screen-2xl mx-auto gap-3">
+    <!-- dashboard -->
     <section class="dashboard">
     <div class="">
         <nav class="flex" aria-label="Breadcrumb">
@@ -78,6 +79,7 @@
         </nav>
     </div>
     </section>
+    <!-- case-profile-new -->
     <section class="case-profile-new">
       <div class="grid grid-cols-1 md:grid-cols-5 max-w-screen-2xl mx-auto p-2 md:p-4 rounded-lg bg-white shadow-sm">
           <div class="flex md:col-span-3 lg:col-span-4 py-2.5 gap-3 items-center">
@@ -136,6 +138,7 @@
           </div>
       </div>
     </section>
+    <!-- case-tabs -->
     <section class="case-tabs">
         <div x-data x-tabs>
             <ul class="flex flex-nowrap mb-2 gap-px text-xs md:text-sm font-medium rounded-xl overflow-x-auto w-full" x-tabs:list>
@@ -175,11 +178,12 @@
             <div class="content w-full relative" x-tabs:panels>
                 <!-- Overview -->
                 <div x-tabs:panel>
+                  <!-- case -->
                   <section class="case flex md:flex-row flex-col gap-3 bg-gray-200">
                     <div class="flex flex-col gap-3 w-full">
                       <div class="flex flex-col p-2 md:p-3 gap-3 bg-white shadow-sm border rounded-lg w-full">
                         <div class="flex items-center gap-2.5">
-                          <img class="w-8 h-8 rounded" src="images/Komal-Riaz.png" alt="">
+                          <img class="w-8 h-8 rounded" src="images/Komal-Riaz2.png" alt="Komal-Riaz2">
                           <div class="flex flex-col gap-0.5">
                             <a class="font-semibold text-xs md:text-sm text-gray-900" href="">Komal Riaz</a>
                             <span class="font-normal text-2xs md:text-xs text-gray-500">Joined in August 2014</span>
@@ -283,7 +287,7 @@
                           <span class="flex items-center text-right text-gray-500 font-semibold text-xs">11:15 PM</span>
                         </div>
                       </div>
-                      <!--  -->
+                      <!-- Date -->
                       <div class="flex flex-col p-2 md:p-3 gap-5 w-full bg-white rounded-lg shadow-lg">
                         <div class="flex items-center w-full font-medium text-base md:text-lg text-gray-900">
                           Mon 2, Jan 2022
@@ -304,7 +308,7 @@
                               </a>
                               <div class="flex flex-col gap-2 w-full">
                                 <div class="flex gap-2 w-full">
-                                  <img class="w-6 h-6 rounded" src="images/fatima-rasheed-1.png" alt="">
+                                  <img class="w-6 h-6 rounded" src="images/Fatima-Rasheed.png" alt="Fatima-Rasheed">
                                   <span>
                                     <a class="font-normal text-sm text-gray-900" href="">Fatima Rasheed</a>
                                     <span class="font-normal text-sm text-gray-500">added you in an event on</span>
@@ -348,7 +352,7 @@
                         </div>
                       </div>
                     </div>
-                    <!--  -->
+                    <!-- Case Details -->
                     <div class="flex flex-col gap-4 w-full">
                       <div class="flex flex-col p-2 md:p-3 gap-4 bg-white shadow-sm rounded-xl w-full">
                         <div class="flex justify-between items-center gap-2.5 w-full">
