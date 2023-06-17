@@ -10,10 +10,6 @@
   <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
   <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
 
-  
-
-  
-  
   <!-- Tailwind CSS-->
   <link href="./css/style.css" rel="stylesheet" />
 
@@ -23,98 +19,46 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-
   </head>
 
 <body class="font-display p-4 bg-gray-200">
 
 
 
-<!-- Advance Options -->
-<div x-data="{ open: false }" class="bg-white border rounded-lg">
-      <button x-disclosure x-on:click="open = ! open" type="button" class="flex w-full px-5 py-3 text-xs md:text-base font-medium text-left text-gray-900 bg-gray-100 rounded-lg items-center justify-between" x-disclosure:button>
-        <span>Advance Options</span>
-        <svg :class="$disclosure.isOpen && 'rotate-180'" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div x-show="open" class="flex flex-col p-2 md:p-3 gap-3 md:gap-5">
-          <div class="flex flex-col gap-2">
-              <label for="case-proceeding" class="block text-xs md:text-sm font-medium text-gray-900">
-                  Case proceeding summary
-              </label>
-              <textarea id="case-proceeding" rows="4" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write text here ..."></textarea>
-          </div>
-          <div class="text-2xs md:text-xs font-normal text-gray-500">
-              A note for extra info
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div class="flex flex-col gap-2">
-                  <label for="court" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Court
-                  </label>
-                  <input type="tel" id="court" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Special court">
-              </div>
-              <div class="flex flex-col gap-2">
-                  <label for="location" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Location/Station
-                  </label>
-                  <input type="tel" id="location" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Special court">
-              </div>
-          </div>
-      </div>
-</div>
-
-<!-- Calendar Options -->
-<div x-data="{ open: false }" class="bg-white border rounded-lg">
-      <button x-disclosure x-on:click="open = ! open" type="button" class="flex w-full px-5 py-3 text-xs md:text-base font-medium text-left text-gray-900 bg-gray-100 rounded-lg items-center justify-between" x-disclosure:button>
-        <span>Calendar Options</span>
-        <svg :class="$disclosure.isOpen && 'rotate-180'" class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-      </button>
-      <div x-show="open" class="flex flex-col p-2 md:p-3 gap-3 md:gap-5">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-              <div class="flex flex-col gap-2">
-                  <label for="select-visibility" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Select Visibility
-                  </label>
-                  <select id="select-visibility" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    <option selected>Open</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-              </div>
-              <div class="flex flex-col gap-2">
-                  <label for="color-picker" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Select color
-                  </label>
-                  <input type="color" name="color-picker" id="color-picker" class="block w-full px-4 py-3 h-12 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
-              </div>
-              <div class="flex flex-col gap-2">
-                  <label for="set-reminder" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Set reminder
-                  </label>
-                  <select id="set-reminder" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    <option selected>2 hours before event</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-              </div>
-              <div class="flex flex-col gap-2">
-                  <label for="type" class="block text-xs md:text-sm font-medium text-gray-900">
-                      Type
-                  </label>
-                  <select id="type" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                    <option selected>Notification</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                  </select>
-              </div>
-          </div>
-      </div>
-</div>
+    <!--  -->
+    <div x-data class="mx-auto max-w-3xl min-h-[16rem] w-full space-y-4">
+        <div x-disclosure class="rounded-lg bg-white shadow divide-y">
+            <button
+                x-disclosure:button
+                class="flex w-full items-center justify-between px-6 py-4 text-xl font-bold"
+            >
+                <span>Question #1</span>
+     
+                <span x-show="$disclosure.isOpen" x-cloak aria-hidden="true" class="ml-4">&minus;</span>
+                <span x-show="! $disclosure.isOpen" aria-hidden="true" class="ml-4">&plus;</span>
+            </button>
+     
+            <div x-disclosure:panel x-collapse>
+                <div class="px-6 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quod natus deleniti architecto eaque consequuntur ex, illo neque iste repellendus modi, quasi ipsa commodi saepe? Provident ipsa nulla earum.</div>
+            </div>
+        <div x-disclosure class="rounded-lg bg-white shadow divide-y">
+            <button
+                x-disclosure:button
+                class="flex w-full items-center justify-between px-6 py-4 text-xl font-bold"
+            >
+                <span>Question #1</span>
+     
+                <span x-show="$disclosure.isOpen" x-cloak aria-hidden="true" class="ml-4">&minus;</span>
+                <span x-show="! $disclosure.isOpen" aria-hidden="true" class="ml-4">&plus;</span>
+            </button>
+     
+            <div x-disclosure:panel x-collapse>
+                <div class="px-6 pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. In magnam quod natus deleniti architecto eaque consequuntur ex, illo neque iste repellendus modi, quasi ipsa commodi saepe? Provident ipsa nulla earum.</div>
+            </div>
+        </div>
+        </div>
+     
+    </div>
   
-
-
-
 </body>
 </html>
