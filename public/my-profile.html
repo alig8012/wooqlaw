@@ -286,7 +286,7 @@
                     <span class="py-1 text-sm md:text-lg font-medium text-gray-600">
                         Services
                     </span>
-                    <a href="#" class="flex w-8 h-8 bg-gray-100 rounded-lg items-center justify-center">
+                    <a onclick="servicesmodal.showModal()" href="javascript:;" class="flex w-8 h-8 bg-gray-100 rounded-lg items-center justify-center">
                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9.625 6.49996C9.625 6.15478 9.34518 5.87496 9 5.87496C8.65482 5.87496 8.375 6.15478 8.375 6.49996L8.375 8.37498H6.5C6.15482 8.37498 5.875 8.6548 5.875 8.99998C5.875 9.34516 6.15482 9.62498 6.5 9.62498H8.375V11.5C8.375 11.8451 8.65482 12.125 9 12.125C9.34518 12.125 9.625 11.8451 9.625 11.5L9.625 9.62498H11.5C11.8452 9.62498 12.125 9.34516 12.125 8.99998C12.125 8.6548 11.8452 8.37498 11.5 8.37498H9.625V6.49996Z" fill="#6B7280"/>
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M9.04782 0.0416261H8.95219C7.02853 0.0416158 5.52099 0.0416076 4.34476 0.199749C3.14081 0.361615 2.19079 0.699399 1.44512 1.44507C0.699441 2.19075 0.361657 3.14077 0.199791 4.34471C0.0416496 5.52095 0.0416577 7.02848 0.0416681 8.95213V9.04777C0.0416577 10.9714 0.0416496 12.479 0.199791 13.6552C0.361657 14.8592 0.699441 15.8092 1.44512 16.5548C2.19079 17.3005 3.14081 17.6383 4.34476 17.8002C5.521 17.9583 7.02853 17.9583 8.95219 17.9583H9.04781C10.9715 17.9583 12.479 17.9583 13.6552 17.8002C14.8592 17.6383 15.8092 17.3005 16.5549 16.5548C17.3006 15.8092 17.6383 14.8592 17.8002 13.6552C17.9584 12.479 17.9583 10.9714 17.9583 9.04777V8.95215C17.9583 7.02849 17.9584 5.52095 17.8002 4.34471C17.6383 3.14077 17.3006 2.19075 16.5549 1.44507C15.8092 0.699399 14.8592 0.361615 13.6552 0.199749C12.479 0.0416076 10.9715 0.0416158 9.04782 0.0416261ZM2.329 2.32896C2.80371 1.85424 3.44598 1.58183 4.51132 1.4386C5.59463 1.29295 7.01815 1.29163 9 1.29163C10.9819 1.29163 12.4054 1.29295 13.4887 1.4386C14.554 1.58183 15.1963 1.85424 15.671 2.32896C16.1457 2.80367 16.4181 3.44594 16.5614 4.51127C16.707 5.59459 16.7083 7.01811 16.7083 8.99996C16.7083 10.9818 16.707 12.4053 16.5614 13.4886C16.4181 14.554 16.1457 15.1962 15.671 15.671C15.1963 16.1457 14.554 16.4181 13.4887 16.5613C12.4054 16.707 10.9819 16.7083 9 16.7083C7.01815 16.7083 5.59463 16.707 4.51132 16.5613C3.44598 16.4181 2.80371 16.1457 2.329 15.671C1.85429 15.1962 1.58187 14.554 1.43864 13.4886C1.293 12.4053 1.29167 10.9818 1.29167 8.99996C1.29167 7.01811 1.293 5.59459 1.43864 4.51127C1.58187 3.44594 1.85429 2.80367 2.329 2.32896Z" fill="#6B7280"/>
@@ -674,7 +674,11 @@
                                     <label for="gender" class="block text-xs md:text-sm font-medium text-gray-900">
                                         Gender*
                                     </label>
-                                    <input type="tel" id="gender" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="e.g. Male">
+                                    <select id="gender" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                      <option selected>e.g. Male</option>
+                                      <option value="Male">Male</option>
+                                      <option value="Female">Female</option>
+                                    </select>
                                 </div>
                             </div>
                             <div class="flex flex-col gap-2">
@@ -849,6 +853,43 @@
         </form>
     </dialog>
 
+    <!-- Services -->
+    <dialog id="servicesmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow start-auto h-full max-h-[100dvh]">
+        <form method="dialog">
+            <!-- Modal header -->
+            <div class="sticky top-0 flex items-start justify-between p-4 bg-white border-b rounded-t">
+                <h3 class="text-xl font-semibold text-gray-900">
+                    Services
+                </h3>
+                <button onclick="servicesmodal.close()" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
+                    <svg aria-hidden="true" class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    <span class="sr-only">Close modal</span>
+                </button>
+            </div>
+            <!-- Modal body -->
+            <div class="flex flex-col gap-3 p-3 md:p-6 md:gap-10">
+                <!-- Servises -->
+                <section class="services">
+                    <!-- Family Law -->
+                    <div class="flex flex-col gap-2">
+                        <label for="family-law" class="block text-xs md:text-sm font-medium text-gray-900">
+                            Family Law
+                        </label>
+                        <select id="family-law" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-sm font-normal text-gray-500 rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                          <option selected>Family Law</option>
+                          <option value="Civil Law">Civil Law</option>
+                          <option value="Property Law">Property Law</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
+            <!-- Modal footer -->
+            <div class="sticky bottom-0 flex items-center justify-end p-4 bg-white border-t border-gray-200 rounded-b gap-x-2">
+                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Save</button>
+            </div>
+        </form>
+    </dialog>
+    
     <!-- Add FAQ -->
     <dialog id="addfaqmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow start-auto h-full max-h-[100dvh]">
         <form method="dialog">
