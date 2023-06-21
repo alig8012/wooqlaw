@@ -1075,6 +1075,9 @@ select {
 .w-3\.5 {
   width: 0.875rem;
 }
+.w-32 {
+  width: 8rem;
+}
 .w-36 {
   width: 9rem;
 }
@@ -1259,9 +1262,6 @@ select {
 }
 .items-center {
   align-items: center;
-}
-.items-baseline {
-  align-items: baseline;
 }
 .items-stretch {
   align-items: stretch;
