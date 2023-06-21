@@ -1260,6 +1260,9 @@ select {
 .items-center {
   align-items: center;
 }
+.items-baseline {
+  align-items: baseline;
+}
 .items-stretch {
   align-items: stretch;
 }
@@ -2212,10 +2215,6 @@ select {
   --tw-text-opacity: 1;
   color: rgb(153 27 27 / var(--tw-text-opacity));
 }
-.text-sky-500 {
-  --tw-text-opacity: 1;
-  color: rgb(14 165 233 / var(--tw-text-opacity));
-}
 .text-violet-500 {
   --tw-text-opacity: 1;
   color: rgb(139 92 246 / var(--tw-text-opacity));
@@ -2956,6 +2955,10 @@ select {
     width: 2rem;
   }
 
+  .md\:w-9 {
+    width: 2.25rem;
+  }
+
   .md\:w-96 {
     width: 24rem;
   }
@@ -2971,10 +2974,6 @@ select {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-9 {
-    width: 2.25rem;
   }
 
   .md\:max-w-3xl {
