@@ -2876,6 +2876,10 @@ select {
     height: 2rem;
   }
 
+  .md\:h-9 {
+    height: 2.25rem;
+  }
+
   .md\:min-h-\[428px\] {
     min-height: 428px;
   }
@@ -2967,6 +2971,10 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-9 {
+    width: 2.25rem;
   }
 
   .md\:max-w-3xl {
