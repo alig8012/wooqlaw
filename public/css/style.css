@@ -1254,6 +1254,9 @@ select {
 .content-center {
   align-content: center;
 }
+.content-end {
+  align-content: flex-end;
+}
 .items-start {
   align-items: flex-start;
 }
@@ -1874,6 +1877,10 @@ select {
   padding-left: 15rem;
   padding-right: 15rem;
 }
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
 .px-8 {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -1925,6 +1932,10 @@ select {
 .py-6 {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+.py-7 {
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
 }
 .py-8 {
   padding-top: 2rem;
