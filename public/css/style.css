@@ -826,6 +826,9 @@ select {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mb-2\.5 {
+  margin-bottom: 0.625rem;
+}
 .mb-28 {
   margin-bottom: 7rem;
 }
@@ -927,9 +930,6 @@ select {
 }
 .mt-9 {
   margin-top: 2.25rem;
-}
-.mb-2\.5 {
-  margin-bottom: 0.625rem;
 }
 .block {
   display: block;
@@ -2043,11 +2043,11 @@ select {
 .pt-3 {
   padding-top: 0.75rem;
 }
-.pt-5 {
-  padding-top: 1.25rem;
-}
 .pt-4 {
   padding-top: 1rem;
+}
+.pt-5 {
+  padding-top: 1.25rem;
 }
 .text-left {
   text-align: left;
@@ -2663,11 +2663,6 @@ select {
 
 @media (prefers-color-scheme: dark) {
 
-  .dark\:divide-gray-700 > :not([hidden]) ~ :not([hidden]) {
-    --tw-divide-opacity: 1;
-    border-color: rgb(55 65 81 / var(--tw-divide-opacity));
-  }
-
   .dark\:border-gray-600 {
     --tw-border-opacity: 1;
     border-color: rgb(75 85 99 / var(--tw-border-opacity));
@@ -2681,11 +2676,6 @@ select {
   .dark\:bg-gray-700 {
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-  }
-
-  .dark\:bg-gray-600 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(75 85 99 / var(--tw-bg-opacity));
   }
 
   .dark\:text-gray-400 {
