@@ -1051,6 +1051,9 @@ select {
 .w-12 {
   width: 3rem;
 }
+.w-16 {
+  width: 4rem;
+}
 .w-2 {
   width: 0.5rem;
 }
@@ -1141,9 +1144,6 @@ select {
 }
 .w-full {
   width: 100%;
-}
-.w-16 {
-  width: 4rem;
 }
 .max-w-2xl {
   max-width: 42rem;
