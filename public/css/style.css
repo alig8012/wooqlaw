@@ -785,6 +785,12 @@ select {
 .col-span-6 {
   grid-column: span 6 / span 6;
 }
+.col-span-5 {
+  grid-column: span 5 / span 5;
+}
+.col-span-4 {
+  grid-column: span 4 / span 4;
+}
 .mx-3 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -834,6 +840,9 @@ select {
 }
 .mb-28 {
   margin-bottom: 7rem;
+}
+.mb-32 {
+  margin-bottom: 8rem;
 }
 .mb-36 {
   margin-bottom: 9rem;
@@ -1955,6 +1964,10 @@ select {
 .py-2\.5 {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
+}
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .py-3 {
   padding-top: 0.75rem;
