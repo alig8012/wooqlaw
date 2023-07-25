@@ -859,6 +859,9 @@ select {
 .mb-8 {
   margin-bottom: 2rem;
 }
+.mb-96 {
+  margin-bottom: 24rem;
+}
 .ml-0 {
   margin-left: 0px;
 }
@@ -939,9 +942,6 @@ select {
 }
 .mt-9 {
   margin-top: 2.25rem;
-}
-.mb-96 {
-  margin-bottom: 24rem;
 }
 .block {
   display: block;
@@ -1673,6 +1673,10 @@ select {
 .bg-green-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
+}
+.bg-green-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 .bg-orange-500 {
   --tw-bg-opacity: 1;
