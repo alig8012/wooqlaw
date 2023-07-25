@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inquiry Details 2</title>
+    <title>Inquiry Details 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
@@ -22,8 +22,8 @@
 </head>
 
     <body class="font-display p-0 md:p-4 bg-white">
-                <!-- Inquiry Details 2 -->
-        <section class="inquiry-details-2">
+                <!-- Inquiry Details 3 -->
+        <section class="inquiry-details-3">
             <div class="flex flex-col border-b max-w-4xl mx-auto rounded-xl bg-gradient-to-tl from-sky-100 shadow">
                 <!-- Your inquiry details -->
                 <div class="flex p-2 md:p-6 items-center justify-between">
@@ -72,90 +72,45 @@
                     </div>
                 </div>
                 <hr>
-                <div class="flex flex-col gap-2 md:gap-5 p-2 md:p-6 mb-72">
-                    <!-- Select preferences for your desired lawyer -->
+                <div class="flex flex-col gap-2 md:gap-5 p-2 md:p-6 mb-96">
+                    <!-- Enter your contact details -->
                     <div class="flex flex-col gap-1">
                         <span class="text-sm md:text-lg font-medium text-gray-900">
-                            Select preferences for your desired lawyer
+                            Enter your contact details
                         </span>
                         <span class="text-xs md:text-sm font-medium text-gray-600">
                             Try to include as many details as possible, as this will help us identify the best lawyers for your job. 
                         </span>
                     </div>
                     <div class="flex flex-col gap-10">
-                        <!-- Case City, Lawyer Gender -->
+                        <!-- Full Name, Your Email -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div class="flex flex-col gap-2">
-                                <label for="case-city" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Case City
+                                <label for="full-name" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Full Name
                                 </label>
-                                <select id="case-city" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                                <option selected>Select</option>
-                                <option value="Cash">Cash</option>
-                                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                                <option value="Easypaisa">Easypaisa</option>
-                                <option value="Stripe pay">Stripe pay</option>
-                                </select>
+                                <input type="tel" id="full-name" class="block w-full px-4 py-3 text-xs md:text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Input text">
                             </div>
                             <div class="flex flex-col gap-2">
-                                <label for="lawyer-gender" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Lawyer Gender
+                                <label for="your-email" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Your Email
                                 </label>
-                                <select id="lawyer-gender" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                                <option selected>Select</option>
-                                <option value="Cash">Cash</option>
-                                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                                <option value="Easypaisa">Easypaisa</option>
-                                <option value="Stripe pay">Stripe pay</option>
-                                </select>
+                                <input type="tel" id="your-email" class="block w-full px-4 py-3 text-xs md:text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Input text">
                             </div>
                         </div>
-                        <!-- Lawyer Language, Lawyer Experience -->
+                        <!-- Your Mobile Number, Select Your City -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                             <div class="flex flex-col gap-2">
-                                <label for="lawyer-language" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Lawyer Language
+                                <label for="your-mobile-number" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Your Mobile Number
                                 </label>
-                                <select id="lawyer-language" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                                <option selected>Select</option>
-                                <option value="Cash">Cash</option>
-                                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                                <option value="Easypaisa">Easypaisa</option>
-                                <option value="Stripe pay">Stripe pay</option>
-                                </select>
+                                <input type="tel" id="your-mobile-number" class="block w-full px-4 py-3 text-xs md:text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Input text">
                             </div>
                             <div class="flex flex-col gap-2">
-                                <label for="lawyer-experience" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Lawyer Experience
+                                <label for="select-your-city" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Select Your City
                                 </label>
-                                <select id="lawyer-experience" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                                <option selected>Select</option>
-                                <option value="Cash">Cash</option>
-                                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                                <option value="Easypaisa">Easypaisa</option>
-                                <option value="Stripe pay">Stripe pay</option>
-                                </select>
-                            </div>
-                        </div>
-                        <!-- Select Law Area, Select Court -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-                            <div class="flex flex-col gap-2">
-                                <label for="select-law-area" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Select Law Area
-                                </label>
-                                <select id="select-law-area" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
-                                <option selected>Select</option>
-                                <option value="Cash">Cash</option>
-                                <option value="Debit/Credit Card">Debit/Credit Card</option>
-                                <option value="Easypaisa">Easypaisa</option>
-                                <option value="Stripe pay">Stripe pay</option>
-                                </select>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <label for="select-court" class="block text-xs md:text-sm font-medium text-gray-900">
-                                    Select Court
-                                </label>
-                                <select id="select-court" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <select id="select-your-city" class="block w-full px-4 py-3 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
                                 <option selected>Select</option>
                                 <option value="Cash">Cash</option>
                                 <option value="Debit/Credit Card">Debit/Credit Card</option>

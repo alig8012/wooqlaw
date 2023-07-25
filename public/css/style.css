@@ -829,11 +829,11 @@ select {
 .mb-2\.5 {
   margin-bottom: 0.625rem;
 }
+.mb-24 {
+  margin-bottom: 6rem;
+}
 .mb-28 {
   margin-bottom: 7rem;
-}
-.mb-32 {
-  margin-bottom: 8rem;
 }
 .mb-36 {
   margin-bottom: 9rem;
@@ -852,6 +852,9 @@ select {
 }
 .mb-7 {
   margin-bottom: 1.75rem;
+}
+.mb-72 {
+  margin-bottom: 18rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -936,6 +939,9 @@ select {
 }
 .mt-9 {
   margin-top: 2.25rem;
+}
+.mb-96 {
+  margin-bottom: 24rem;
 }
 .block {
   display: block;
@@ -1500,10 +1506,6 @@ select {
 .rounded-t-xl {
   border-top-left-radius: 0.75rem;
   border-top-right-radius: 0.75rem;
-}
-.rounded-l {
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem;
 }
 .rounded-bl-full {
   border-bottom-left-radius: 9999px;
