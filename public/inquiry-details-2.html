@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inquiry Details 1</title>
+    <title>Inquiry Details 2</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
@@ -22,8 +22,8 @@
 </head>
 
     <body class="font-display p-0 md:p-4 bg-white">
-                <!-- Inquiry Details 1 -->
-        <section class="inquiry-details-1">
+                <!-- Inquiry Details 2 -->
+        <section class="inquiry-details-2">
             <div class="flex flex-col border-b max-w-4xl mx-auto rounded-xl bg-gradient-to-tl from-sky-100 shadow">
                 <!-- Your inquiry details -->
                 <div class="flex p-2 md:p-6 items-center justify-between">
@@ -73,78 +73,98 @@
                 </div>
                 <hr>
                 <div class="flex flex-col gap-2 md:gap-5 p-2 md:p-6 mb-32">
-                    <!-- Please describe your legal needs in few sentences -->
+                    <!-- Select preferences for your desired lawyer -->
                     <div class="flex flex-col gap-1">
                         <span class="text-sm md:text-lg font-medium text-gray-900">
-                            Please describe your legal needs in few sentences
+                            Select preferences for your desired lawyer
                         </span>
                         <span class="text-xs md:text-sm font-medium text-gray-600">
                             Try to include as many details as possible, as this will help us identify the best lawyers for your job. 
                         </span>
                     </div>
-                    <!-- Title -->
-                    <div class="flex flex-col gap-2">
-                        <label for="title" class="block text-xs md:text-sm font-medium text-gray-900">
-                            Title
-                        </label>
-                        <input type="tel" id="title" class="block w-full px-4 py-3 text-xs md:text-sm font-normal text-gray-500 bg-gray-50 border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" placeholder="Input text">
-                    </div>
-                    <!-- Your message -->
-                    <div class="flex flex-col gap-2">
-                        <label for="your-message" class="block text-xs md:text-sm font-medium text-gray-900">
-                            Your message
-                        </label>
-                        <textarea id="your-message" rows="2" class="block w-full px-4 py-3 text-xs md:text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Write text here ..."></textarea>
-                    </div>
-                    <!-- A good description includes: -->
-                    <div class="flex flex-col gap-2">
-                        <span class="text-sm md:text-base font-medium text-gray-500">
-                            A good description includes:
-                        </span>
-                        <span class="ml-6 text-xs md:text-sm font-normal text-gray-500">
-                            <ul class="list-disc">
-                                <li>Details about your case, specific legal expertise or background that you would need.</li>
-                                <li>Case timeline and budget expectations.</li>
-                            </ul>
-                        </span>
-                    </div>
-                    <!-- Is your case in the court? -->
-                    <div class="flex gap-2 md:gap-5">
-                        <span class="text-sm md:text-base font-medium text-gray-800">
-                            Is your case in the court?
-                        </span>
-                        <div class="flex gap-2 md:gap-5">
-                        <span class="">
-                            <input id="yes-radio-1" type="radio" value="" name="yes-radio" class="w-4 h-4 text-violet-700">
-                            <label for="yes-radio-1" class="text-sm font-medium text-gray-900">Yes</label>
-                        </span>
-                        <span class="">
-                            <input id="yes-radio-2" type="radio" value="" name="yes-radio" class="w-4 h-4 text-violet-700">
-                            <label for="yes-radio-2" class="text-sm font-medium text-gray-900">No</label>
-                        </span>
+                    <div class="flex flex-col gap-10">
+                    <!-- Case City, Lawyer Gender -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="case-city" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Case City
+                                </label>
+                                <select id="case-city" class="block w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select contact</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                                <option value="Easypaisa">Easypaisa</option>
+                                <option value="Stripe pay">Stripe pay</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="lawyer-gender" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Lawyer Gender
+                                </label>
+                                <select id="lawyer-gender" class="block w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select contact</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                                <option value="Easypaisa">Easypaisa</option>
+                                <option value="Stripe pay">Stripe pay</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- Case City, Lawyer Gender -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                            <div class="flex flex-col gap-2">
+                                <label for="case-city" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Case City
+                                </label>
+                                <select id="case-city" class="block w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select contact</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                                <option value="Easypaisa">Easypaisa</option>
+                                <option value="Stripe pay">Stripe pay</option>
+                                </select>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <label for="lawyer-gender" class="block text-xs md:text-sm font-medium text-gray-900">
+                                    Lawyer Gender
+                                </label>
+                                <select id="lawyer-gender" class="block w-full p-2.5 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500">
+                                <option selected>Select contact</option>
+                                <option value="Cash">Cash</option>
+                                <option value="Debit/Credit Card">Debit/Credit Card</option>
+                                <option value="Easypaisa">Easypaisa</option>
+                                <option value="Stripe pay">Stripe pay</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <!-- Upload supporting documents -->
-                    <div class="flex flex-col gap-2">
-                        <label class="block text-sm font-medium text-gray-900" for="file_input">
-                            Upload supporting documents
-                        </label>
-                        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50" id="file_input" type="file">
-                    </div>
+                    
+                    
+                   
+                    
                 </div>
                 <hr>
-                <!-- Cancel Next -->
+                <!-- Cancel Next Back -->
                 <div class="flex rounded-b-lg p-2 md:p-6 items-center justify-between">
                     <button type="button" class="text-sm font-medium text-gray-800 text-center border rounded-lg px-3 py-2 inline-flex items-center bg-gray-200 hover:bg-gray-300 focus:ring-4 focus:outline-none focus:ring-gray-100">
                         Cancel
                     </button>
-                    <button type="button" class="text-sm font-medium text-white text-center rounded-lg px-6 py-2 gap-2 inline-flex items-center bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300">
-                        Next
-                        <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97977 4.14645C9.17503 3.95118 9.49161 3.95118 9.68688 4.14645L13.6869 8.14645C13.8821 8.34171 13.8821 8.65829 13.6869 8.85355L9.68688 12.8536C9.49161 13.0488 9.17503 13.0488 8.97977 12.8536C8.78451 12.6583 8.78451 12.3417 8.97977 12.1464L12.1262 9H2.66666C2.39051 9 2.16666 8.77614 2.16666 8.5C2.16666 8.22386 2.39051 8 2.66666 8H12.1262L8.97977 4.85355C8.78451 4.65829 8.78451 4.34171 8.97977 4.14645Z" fill="white"/>
-                        </svg>
-                            
-                    </button>
+                    <div class="flex gap-3">
+                        <button type="button" class="text-sm font-medium text-gray-800 text-center rounded-lg border border-gray-200 px-6 py-2 gap-2 inline-flex items-center hover:bg-white focus:ring-4 focus:outline-none focus:ring-gray-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.02021 4.14645C7.21547 4.34171 7.21547 4.65829 7.02021 4.85355L3.87376 8H13.3333C13.6095 8 13.8333 8.22386 13.8333 8.5C13.8333 8.77614 13.6095 9 13.3333 9H3.87376L7.02021 12.1464C7.21547 12.3417 7.21547 12.6583 7.02021 12.8536C6.82495 13.0488 6.50837 13.0488 6.3131 12.8536L2.3131 8.85355C2.11784 8.65829 2.11784 8.34171 2.3131 8.14645L6.3131 4.14645C6.50837 3.95118 6.82495 3.95118 7.02021 4.14645Z" fill="#1C274C"/>
+                            </svg>
+                            Back
+                                
+                        </button>
+                        <button type="button" class="text-sm font-medium text-white text-center rounded-lg px-6 py-2 gap-2 inline-flex items-center bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300">
+                            Next
+                            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.97977 4.14645C9.17503 3.95118 9.49161 3.95118 9.68688 4.14645L13.6869 8.14645C13.8821 8.34171 13.8821 8.65829 13.6869 8.85355L9.68688 12.8536C9.49161 13.0488 9.17503 13.0488 8.97977 12.8536C8.78451 12.6583 8.78451 12.3417 8.97977 12.1464L12.1262 9H2.66666C2.39051 9 2.16666 8.77614 2.16666 8.5C2.16666 8.22386 2.39051 8 2.66666 8H12.1262L8.97977 4.85355C8.78451 4.65829 8.78451 4.34171 8.97977 4.14645Z" fill="white"/>
+                            </svg>
+                                
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
