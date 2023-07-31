@@ -764,9 +764,6 @@ select {
 .top-1\/2 {
   top: 50%;
 }
-.top-2 {
-  top: 0.5rem;
-}
 .-z-10 {
   z-index: -10;
 }
@@ -1195,16 +1192,6 @@ select {
 }
 .max-w-xs {
   max-width: 20rem;
-}
-.max-w-6xl {
-  max-width: 72rem;
-}
-.max-w-full {
-  max-width: 100%;
-}
-.max-w-fit {
-  max-width: -moz-fit-content;
-  max-width: fit-content;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -3080,6 +3067,10 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-64 {
+    width: 16rem;
   }
 
   .md\:max-w-3xl {
