@@ -3040,6 +3040,10 @@ select {
     width: 15rem;
   }
 
+  .md\:w-64 {
+    width: 16rem;
+  }
+
   .md\:w-7 {
     width: 1.75rem;
   }
@@ -3067,10 +3071,6 @@ select {
 
   .md\:w-full {
     width: 100%;
-  }
-
-  .md\:w-64 {
-    width: 16rem;
   }
 
   .md\:max-w-3xl {
