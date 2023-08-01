@@ -1913,6 +1913,10 @@ select {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.px-32 {
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2000,14 +2004,6 @@ select {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
-}
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-.px-32 {
-  padding-left: 8rem;
-  padding-right: 8rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -2285,6 +2281,10 @@ select {
   --tw-text-opacity: 1;
   color: rgb(29 78 216 / var(--tw-text-opacity));
 }
+.text-purple-800 {
+  --tw-text-opacity: 1;
+  color: rgb(107 33 168 / var(--tw-text-opacity));
+}
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
@@ -2308,10 +2308,6 @@ select {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-.text-purple-800 {
-  --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity));
 }
 .underline {
   text-decoration-line: underline;
