@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>tabs-animation1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"  rel="stylesheet" />
+
+  <!-- Tailwind CSS-->
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <!-- Googel Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+  </head>
+
+<body class="font-display p-4 bg-gray-200">
+    <section class="wrapper min-w-[60rem,100%-2rem] mx-auto rounded-xl shadow bg-white justify-between">
+    <div class="mb-4 border-b border-gray-100">
+        <ul class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 text-center px-5 pt-3 gap-2" id="myTab" data-tabs-toggle="#tab-panels" role="tablist" aria-labelledby="channel-name">
+            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
+                <button class="px-3 py-5 min-w-fit border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="overview-tab" data-tabs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" tabindex="0">Overview</button>
+            </li>
+            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
+                <button class="inline-block px-3 py-5 border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="experience-tab" data-tabs-target="#experience" type="button" role="tab" aria-controls="experience" aria-selected="false" tabindex="-1">Experience</button>
+            </li>
+            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
+                <button class="inline-block px-3 py-5 border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="appointment-tab" data-tabs-target="#appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false" tabindex="-1">Appointment Booking</button>
+            </li>
+        </ul>
+    </div>
+    <div id="tab-panels flex justify-between">
+        <div id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+            <p class="text-sm text-gray-500">This is some placeholder content the next.</p>
+        </div>
+        <div class="hidden" id="experience" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
+            <p class="text-sm text-gray-500">Clicking another tab will toggle of this one</p>
+        </div>
+        <div class="hidden" id="appointment" role="tabpanel" aria-labelledby="appointment-tab" tabindex="0">
+            <p class="text-sm text-gray-500">The visibility of this one for</p>
+        </div>
+    </div>    
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+    <script>
+        const tabsContainer = document.querySelector("[role=tablist]");
+        const tabButtons = tabsContainer.querySelectorAll("[role=tab]");
+        const tabPanels = document.querySelectorAll("[role=tabpanel]");
+
+        tabsContainer.addEventListener("click", (e) => {
+        const clickedTab = e.target.closest("button");
+        const currentTab = tabsContainer.querySelector('[aria-selected="true"]');
+
+        if (!clickedTab || clickedTab === currentTab) return;
+
+        switchTab(clickedTab);
+        });
+
+        tabsContainer.addEventListener("keydown", (e) => {
+        switch (e.key) {
+            case "ArrowLeft":
+            moveLeft();
+            break;
+            case "ArrowRight":
+            moveRight();
+            break;
+            case "Home":
+            e.preventDefault();
+            switchTab(tabButtons[0]);
+            break;
+            case "End":
+            e.preventDefault();
+            switchTab(tabButtons[tabButtons.length - 1]);
+            break;
+        }
+        });
+
+        function moveLeft() {
+        const currentTab = document.activeElement;
+
+        if (!currentTab.previousElementSibling) {
+            tabButtons.item(tabButtons.length - 1).focus();
+        } else {
+            currentTab.previousElementSibling.focus();
+        }
+        }
+
+        function moveRight() {
+        const currentTab = document.activeElement;
+        if (!currentTab.nextElementSibling) {
+            tabButtons.item(0).focus();
+        } else {
+            currentTab.nextElementSibling.focus();
+        }
+        }
+
+        function switchTab(newTab) {
+        const oldTab = tabsContainer.querySelector('[aria-selected="true"]');
+        const activePanelId = newTab.getAttribute("aria-controls");
+        const activePanel = tabsContainer.nextElementSibling.querySelector(
+            "#" + CSS.escape(activePanelId)
+        );
+        tabButtons.forEach((button) => {
+            button.setAttribute("aria-selected", false);
+            button.setAttribute("tabindex", "-1");
+        });
+
+        tabPanels.forEach((panel) => {
+            panel.setAttribute("hidden", true);
+        });
+
+        activePanel.removeAttribute("hidden", false);
+
+        newTab.setAttribute("aria-selected", true);
+        newTab.setAttribute("tabindex", "0");
+        newTab.focus();
+        moveIndicator(oldTab, newTab);
+        }
+
+        // move underline indicator
+        function moveIndicator(oldTab, newTab) {
+        const newTabPosition = oldTab.compareDocumentPosition(newTab);
+        const newTabWidth = newTab.offsetWidth / tabsContainer.offsetWidth;
+        let transitionWidth;
+
+        // if the new tab is to the right
+        if (newTabPosition === 4) {
+            transitionWidth =
+            newTab.offsetLeft + newTab.offsetWidth - oldTab.offsetLeft;
+        } else {
+            // if the tab is to the left
+            transitionWidth =
+            oldTab.offsetLeft + oldTab.offsetWidth - newTab.offsetLeft;
+            tabsContainer.style.setProperty("--_left", newTab.offsetLeft + "px");
+        }
+
+        tabsContainer.style.setProperty(
+            "--_width",
+            transitionWidth / tabsContainer.offsetWidth
+        );
+
+        setTimeout(() => {
+            tabsContainer.style.setProperty("--_left", newTab.offsetLeft + "px");
+            tabsContainer.style.setProperty("--_width", newTabWidth);
+        }, 220);
+        }
+
+    </script>
+
+</body>
+</html>
