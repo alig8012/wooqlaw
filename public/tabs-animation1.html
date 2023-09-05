@@ -16,36 +16,82 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+  <style>
+.wrapper {
+  width: min(60rem, 100% - 2rem);
+  margin-inline: auto;
+}
 
+[role="tablist"] {
+  position: relative;
+  display: flex;
+  width: fit-content;
+  border-bottom: 1px solid hsl(0 0% 30%);
+  margin-block: 3rem;
+}
+
+[role="tablist"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  scale: var(--_width, 0.125) 1;
+  translate: var(--_left, 0) 0;
+  transform-origin: left;
+  transition: scale 200ms, translate 200ms;
+  background: #6D28D9;
+}
+
+[role="tab"] {
+  padding: 1em 2em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+[role="tab"]:hover {
+  opacity: 1;
+}
+
+[role="tab"][aria-selected="true"] {
+  opacity: 1;
+}
+
+  </style>
 
   </head>
 
-<body class="font-display p-4 bg-gray-200">
-    <section class="wrapper min-w-[60rem,100%-2rem] mx-auto rounded-xl shadow bg-white justify-between">
-    <div class="mb-4 border-b border-gray-100">
-        <ul class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 text-center px-5 pt-3 gap-2" id="myTab" data-tabs-toggle="#tab-panels" role="tablist" aria-labelledby="channel-name">
-            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
-                <button class="px-3 py-5 min-w-fit border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="overview-tab" data-tabs-target="#overview" type="button" role="tab" aria-controls="overview" aria-selected="true" tabindex="0">Overview</button>
-            </li>
-            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
-                <button class="inline-block px-3 py-5 border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="experience-tab" data-tabs-target="#experience" type="button" role="tab" aria-controls="experience" aria-selected="false" tabindex="-1">Experience</button>
-            </li>
-            <li class="flex grow-0 shrink-0 basis-auto" role="tablist">
-                <button class="inline-block px-3 py-5 border-b-4 border-transparent hover:text-violet-700 hover:border-violet-700" id="appointment-tab" data-tabs-target="#appointment" type="button" role="tab" aria-controls="appointment" aria-selected="false" tabindex="-1">Appointment Booking</button>
-            </li>
-        </ul>
-    </div>
-    <div id="tab-panels flex justify-between">
-        <div id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
-            <p class="text-sm text-gray-500">This is some placeholder content the next.</p>
-        </div>
-        <div class="hidden" id="experience" role="tabpanel" aria-labelledby="experience-tab" tabindex="0">
-            <p class="text-sm text-gray-500">Clicking another tab will toggle of this one</p>
-        </div>
-        <div class="hidden" id="appointment" role="tabpanel" aria-labelledby="appointment-tab" tabindex="0">
-            <p class="text-sm text-gray-500">The visibility of this one for</p>
-        </div>
-    </div>    
+<body class="font-display p-2 md:p-4 bg-gray-200">
+    <!-- Tabs Animation 1 -->
+    <section class="wrapper flex-nowrap overflow-x-auto w-full mx-auto rounded-xl shadow bg-white">
+            <div class="text-base font-semibold text-gray-500 px-5 pt-3" role="tablist" aria-labelledby="channel-name">
+              <button class="hover:text-violet-700" id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">Overview
+              </button>
+              <button class="hover:text-violet-700" id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">Experience
+              </button>
+              <button class="hover:text-violet-700" id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">Services
+              </button>
+              <button class="hover:text-violet-700" id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">Appointment Booking
+              </button>
+            </div>
+            <div class="tab-panels p-5">
+              <div class="text-sm text-gray-500" id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+                <p>My intro video and some curratedfalse content</p>
+              </div>
+              <div class="text-sm text-gray-500" id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+                <p>My hundreds of videos, all right here</p>
+              </div>
+              <div class="text-sm text-gray-500" id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+                <p>A lot of content, all under 60 seconds</p>
+              </div>
+              <div class="text-sm text-gray-500" id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+                <p>content all under</p>
+              </div>
+            </div>
+          </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
