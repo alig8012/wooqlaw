@@ -66,32 +66,43 @@
 
 <body class="font-display p-2 md:p-4 bg-gray-200">
     <!-- Tabs Animation 1 -->
-    <section class="wrapper flex-nowrap overflow-x-auto w-full mx-auto rounded-xl shadow bg-white">
-            <div class="text-base font-semibold text-gray-500 px-5 pt-3" role="tablist" aria-labelledby="channel-name">
-              <button class="hover:text-violet-700" id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">Overview
-              </button>
-              <button class="hover:text-violet-700" id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">Experience
-              </button>
-              <button class="hover:text-violet-700" id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">Services
-              </button>
-              <button class="hover:text-violet-700" id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">Appointment Booking
-              </button>
+    <section class="wrapper w-full mx-auto rounded-xl shadow bg-white">
+        <div class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 px-5 pt-3" role="tablist" aria-labelledby="channel-name">
+            <button class="hover:text-violet-700" id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">
+                Overview
+            </button>
+            <button class="hover:text-violet-700" id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">
+                Experience
+            </button>
+            <button class="hover:text-violet-700" id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">
+                Services
+            </button>
+            <button class="hover:text-violet-700" id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">
+                Appointment Booking
+            </button>
+        </div>
+        <div class="tab-panels p-5">
+            <div class="text-sm text-gray-500" id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
+            <p>
+                My intro video and some curratedfalse content
+            </p>
             </div>
-            <div class="tab-panels p-5">
-              <div class="text-sm text-gray-500" id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-                <p>My intro video and some curratedfalse content</p>
-              </div>
-              <div class="text-sm text-gray-500" id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
-                <p>My hundreds of videos, all right here</p>
-              </div>
-              <div class="text-sm text-gray-500" id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
-                <p>A lot of content, all under 60 seconds</p>
-              </div>
-              <div class="text-sm text-gray-500" id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
-                <p>content all under</p>
-              </div>
+            <div class="text-sm text-gray-500" id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
+            <p>
+                My hundreds of videos, all right here
+            </p>
             </div>
-          </div>
+            <div class="text-sm text-gray-500" id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
+            <p>
+                A lot of content, all under 60 seconds
+            </p>
+            </div>
+            <div class="text-sm text-gray-500" id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
+            <p>
+                content all under
+            </p>
+            </div>
+        </div>
     </section>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
