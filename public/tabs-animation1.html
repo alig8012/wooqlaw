@@ -18,87 +18,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
     
   <style>
-.wrapper {
-  width: min(60rem, 100% - 2rem);
-  margin-inline: auto;
-}
+    .wrapper {
+    width: min(60rem, 100% - 2rem);
+    margin-inline: auto;
+    }
 
-[role="tablist"] {
-  position: relative;
-  display: flex;
-  width: fit-content;
-  border-bottom: 1px solid hsl(0 0% 30%);
-  margin-block: 3rem;
-}
+    [role="tablist"] {
+    position: relative;
+    display: flex;
+    width: fit-content;
+    border-bottom: 1px solid hsl(0 0% 30%);
+    }
 
-[role="tablist"]::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 4px;
-  scale: var(--_width, 0.125) 1;
-  translate: var(--_left, 0) 0;
-  transform-origin: left;
-  transition: scale 200ms, translate 200ms;
-  background: #6D28D9;
-}
+    [role="tablist"]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    scale: var(--_width, 0.125) 1;
+    translate: var(--_left, 0) 0;
+    transform-origin: left;
+    transition: scale 200ms, translate 200ms;
+    background: #6D28D9;
+    }
 
-[role="tab"] {
-  padding: 1em 2em;
-  text-transform: uppercase;
-  opacity: 0.7;
-  cursor: pointer;
-}
+    [role="tab"] {
+    padding: 1em 2em;
+    text-transform: uppercase;
+    opacity: 0.7;
+    cursor: pointer;
+    }
 
-[role="tab"]:hover {
-  opacity: 1;
-}
+    [role="tab"]:hover {
+    opacity: 1;
+    }
 
-[role="tab"][aria-selected="true"] {
-  opacity: 1;
-}
+    [role="tab"][aria-selected="true"] {
+    opacity: 1;
+    }
 
   </style>
 
   </head>
 
-<body class="font-display p-2 md:p-4 bg-gray-200">
+<body class="font-display p-4 bg-gray-200">
     <!-- Tabs Animation 1 -->
-    <section class="wrapper w-full mx-auto rounded-xl shadow bg-white">
-        <div class="flex flex-nowrap overflow-x-auto text-base font-semibold text-gray-500 px-5 pt-3" role="tablist" aria-labelledby="channel-name">
-            <button class="hover:text-violet-700" id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true" tabindex="0">
+    <section class="wrapper w-full mx-auto rounded-xl shadow bg-white flex-nowrap overflow-x-auto">
+        <div class="flex text-base font-semibold text-gray-500 px-5 pt-3" role="tablist" aria-labelledby="tab-panels">
+            <button class="hover:text-violet-700" id="tab-1" role="tab" aria-controls="tabPanel-1" aria-selected="true">
                 Overview
             </button>
-            <button class="hover:text-violet-700" id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false" tabindex="-1">
+            <button class="hover:text-violet-700" id="tab-2" role="tab" aria-controls="tabPanel-2" aria-selected="false">
                 Experience
             </button>
-            <button class="hover:text-violet-700" id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false" tabindex="-1">
+            <button class="hover:text-violet-700" id="tab-3" role="tab" aria-controls="tabPanel-3" aria-selected="false">
                 Services
             </button>
-            <button class="hover:text-violet-700" id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false" tabindex="-1">
+            <button class="hover:text-violet-700" id="tab-4" role="tab" aria-controls="tabPanel-4" aria-selected="false">
                 Appointment Booking
             </button>
         </div>
-        <div class="tab-panels p-5">
-            <div class="text-sm text-gray-500" id="tabPanel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1">
-            <p>
+        <div class="p-5" id="tab-panels">
+            <div id="tabPanel-1" role="tabpanel" aria-labelledby="tab-1">
+            <p class="text-sm text-gray-500">
                 My intro video and some curratedfalse content
             </p>
             </div>
-            <div class="text-sm text-gray-500" id="tabPanel-2" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-2">
-            <p>
+            <div id="tabPanel-2" hidden role="tabpanel" aria-labelledby="tab-2">
+            <p class="text-sm text-gray-500">
                 My hundreds of videos, all right here
             </p>
             </div>
-            <div class="text-sm text-gray-500" id="tabPanel-3" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-3">
-            <p>
+            <div id="tabPanel-3" hidden role="tabpanel" aria-labelledby="tab-3">
+            <p class="text-sm text-gray-500">
                 A lot of content, all under 60 seconds
             </p>
             </div>
-            <div class="text-sm text-gray-500" id="tabPanel-4" hidden role="tabpanel" tabindex="0" aria-labelledby="tab-4">
-            <p>
+            <div id="tabPanel-4" hidden role="tabpanel" aria-labelledby="tab-4">
+            <p class="text-sm text-gray-500">
                 content all under
             </p>
             </div>
