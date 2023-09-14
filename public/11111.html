@@ -1,52 +1,134 @@
-<!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <title>11111</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-
-  <script defer src="https://unpkg.com/@alpinejs/ui@3.12.1-beta.0/dist/cdn.min.js"></script>
-  <script defer src="https://unpkg.com/@alpinejs/focus@3.12.1/dist/cdn.min.js"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.12.1/dist/cdn.min.js"></script>
-
-  <!-- Tailwind CSS-->
-  <link href="./css/style.css" rel="stylesheet" />
-
-  <!-- Googel Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
-
-  </head>
-
-<body class="font-display p-4 bg-gray-200">
-
-    <!--  -->
-    
-    <dialog id="rightmodal" class="relative right-0 w-full max-w-xl p-0 bg-white shadow start-auto h-full max-h-[100dvh]" open="">
-        <form method="dialog">
-            <!-- Modal header -->
-            <div class="sticky top-0 flex items-start justify-between p-4 bg-white border-b rounded-t">
-                <h3 class="text-xl font-semibold text-gray-900">
-                    Right Modal
-                </h3>
-                <button onclick="rightmodal.close()" type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center">
-                    <svg aria-hidden="true" class="w-5 h-5 text-gray-900" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-                    <span class="sr-only">Close modal</span>
-                </button>
-            </div>
-            <!-- Modal body -->
-            <div class="flex flex-col gap-3 p-3 md:p-6 md:gap-10">
-                <h3>Right Modal Content</h3>
-            </div>
-            <!-- Modal footer -->
-            <div class="sticky bottom-0 flex items-center justify-end p-4 bg-white border-t border-gray-200 rounded-b gap-x-2">
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">Save</button>
-            </div>
-        </form>
-    </dialog>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
   
-</body>
-</html>
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/light-a09cef873428.css"><link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/dark-5d486a4ede8e.css"><link data-color-theme="light" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light-a09cef873428.css"><link data-color-theme="dark" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark-5d486a4ede8e.css"><link data-color-theme="dark_dimmed" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_dimmed-27c8d635e4e5.css"><link data-color-theme="dark_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_high_contrast-8438e75afd36.css"><link data-color-theme="dark_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_colorblind-bf5665b96628.css"><link data-color-theme="light_colorblind" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_colorblind-c414b5ba1dce.css"><link data-color-theme="light_high_contrast" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_high_contrast-e5868b7374db.css"><link data-color-theme="light_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/light_tritanopia-299ac9c64ec0.css"><link data-color-theme="dark_tritanopia" crossorigin="anonymous" media="all" rel="stylesheet" data-href="https://github.githubassets.com/assets/dark_tritanopia-3a26e78ad0ff.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/primer-903aefe99058.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/global-173da82a737b.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/site-657ed51f7599.css">
+    <link crossorigin="anonymous" media="all" rel="stylesheet" href="https://github.githubassets.com/assets/home-campaign-1fd038acb658.css">
+
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/wp-runtime-33b747f52167.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_stacktrace-parser_dist_stack-trace-parser_esm_js-node_modules_github_bro-a4c183-18bf85b8e9f4.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/ui_packages_soft-nav_soft-nav_ts-df17d5597d8f.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_github_selector-observer_dist_index_esm_js-2646a2c533e3.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/vendors-node_modules_delegated-events_dist_index_js-node_modules_github_catalyst_lib_index_js-b4a243-f71dee1f28a5.js"></script>
+    <script crossorigin="anonymous" defer="defer" type="application/javascript" src="https://github.githubassets.com/assets/marketing-491859bb3d7a.js"></script>
+    
+    <title>Kartoa Animation 2</title>
+  
+    </head>
+  
+  <body class="logged-out env-production page-responsive header-overlay home-campaign" style="word-wrap: break-word;">
+    <div class="home-campaign-security js-section overflow-hidden px-3 pb-8 pt-5" data-color-mode="dark" data-light-theme="light" data-dark-theme="dark" id="security">
+        <div class="container-xl">
+          
+            <div >
+              
+          
+              <div class="col-11 col-lg-9 ml-2 ml-md-0 mb-6 mb-md-10">
+                <h3 class="h5-mktg mb-4 text-medium " >Security</h3>
+                <h2 class="h3-mktg mb-4 text-medium " >
+                  <span class="text-accent-primary">Embed security into the developer workflow.</span>
+                  With GitHub, developers can secure their code in minutes and organizations can automatically comply with regulations.
+                </h2>
+              </div>
+            </div>
+          
+        </div>
+        <div class="container-xl">
+          
+            <div >
+              
+          
+              <div class="col-11 col-lg-9 ml-2 ml-md-0 mb-6 mb-md-10">
+                <h3 class="h5-mktg mb-4 text-medium " >Security</h3>
+                <h2 class="h3-mktg mb-4 text-medium " >
+                  <span class="text-accent-primary">Embed security into the developer workflow.</span>
+                  With GitHub, developers can secure their code in minutes and organizations can automatically comply with regulations.
+                </h2>
+              </div>
+            </div>
+          
+        </div>
+    </div>
+    <div class="home-campaign-security js-section overflow-hidden px-3 pb-8 pt-5" data-color-mode="dark" data-light-theme="light" data-dark-theme="dark" id="security">
+            <div class="container-xl">
+            
+            
+        
+            <card-skew class="overflow-hidden rounded-3 mb-3 mb-md-5 position-relative z-1" data-catalyst="" data-perspective="700" style="transform: perspective(700px) rotateX(-0.03deg) rotateY(-0.03deg);">
+            <div class="color-bg-subtle border rounded-3 p-2 p-lg-6 js-build-in-trigger feature-card-mktg z-1 position-relative build-in-animate" data-target="card-skew.bounding" data-build-in-stagger="200">
+                <div class="color-fg-subtle p-4">
+                <div class="f5 text-medium">cmake.yml</div>
+                <span class="f6">on: push</span>
+                </div>
+        
+                <div class="position-relative d-flex flex-column flex-md-row gutter-spacious col-lg-10 mx-auto my-lg-6">
+                <div class="col-md-6 js-build-in-item build-in-scale-right build-in-animate" style="transition-delay: 0ms;">
+                    <div class="p-4 rounded mt-5 box-shadow-mktg-xl mb-6" style="background: rgba(235, 245, 255, 0.2);">
+                    <ul class="list-style-none mb-n4">
+                        <li class="mb-4 f4-mktg d-flex flex-items-center flex-justify-between js-build-in-item build-in-scale-fade build-in-animate" style="transition-delay: 200ms;">
+                            <div class="d-flex flex-items-center">
+                            <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-check-circle-fill color-fg-success mr-2">
+            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+        </svg>
+                            <span class="text-medium">Build</span>
+                            </div>
+                            <span class="f5 color-fg-muted d-none d-sm-block">1m 21s</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+        
+                <div class="home-campaign-ghas-connect position-relative position-md-absolute z-1 d-flex flex-items-center js-build-in-item build-in-scale-fade build-in-animate" style="transition-delay: 400ms;">
+                    <div class="d-inline-block circle p-1 color-bg-emphasis" style="box-shadow: 0 0 0 2px #444D56;"></div>
+                    <div style="width: 40px; height: 2px; background: #D1D5DA;"></div>
+                    <div class="d-inline-block circle p-1 color-bg-emphasis" style="box-shadow: 0 0 0 2px #444D56;"></div>
+                </div>
+        
+                <div class="col-md-6 js-build-in-item build-in-scale-right build-in-animate" style="transition-delay: 600ms;">
+                    <div class="pt-2 pb-1 px-4 rounded-top-2 d-inline-block text-medium" style="background: rgba(235, 245, 255, 0.2);">
+                    Steps
+                    </div>
+                    <div class="p-4 rounded-bottom-2 rounded-right-2 box-shadow-mktg-xl mb-6" style="background: rgba(235, 245, 255, 0.2);">
+                    <ul class="list-style-none mb-n4">
+                        <li class="mb-4 f4-mktg d-flex flex-items-center flex-justify-between js-build-in-item build-in-scale-fade build-in-animate" style="transition-delay: 800ms;">
+                            <div class="d-flex flex-items-center">
+                            <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-check-circle-fill color-fg-success mr-2">
+            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+        </svg>
+                            <span class="text-medium">Initialize CodeQL</span>
+                            </div>
+                            <span class="f5 color-fg-muted d-none d-sm-block">1m 42s</span>
+                        </li>
+                        <li class="mb-4 f4-mktg d-flex flex-items-center flex-justify-between js-build-in-item build-in-scale-fade build-in-animate" style="transition-delay: 1000ms;">
+                            <div class="d-flex flex-items-center">
+                            <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-check-circle-fill color-fg-success mr-2">
+            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+        </svg>
+                            <span class="text-medium">Autobuild</span>
+                            </div>
+                            <span class="f5 color-fg-muted d-none d-sm-block">1m 24s</span>
+                        </li>
+                        <li class="mb-4 f4-mktg d-flex flex-items-center flex-justify-between js-build-in-item build-in-scale-fade build-in-animate" style="transition-delay: 1200ms;">
+                            <div class="d-flex flex-items-center">
+                            <svg aria-hidden="true" height="24" viewBox="0 0 24 24" version="1.1" width="24" data-view-component="true" class="octicon octicon-check-circle-fill color-fg-success mr-2">
+            <path d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z"></path>
+        </svg>
+                            <span class="text-medium">Perform CodeQL Analyses</span>
+                            </div>
+                            <span class="f5 color-fg-muted d-none d-sm-block">1m 36s</span>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div data-target="card-skew.shine" class="position-absolute bottom-0 right-0 events-none z-n1" style="transform: translate(170.48px, -32.61px);"></div>
+            </div>
+            </card-skew>
+            </div>
+    </div>
+  </body>
+  </html>
