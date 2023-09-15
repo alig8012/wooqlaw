@@ -796,6 +796,10 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
+.my-1 {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -807,6 +811,10 @@ select {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 .-ml-1 {
   margin-left: -0.25rem;
@@ -1045,6 +1053,9 @@ select {
 .h-44 {
   height: 11rem;
 }
+.h-48 {
+  height: 12rem;
+}
 .h-5 {
   height: 1.25rem;
 }
@@ -1063,32 +1074,11 @@ select {
 .h-9 {
   height: 2.25rem;
 }
-.h-96 {
-  height: 24rem;
-}
 .h-\[100dvh\] {
   height: 100dvh;
 }
 .h-full {
   height: 100%;
-}
-.h-64 {
-  height: 16rem;
-}
-.h-72 {
-  height: 18rem;
-}
-.h-80 {
-  height: 20rem;
-}
-.h-60 {
-  height: 15rem;
-}
-.h-56 {
-  height: 14rem;
-}
-.h-48 {
-  height: 12rem;
 }
 .max-h-\[100dvh\] {
   max-height: 100dvh;
@@ -1194,9 +1184,6 @@ select {
 }
 .w-8 {
   width: 2rem;
-}
-.w-80 {
-  width: 20rem;
 }
 .w-9 {
   width: 2.25rem;
@@ -1938,6 +1925,9 @@ select {
 .p-10 {
   padding: 2.5rem;
 }
+.p-12 {
+  padding: 3rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2082,6 +2072,10 @@ select {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 .pb-1 {
   padding-bottom: 0.25rem;
@@ -3076,14 +3070,19 @@ select {
     grid-column: span 3 / span 3;
   }
 
+  .md\:my-6 {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
   .md\:my-3 {
     margin-top: 0.75rem;
     margin-bottom: 0.75rem;
   }
 
-  .md\:my-6 {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  .md\:my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   .md\:ml-2 {
@@ -3162,6 +3161,10 @@ select {
     height: 1.75rem;
   }
 
+  .md\:h-72 {
+    height: 18rem;
+  }
+
   .md\:h-8 {
     height: 2rem;
   }
@@ -3172,10 +3175,6 @@ select {
 
   .md\:h-9 {
     height: 2.25rem;
-  }
-
-  .md\:h-72 {
-    height: 18rem;
   }
 
   .md\:min-h-\[428px\] {
@@ -3415,6 +3414,10 @@ select {
     gap: 2rem;
   }
 
+  .md\:gap-9 {
+    gap: 2.25rem;
+  }
+
   .md\:space-x-3 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0.75rem * var(--tw-space-x-reverse));
@@ -3586,8 +3589,17 @@ select {
     padding-bottom: 2rem;
   }
 
+  .md\:py-10 {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
   .md\:pb-10 {
     padding-bottom: 2.5rem;
+  }
+
+  .md\:pb-4 {
+    padding-bottom: 1rem;
   }
 
   .md\:pb-5 {
@@ -3624,6 +3636,10 @@ select {
 
   .md\:pt-5 {
     padding-top: 1.25rem;
+  }
+
+  .md\:pb-3 {
+    padding-bottom: 0.75rem;
   }
 
   .md\:text-start {
