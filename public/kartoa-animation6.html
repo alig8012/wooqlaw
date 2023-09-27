@@ -1,0 +1,146 @@
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>Kartoa Animation 6</title>
+    
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+
+        <!-- Flow Bite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css"/>
+  
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <style>
+        :root{
+        --height: 188px;
+        }
+        .aos-animate .image-animate {
+        width: 100%;
+        animation: scale-up 1s ease-in-out, parallax 1s ease-in-out;
+        }
+
+        @media (max-width: 479px){
+        :root{
+        --height: 140px;
+        }
+        }
+
+        @keyframes scale-up {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: var(--height);
+        }
+        }
+
+        @keyframes parallax {
+        0% {
+            background-position: center;
+        }
+        100% {
+            background-position: bottom;
+        }
+        }
+
+    </style>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop()>10)
+            {
+                $('.kartoa').hide(1000);
+            }
+            else
+            {
+            $('.kartoa').show(1000);
+            }
+        });
+    </script>
+    
+    <style>
+        body{
+            height: 800px;
+        }
+        div{
+            background: #34d234;
+            border: 1px solid #000;
+            padding: 10px;
+            color: #fff;
+            margin-top:100px;
+        }    
+    </style>
+
+  </head>
+  
+  <body>
+    <section class="kartoa-animation6 container">
+    
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+
+    <div class="kartoa">
+        <ul>
+            <li>Home</li>
+            <li>Our Products</li>
+            <li>IT Argumentation</li>
+            <li>Services</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+
+    <div class="flex" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">
+        <div class="flex bg-black rounded-xl overflow-hidden">
+            <div class="transition duration-500 hover:scale-125">
+                <img src="images/islamabad.png" alt="">
+            </div>
+        </div>
+        <div class="flex bg-black rounded-xl overflow-hidden mt-10">
+            <div class="transition duration-500 hover:scale-125">
+                <img src="images/islamabad.png" alflext="">
+            </div>
+        </div>
+        <div class="flex bg-black rounded-xl overflow-hidden mt-20">
+            <div class="transition duration-500 hover:scale-125">
+                <img src="images/islamabad.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+    <div class="p-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, debitis soluta. Incidunt eius dolore, voluptatum alias sint vel quidem vero a nemo excepturi nihil voluptate nam officia quae pariatur. Ipsum cupiditate libero exercitationem molestiae, nihil eligendi amet in quia, quos sunt tenetur, consequatur maiores quo et labore beatae facilis doloremque.
+    </div>
+
+</section>
+
+    <!-- Flow Bite Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        AOS.init();
+    </script>
+
+  </body>
+  </html>
