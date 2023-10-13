@@ -1107,6 +1107,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .max-h-\[100dvh\] {
   max-height: 100dvh;
 }
