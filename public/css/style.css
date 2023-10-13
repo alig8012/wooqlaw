@@ -1107,6 +1107,9 @@ select {
 .h-full {
   height: 100%;
 }
+.h-80 {
+  height: 20rem;
+}
 .max-h-\[100dvh\] {
   max-height: 100dvh;
 }
