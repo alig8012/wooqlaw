@@ -785,6 +785,12 @@ select {
 .top-1\/2 {
   top: 50%;
 }
+.bottom-20 {
+  bottom: 5rem;
+}
+.-bottom-20 {
+  bottom: -5rem;
+}
 .-z-10 {
   z-index: -10;
 }
