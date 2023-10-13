@@ -46,7 +46,7 @@
             display: inline-block;
         }
     
-        #startbutton {
+        #takephoto {
             display: block;
             position: relative;
             margin-left: auto;
@@ -390,12 +390,7 @@
                             </div>
                             
                             <div class="contentarea">
-                                <h1>
-                                    Using Javascript to capture Photo
-                                </h1>
-                                <div class="camera">
-                                    <video id="video">Video stream not available.</video>
-                                </div>
+                                
                                 <div><button id="startbutton">Take photo</button></div>
                                 <canvas id="canvas"></canvas>
                                 <div class="output">
@@ -404,11 +399,13 @@
                             </div>
 
 
-                            <div class="flex flex-col items-center justify-end w-full h-40 md:h-80 p-2 md:p-6 rounded-lg bg-gray-900">
-                                
+                            <div class="relative flex flex-col items-center justify-end w-full h-40 md:h-80 p-2 md:p-6 rounded-lg bg-gray-900">
+                                <div class="camera absolute">
+                                    <video id="video">Video stream not available.</video>
+                                </div>
                                 <div class="flex p-2.5 gap-3 bg-gray-800 rounded-lg">
                                     <!-- Import -->
-                                    <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
+                                    <!-- <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
                                         <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_169_1823)">
                                             <path d="M0 26.9727C0 12.6133 11.6406 0.972656 26 0.972656C40.3594 0.972656 52 12.6133 52 26.9727C52 41.3321 40.3594 52.9727 26 52.9727C11.6406 52.9727 0 41.3321 0 26.9727Z" fill="#E9E9EB"/>
@@ -426,9 +423,9 @@
                                         <span class="block text-sm font-normal text-white">
                                             Import
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <!-- Flip -->
-                                    <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
+                                    <!-- <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
                                         <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_169_1831)">
                                             <path d="M0.5 26.9727C0.5 12.8894 11.9167 1.47266 26 1.47266C40.0833 1.47266 51.5 12.8894 51.5 26.9727C51.5 41.0559 40.0833 52.4727 26 52.4727C11.9167 52.4727 0.5 41.0559 0.5 26.9727Z" fill="#E9E9EB" stroke="black"/>
@@ -445,7 +442,7 @@
                                         <span class="block text-sm font-normal text-white">
                                             Flip
                                         </span>
-                                    </a>
+                                    </a> -->
                                     <!-- Take Photo -->
                                     <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
                                         <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -460,12 +457,12 @@
                                             </clipPath>
                                             </defs>
                                         </svg>
-                                        <span class="block text-sm font-normal text-white">
+                                        <span  id="takephoto" class="block text-sm font-normal text-white">
                                             Take Photo
                                         </span>
                                     </a>
                                     <!-- Scan -->
-                                    <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
+                                    <!-- <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
                                         <svg width="53" height="53" viewBox="0 0 53 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_169_1843)">
                                             <path d="M0.5 0.972656H52.5V52.9727H0.5V0.972656Z" fill="#0D5F9A"/>
@@ -484,9 +481,8 @@
                                         <span class="block text-sm font-normal text-white">
                                             Scan
                                         </span>
-                                    </a>
+                                    </a> -->
                                 </div>
-                                <input type="file" class="hidden" />
                             </div>
                         </div>
                         <!--  -->
@@ -538,13 +534,13 @@
             var video = null;
             var canvas = null;
             var photo = null;
-            var startbutton = null;
+            var takephoto = null;
     
             function startup() {
                 video = document.getElementById('video');
                 canvas = document.getElementById('canvas');
                 photo = document.getElementById('photo');
-                startbutton = document.getElementById('startbutton');
+                takephoto = document.getElementById('takephoto');
     
                 navigator.mediaDevices.getUserMedia({
                         video: true,
@@ -574,7 +570,7 @@
                     }
                 }, false);
     
-                startbutton.addEventListener('click', function(ev) {
+                takephoto.addEventListener('click', function(ev) {
                     takepicture();
                     ev.preventDefault();
                 }, false);
