@@ -37,7 +37,7 @@
         }
     
         .camera {
-            width: 340px;
+            /* width: 340px; */
             display: inline-block;
         }
     
@@ -51,10 +51,10 @@
             position: relative;
             margin-left: auto;
             margin-right: auto;
-            bottom: 36px;
-            padding: 5px;
+            /* bottom: 12px;
+            padding: 4px;
             background-color: #6a67ce;
-            border: 1px solid rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.7); */
             font-size: 14px;
             color: rgba(255, 255, 255, 1.0);
             cursor: pointer;
@@ -433,23 +433,17 @@
                                         </span>
                                     </a> -->
                                     <!-- Take Photo -->
-                                    <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
-                                        <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_169_1837)">
-                                            <path d="M0 0.972656H52V52.9727H0V0.972656Z" fill="#0D5F9A"/>
-                                            <path d="M16.6667 20.3086H18C18.7072 20.3086 19.3855 20.0276 19.8856 19.5275C20.3857 19.0274 20.6667 18.3492 20.6667 17.6419C20.6667 17.2883 20.8071 16.9492 21.0572 16.6991C21.3072 16.4491 21.6464 16.3086 22 16.3086H30C30.3536 16.3086 30.6928 16.4491 30.9428 16.6991C31.1929 16.9492 31.3333 17.2883 31.3333 17.6419C31.3333 18.3492 31.6143 19.0274 32.1144 19.5275C32.6145 20.0276 33.2928 20.3086 34 20.3086H35.3333C36.0406 20.3086 36.7189 20.5895 37.219 21.0896C37.719 21.5897 38 22.268 38 22.9753V34.9753C38 35.6825 37.719 36.3608 37.219 36.8609C36.7189 37.361 36.0406 37.6419 35.3333 37.6419H16.6667C15.9594 37.6419 15.2811 37.361 14.781 36.8609C14.281 36.3608 14 35.6825 14 34.9753V22.9753C14 22.268 14.281 21.5897 14.781 21.0896C15.2811 20.5895 15.9594 20.3086 16.6667 20.3086" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M26 32.3086C28.2091 32.3086 30 30.5177 30 28.3086C30 26.0995 28.2091 24.3086 26 24.3086C23.7909 24.3086 22 26.0995 22 28.3086C22 30.5177 23.7909 32.3086 26 32.3086Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_169_1837">
-                                            <rect y="0.972656" width="52" height="52" rx="26" fill="white"/>
-                                            </clipPath>
-                                            </defs>
-                                        </svg>
-                                        <span  id="takephoto" class="block text-sm font-normal text-white">
+                                    <button id="takephoto" type="submit" class="flex w-40 py-2.5 rounded-lg text-xs md:text-sm font-medium text-center text-white bg-violet-700 hover:bg-violet-800 focus:ring-4 focus:outline-none focus:ring-violet-300 items-center justify-center">
+                                        <div class="flex items-center justify-center gap-2" href="#">
+                                            <span class="w-6 h-5">
+                                                <svg class="w-6 h-5" viewBox="0 0 28 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.66667 5.30859H6C6.70724 5.30859 7.38552 5.02764 7.88562 4.52755C8.38572 4.02745 8.66667 3.34917 8.66667 2.64193C8.66667 2.28831 8.80714 1.94917 9.05719 1.69912C9.30724 1.44907 9.64638 1.30859 10 1.30859H18C18.3536 1.30859 18.6928 1.44907 18.9428 1.69912C19.1929 1.94917 19.3333 2.28831 19.3333 2.64193C19.3333 3.34917 19.6143 4.02745 20.1144 4.52755C20.6145 5.02764 21.2928 5.30859 22 5.30859H23.3333C24.0406 5.30859 24.7189 5.58955 25.219 6.08964C25.719 6.58974 26 7.26802 26 7.97526V19.9753C26 20.6825 25.719 21.3608 25.219 21.8609C24.7189 22.361 24.0406 22.6419 23.3333 22.6419H4.66667C3.95942 22.6419 3.28115 22.361 2.78105 21.8609C2.28095 21.3608 2 20.6825 2 19.9753V7.97526C2 7.26802 2.28095 6.58974 2.78105 6.08964C3.28115 5.58955 3.95942 5.30859 4.66667 5.30859" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                    <path d="M14 17.3086C16.2091 17.3086 18 15.5177 18 13.3086C18 11.0995 16.2091 9.30859 14 9.30859C11.7909 9.30859 10 11.0995 10 13.3086C10 15.5177 11.7909 17.3086 14 17.3086Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                            </span>
                                             Take Photo
-                                        </span>
-                                    </a>
+                                        </div>
+                                    </button>
                                     <canvas id="canvas"></canvas>
                                     <!-- Scan -->
                                     <!-- <a href="#" class="flex flex-col px-3 gap-2.5 items-center">
