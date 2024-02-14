@@ -1,19 +1,187 @@
 // fullName = "Kartoa";
-// console.log(fullName);
+// console.log(typeof fullName);
+
+/* >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> */
+
+// console.log("wooqlaw.com");    
+// alert("Kartoa");
+// prompt("Kartoa","Your Comments Here");
+// confirm("Login");
+// document.write("wellcome");
+
+/* >>>>>>>>>>>>>> Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Artimetic Operators >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+
+// console.log("a + b = ", a + b);
+// console.log("a - b = ", a - b);
+// console.log("a / b = ", a / b);
+// console.log("a * b = ", a * b);
+// console.log("a % b = ", a % b);
+// console.log("a ** b = ", a ** b);
+
+/* >>>>>>>>>>>>>> Unary Operators >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// a = a + 1;
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut a++ >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// a++;
+// console.log("a = ", a);
 
 /* >>>>>>>>>>>>>> ********** >>>>>>>>>>>>>> */
 
-// console.log("wooqlaw.com");
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// a = a - 1;
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut a-- >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// a--;
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut a++ >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// console.log("a++ = ", a++);
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut ++a >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// console.log("++a = ", ++a);
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut a-- >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// console.log("a-- = ", a--);
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> or shortcut --a >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("a = ", a, " & b = ", b);
+// console.log("--a = ", --a);
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Asignment Operators a += 4; a -= 4; a *= 4; a /= 4; a %= 4; a **= 4; >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// a += 4;
+// console.log("a = ", a);
+
+/* >>>>>>>>>>>>>> Comparison Operators >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = 2;
+
+// console.log("5 == 2", a == b);
+// console.log("5 != 2", a != b);
+// console.log("5 === 2", a === b);
+// console.log("5 !== 2", a !== b);
+// console.log("5 > 2", a > b);
+// console.log("5 < 2", a < b);
 
 /* >>>>>>>>>>>>>> ********** >>>>>>>>>>>>>> */
-    
-// alert("me");
+
+// let a = 5;
+// let b = 5;
+
+// console.log("5 >= 5", a >= b);
+// console.log("5 <= 5", a <= b);
+
+/* >>>>>>>>>>>>>> Comparison Operators ( 1st "5" string to convert in -> number ) >>>>>>>>>>>>>> */
+
+// let a = 5;
+// let b = "5";
+
+// console.log("a == b", a == b);
+// console.log("a === b", a === b);
+// console.log("a !== b", a !== b);
+
+/* >>>>>>>>>>>>>> Logical Operators ( && ) >>>>>>>>>>>>>> */
+
+// let a = 6;
+// let b = 5;
+
+// let cond1 = a > b;
+// let cond2 = a === 6;
+// console.log("cond1 && cond2 = ", cond1 && cond2);
+
+/* >>>>>>>>>>>>>> ********** let a = 6 to let cond2 = a === 4; >>>>>>>>>>>>>> */
+
+// let a = 6;
+// let b = 5;
+
+// let cond1 = a > b;
+// let cond2 = a === 4;
+// console.log("cond1 && cond2 = ", cond1 && cond2);
+
+/* >>>>>>>>>>>>>> ********** let a = 6; to let cond1 = a < b; >>>>>>>>>>>>>> */
+
+// let a = 6;
+// let b = 5;
+
+// let cond1 = a < b;
+// let cond2 = a === 6;
+// console.log("cond1 && cond2 = ", cond1 && cond2);
 
 /* >>>>>>>>>>>>>> ********** >>>>>>>>>>>>>> */
 
-// var number1 = 34;
-// var number2 = 56;
-// console.log(number1 + number2);
+// let a = 6;
+// let b = 5;
+
+// console.log("cond1 && cond2 = ", a < b && a === 6);
+
+/* >>>>>>>>>>>>>> Logical Operators ( || ) Pipe Sign -> || >>>>>>>>>>>>>> */
+
+// let a = 6;
+// let b = 5;
+
+// console.log("cond1 || cond2 = ", a < b || a === 6);
+
+/* >>>>>>>>>>>>>> Logical Operators ( ! ) true to false and false to true >>>>>>>>>>>>>> */
+
+// let a = 6;
+// let b = 5;
+
+// console.log("!(6<5) = ", !(a < b));
+// console.log("!(6<5) = ", !(a === 6));
 
 /* >>>>>>>>>>>>>> ********** >>>>>>>>>>>>>> */
 
