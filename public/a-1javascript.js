@@ -315,6 +315,32 @@ Symbol => unique
 // }
 
 /* >>>>>>>>>>>>>> 2- if-else Statements >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> odd or even >>>>>>>>>>>>>> */
+
+// let num = 10;
+
+// if (num % 2 === 0) {
+//     console.log(num, "is even");
+// }
+
+// else {
+//     console.log(num, "is odd");
+// }
+
+/* >>>>>>>>>>>>>> 2- if-else Statements >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> odd or even >>>>>>>>>>>>>> */
+
+// let num = 7;
+
+// if (num % 2 === 0) {
+//     console.log(num, "is even");
+// }
+
+// else {
+//     console.log(num, "is odd");
+// }
+
+/* >>>>>>>>>>>>>> 2- if-else Statements >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> dark mode apply in ( DOM ) >>>>>>>>>>>>>> */
 
 // let mode = "light";
@@ -329,4 +355,27 @@ Symbol => unique
 // }
 
 // console.log(color);
+
+/* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
+
+let mode = "blue";
+let color;
+
+if (mode === "dark") {
+    color = "black";
+}
+
+else if (mode === "blue") {
+    color = "blue";
+}
+
+else if (mode === "pink") {
+    color = "pink";
+}
+
+else {
+    color = "white";
+}
+
+console.log(color);
 
