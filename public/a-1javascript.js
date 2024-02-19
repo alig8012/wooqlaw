@@ -217,6 +217,14 @@ Symbol => unique
 // console.log("5 >= 5", a >= b);
 // console.log("5 <= 5", a <= b);
 
+/* >>>>>>>>>>>>>> Ternary Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> ( ? ) simpler, compact if-else >>>>>>>>>>>>>> */
+
+// let age = 25;
+
+// let result = age >= 18 ? "adult" : "not adult";
+// console.log(result);
+
 /* >>>>>>>>>>>>>> 4-Logical Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> ( && ) >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> let cond1 = a > b , let cond2 = a === 6 >>>>>>>>>>>>>> */
@@ -280,7 +288,6 @@ Symbol => unique
 // if (age >= 18) {
 //     console.log("you can vote");
 // }
-
 // if (age < 18) {
 //     console.log("you cannot vote");
 // }
@@ -294,7 +301,6 @@ Symbol => unique
 // if (mode === "dark") {
 //     color = "black";
 // }
-
 // if (mode === "light") {
 //     color = "white";
 // }
@@ -309,7 +315,6 @@ Symbol => unique
 // if (age >= 18) {
 //     console.log("vote");
 // }
-
 // else {
 //     console.log("not vote");
 // }
@@ -322,7 +327,6 @@ Symbol => unique
 // if (num % 2 === 0) {
 //     console.log(num, "is even");
 // }
-
 // else {
 //     console.log(num, "is odd");
 // }
@@ -335,7 +339,6 @@ Symbol => unique
 // if (num % 2 === 0) {
 //     console.log(num, "is even");
 // }
-
 // else {
 //     console.log(num, "is odd");
 // }
@@ -349,7 +352,6 @@ Symbol => unique
 // if (mode === "dark") {
 //     color = "black";
 // }
-
 // else {
 //     color = "white";
 // }
@@ -358,24 +360,85 @@ Symbol => unique
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 
-let mode = "blue";
-let color;
+// let mode = "blue";
+// let color;
 
-if (mode === "dark") {
-    color = "black";
-}
+// if (mode === "dark") {
+//     color = "black";
+// }
+// else if (mode === "blue") {
+//     color = "blue";
+// }
+// else if (mode === "pink") {
+//     color = "pink";
+// }
+// else {
+//     color = "white";
+// }
 
-else if (mode === "blue") {
-    color = "blue";
-}
+// console.log(color);
 
-else if (mode === "pink") {
-    color = "pink";
-}
+/* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 
-else {
-    color = "white";
-}
+// let a = prompt("whats your age?");
+// a = Number.parseInt(a);
 
-console.log(color);
+// if(a<0){
+//     alert("This is an invalid age");
+// }
+// else if(a<9){
+//     alert("You are a kid");
+// }
+// else if(a<18 && a>9){
+//     alert("You are a kid and you can driving after 18");
+// }
+// else{
+//     alert("you can drive");
+// }
+
+/* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
+
+// let score = 90;
+// let grade;
+
+// if (score >= 90 && score <= 100) {
+//     grade = "A";
+// }
+// else if (score >= 70 && score <= 89) {
+//     grade = "B";
+// }
+// else if (score >= 60 && score <= 69) {
+//     grade = "C";
+// }
+// else if (score >= 50 && score <= 59) {
+//     grade = "D";
+// }
+// else if (score >= 0 && score <= 49) {
+//     grade = "E";
+// }
+// console.log("according to your scores, your grade was : ", grade);
+
+/* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> with prompt >>>>>>>>>>>>>> */
+
+// let score = prompt("enter your score (0-100):");
+// let grade;
+
+// if (score >= 90 && score <= 100) {
+//     grade = "A";
+// }
+// else if (score >= 70 && score <= 89) {
+//     grade = "B";
+// }
+// else if (score >= 60 && score <= 69) {
+//     grade = "C";
+// }
+// else if (score >= 50 && score <= 59) {
+//     grade = "D";
+// }
+// else if (score >= 0 && score <= 49) {
+//     grade = "E";
+// }
+// console.log("according to your scores, your grade was : ", grade);
+
 
