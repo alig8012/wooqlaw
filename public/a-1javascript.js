@@ -441,4 +441,60 @@ Symbol => unique
 // }
 // console.log("according to your scores, your grade was : ", grade);
 
+/* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+
+// for (let count = 1; count <= 5
+    
+//     ; count++) {
+//     console.log("Kartoa");
+// }
+
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+
+// for (let i = 0; i < 10; i++) {
+//     const element = i;
+//     console.log(element);
+// }
+
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+
+// for (let i = 0; i <= 10; i++) {
+//     const element = i;
+//     console.log(element);
+// }
+
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+
+// for (let i = 0; i < 10; i++) {
+//     console.log(i+1);
+// }
+
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
+
+// let sum = 0
+// let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
+
+// for (let i = 0; i < n; i++) {
+//     sum += (i+1);
+// }
+// console.log("Sum of first " + n + " natural number is " + sum);
+
+/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> or show >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> console.log((i+1), "+") >>>>>>>>>>>>>> */
+
+// let sum = 0
+// let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
+
+// for (let i = 0; i < n; i++) {
+//     sum += (i+1);
+//     console.log((i+1), "+")
+// }
+// console.log("Sum of first " + n + " natural number is " + sum);
+
 
