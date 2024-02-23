@@ -444,11 +444,12 @@ Symbol => unique
 /* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
 
-// for (let count = 1; count <= 5
+// for (let count = 1; count <= 10000
     
 //     ; count++) {
 //     console.log("Kartoa");
 // }
+// console.log("loop has ended");
 
 /* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
 
@@ -496,5 +497,25 @@ Symbol => unique
 //     console.log((i+1), "+")
 // }
 // console.log("Sum of first " + n + " natural number is " + sum);
+
+/* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+
+// let i = 1;
+// while (i <= 1000) {
+//     console.log("Kartoa");
+//     i++;
+// }
+
+/* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+
+// let n = prompt("Enter the value of n")
+// n = Number.parseInt(n)
+
+// let i = 0;
+// while (i<n) {
+//     console.log(i)
+//     i++;
+// }
 
 
