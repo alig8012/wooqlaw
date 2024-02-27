@@ -500,6 +500,9 @@ Symbol => unique
 
 /* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
 
 // let i = 1;
 // while (i <= 1000) {
@@ -508,6 +511,9 @@ Symbol => unique
 // }
 
 /* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
 
 // let n = prompt("Enter the value of n")
 // n = Number.parseInt(n)
@@ -518,4 +524,27 @@ Symbol => unique
 //     i++;
 // }
 
+/* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 3-Do While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
 
+// let i = 20;
+// do {
+//     console.log("Kartoa");
+//     i++;
+// }
+// while (i <= 10);
+
+/* >>>>>>>>>>>>>> 3-Do While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
+
+let i = 1;
+do {
+    console.log("i=",i);
+    i++;
+}
+while (i <= 10);
