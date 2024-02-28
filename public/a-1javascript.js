@@ -542,9 +542,59 @@ Symbol => unique
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
 
-let i = 1;
-do {
-    console.log("i=",i);
-    i++;
-}
-while (i <= 10);
+// let i = 1;
+// do {
+//     console.log("i=",i);
+//     i++;
+// }
+// while (i <= 10);
+
+/* >>>>>>>>>>>>>> 4-For-in Loop >>>>>>>>>>>>>> */
+
+// let student = {
+//     name: "Ali",
+//     age: 20,
+//     cpga: 7.5,
+//     isPass: true,
+// };
+
+// for (let key in student) {
+//     console.log("key=", key, " value=", student[key]);
+// }
+
+/* >>>>>>>>>>>>>> 4-For-in Loop >>>>>>>>>>>>>> */
+
+// let obj = {
+//     Ali: 90,
+//     Ahmed: 85,
+//     Sohail: 80,
+    
+// }
+
+// for (let a in obj){
+//     console.log("Marks of " + a + " are " + obj[a])
+// }
+
+/* >>>>>>>>>>>>>> 5-For-of Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Notes: (let i of str) i is iterator -> Characters >>>>>>>>>>>>>> */
+
+// let str = "Kartoa";
+
+// for (let i of str) {
+//     console.log("i=", i);
+// }
+
+/* >>>>>>>>>>>>>> 5-For-of Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Notes: (let val of str) val is value >>>>>>>>>>>>>> */
+
+// let str = "Kartoa";
+
+// let size = 0;
+// for (let val of str) {
+//     console.log("val=", val);
+//     size++;
+// }
+
+// console.log("string size = ", size);
+
+
