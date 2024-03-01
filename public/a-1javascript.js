@@ -218,7 +218,7 @@ Symbol => unique
 // console.log("5 <= 5", a <= b);
 
 /* >>>>>>>>>>>>>> Ternary Operators >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> ( ? ) simpler, compact if-else >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> ( ? ) simpler, compact, shortcut of if-else >>>>>>>>>>>>>> */
 
 // let age = 25;
 
