@@ -597,9 +597,5 @@ Symbol => unique
 
 // console.log("string size = ", size);
 
-/* >>>>>>>>>>>>>> Break and Continue >>>>>>>>>>>>>> */
-        statrt write in html or console ???? delete
-
-let str = "Kartoa";
 
 
