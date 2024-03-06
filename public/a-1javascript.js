@@ -383,24 +383,6 @@ Symbol => unique
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 
-let a = prompt("whats your age?");
-a = Number.parseInt(a);
-
-if(a<0){
-    alert("This is an invalid age");
-}
-else if(a<9){
-    alert("You are a kid");
-}
-else if(a<18 && a>9){
-    alert("You are a kid and you can driving after 18");
-}
-else{
-    alert("you can drive");
-}
-
-/* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
-
 // let score = 90;
 // let grade;
 
@@ -422,8 +404,7 @@ else{
 // console.log("according to your scores, your grade was : ", grade);
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> with prompt >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> With Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
 
 // let score = prompt("enter your score (0-100):");
 // let grade;
