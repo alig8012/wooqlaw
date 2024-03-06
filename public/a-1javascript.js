@@ -423,6 +423,7 @@ else{
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> with prompt >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
 
 // let score = prompt("enter your score (0-100):");
 // let grade;
