@@ -78,6 +78,9 @@ Symbol => unique
 // console.log(student["name"]);
 
 /* >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Alert >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Prompt >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> Confirm >>>>>>>>>>>>>> */
 
 // console.log("wooqlaw.com");
 // document.write("wellcome");
@@ -380,21 +383,21 @@ Symbol => unique
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 
-// let a = prompt("whats your age?");
-// a = Number.parseInt(a);
+let a = prompt("whats your age?");
+a = Number.parseInt(a);
 
-// if(a<0){
-//     alert("This is an invalid age");
-// }
-// else if(a<9){
-//     alert("You are a kid");
-// }
-// else if(a<18 && a>9){
-//     alert("You are a kid and you can driving after 18");
-// }
-// else{
-//     alert("you can drive");
-// }
+if(a<0){
+    alert("This is an invalid age");
+}
+else if(a<9){
+    alert("You are a kid");
+}
+else if(a<18 && a>9){
+    alert("You are a kid and you can driving after 18");
+}
+else{
+    alert("you can drive");
+}
 
 /* >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> */
 
