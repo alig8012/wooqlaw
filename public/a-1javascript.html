@@ -27,6 +27,8 @@
 
     <!-- >>>>>>>>>>>>>> Difference Between >>>>>>>>>>>>>> -->
     <!-- >>>>>>>>>>>>>> console.log & document.write >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> console.log Show in Console  >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> document.write Show in Browser >>>>>>>>>>>>>> -->
 
     <script>
         console.log("wooqlaw.com");
@@ -34,29 +36,49 @@
     </script>
 
     <!-- >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> -->
-    <!-- >>>>>>>>>>>>>> Alert, Prompt, Confirm Box Show in Browser >>>>>>>>>>>>>> -->
-    
-    <!-- >>>>>>>>>>>>>> Alert Box >>>>>>>>>>>>>> -->
-    <!-- >>>>>>>>>>>>>> Alert box does not return anything >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> 1- Alert Box >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> Show in Browser & does not return anything >>>>>>>>>>>>>> -->
     
     <!-- <script>
         alert("Kartoa");
     </script> -->
     
-    <!-- >>>>>>>>>>>>>> Prompt Box >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> -->
+`   <!-- >>>>>>>>>>>>>> 2- Prompt Box >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> With Prompt in Browser & Show in Console  >>>>>>>>>>>>>> -->
     
     <!-- <script>
-        prompt("Kartoa","Your Comments Here");
+        let name = prompt("Kartoa","Your Comments Here");
+        console.log(name);
     </script> -->
     
-    <!-- >>>>>>>>>>>>>> Confirm Box >>>>>>>>>>>>>> -->
-    
+    <!-- >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> 3- Confirm Box >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> With Confirm in Browser & Show in Console  >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> if Ok Show True & Cancel Show, False >>>>>>>>>>>>>> -->
+
     <!-- <script>
-        confirm("Login");
+        let deletePost = confirm("Yes Delete");
+        console.log(deletePost);
+    </script> -->
+
+    <!-- >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> 3- Confirm Box >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> With Confirm in Browser & Show in Console  >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> if Ok Show Yes & Cancel Show, Not >>>>>>>>>>>>>> -->
+
+    <!-- <script>
+        let deletePost = confirm("Do you want to delete this post?");
+        if (deletePost) {
+            console.log("Yes Delete");
+        }
+        else {
+            console.log("Not Delete");
+        }
     </script> -->
 
     <!-- >>>>>>>>>>>>>> 3- else-if Statements >>>>>>>>>>>>>> -->
-    <!-- >>>>>>>>>>>>>> With Prompt in Browser & Show in Alert  >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> With Prompt in Browser & Show in Alert Box  >>>>>>>>>>>>>> -->
     
     <!-- <script>
         let a = prompt("whats your age?");
@@ -151,6 +173,7 @@
 
     <!-- >>>>>>>>>>>>>> Break & Continue >>>>>>>>>>>>>> -->
     <!-- >>>>>>>>>>>>>> Break >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> Show in Browser >>>>>>>>>>>>>> -->
 
 <!-- <script>
     for(let counter=1; counter<=10; counter++){
@@ -166,6 +189,7 @@
 
     <!-- >>>>>>>>>>>>>> Break & Continue >>>>>>>>>>>>>> -->
     <!-- >>>>>>>>>>>>>> Continue >>>>>>>>>>>>>> -->
+    <!-- >>>>>>>>>>>>>> Show in Browser >>>>>>>>>>>>>> -->
 
 <!-- <script>
     for(let counter=1; counter<=10; counter++){
