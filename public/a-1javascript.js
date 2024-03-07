@@ -1,4 +1,5 @@
 /* >>>>>>>>>>>>>> Javascript >>>>>>>>>>>>>> */
+
 /* >>>>>>>>>>>>>> Veriables >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> fullName is a Veriables & "Kartoa" is a Value >>>>>>>>>>>>>> */
 
@@ -77,19 +78,8 @@ Symbol => unique
 // student["name"] = "Ahmed";
 // console.log(student["name"]);
 
-/* >>>>>>>>>>>>>> Important Function >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> Alert >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> Prompt >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> Confirm >>>>>>>>>>>>>> */
-
-// console.log("wooqlaw.com");
-// document.write("wellcome");
-// alert("Kartoa");
-// prompt("Kartoa","Your Comments Here");
-// confirm("Login");
-
 /* >>>>>>>>>>>>>> Operators >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 1-Artimetic Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- Artimetic Operators >>>>>>>>>>>>>> */
  
 // let a = 5;
 // let b = 2;
@@ -104,7 +94,7 @@ Symbol => unique
 // console.log("a ** b = ", a ** b);
 
 /* >>>>>>>>>>>>>> Operators >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 1-Artimetic Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- Artimetic Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Increment - Decrement >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Unary Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> a = a + 1 or shortcut a++ >>>>>>>>>>>>>> */
@@ -182,7 +172,7 @@ Symbol => unique
 // console.log("a = ", a);
 
 /* >>>>>>>>>>>>>> Operators >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 2-Asignment Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 2- Asignment Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> a += 4; a -= 4; a *= 4; a /= 4; a %= 4; a **= 4; >>>>>>>>>>>>>> */
 
 // let a = 5;
@@ -191,7 +181,7 @@ Symbol => unique
 // a += 4;
 // console.log("a = ", a);
 
-/* >>>>>>>>>>>>>> 3-Comparison Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 3- Comparison Operators >>>>>>>>>>>>>> */
 
 // let a = 5;
 // let b = 2;
@@ -228,7 +218,7 @@ Symbol => unique
 // let result = age >= 18 ? "adult" : "not adult";
 // console.log(result);
 
-/* >>>>>>>>>>>>>> 4-Logical Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 4- Logical Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> ( && ) >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> let cond1 = a > b , let cond2 = a === 6 >>>>>>>>>>>>>> */
 
@@ -266,7 +256,7 @@ Symbol => unique
 
 // console.log("cond1 && cond2 = ", a < b && a === 6);
 
-/* >>>>>>>>>>>>>> 4-Logical Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 4- Logical Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> ( || ) Pipe Sign -> || >>>>>>>>>>>>>> */
 
 // let a = 6;
@@ -274,7 +264,7 @@ Symbol => unique
 
 // console.log("cond1 || cond2 = ", a < b || a === 6);
 
-/* >>>>>>>>>>>>>> 4-Logical Operators >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 4- Logical Operators >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> ( ! ) true to false and false to true >>>>>>>>>>>>>> */
 
 // let a = 6;
@@ -427,7 +417,7 @@ Symbol => unique
 // console.log("according to your scores, your grade was : ", grade);
 
 /* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 
 // for (let count = 1; count <= 10000
     
@@ -436,27 +426,27 @@ Symbol => unique
 // }
 // console.log("loop has ended");
 
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 
 // for (let i = 0; i < 10; i++) {
 //     const element = i;
 //     console.log(element);
 // }
 
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 
 // for (let i = 0; i <= 10; i++) {
 //     const element = i;
 //     console.log(element);
 // }
 
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 
 // for (let i = 0; i < 10; i++) {
 //     console.log(i+1);
 // }
 
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
 
 // let sum = 0
@@ -468,7 +458,7 @@ Symbol => unique
 // }
 // console.log("Sum of first " + n + " natural number is " + sum);
 
-/* >>>>>>>>>>>>>> 1-For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> or show >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> console.log((i+1), "+") >>>>>>>>>>>>>> */
@@ -484,7 +474,7 @@ Symbol => unique
 // console.log("Sum of first " + n + " natural number is " + sum);
 
 /* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 2- While Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
@@ -495,7 +485,7 @@ Symbol => unique
 //     i++;
 // }
 
-/* >>>>>>>>>>>>>> 2-While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 2- While Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
@@ -510,7 +500,7 @@ Symbol => unique
 // }
 
 /* >>>>>>>>>>>>>> Loops >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> 3-Do While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 3- Do While Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
@@ -522,7 +512,7 @@ Symbol => unique
 // }
 // while (i <= 10);
 
-/* >>>>>>>>>>>>>> 3-Do While Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 3- Do While Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
@@ -534,7 +524,7 @@ Symbol => unique
 // }
 // while (i <= 10);
 
-/* >>>>>>>>>>>>>> 4-For-in Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 4- For-in Loop >>>>>>>>>>>>>> */
 
 // let student = {
 //     name: "Ali",
@@ -547,7 +537,7 @@ Symbol => unique
 //     console.log("key=", key, " value=", student[key]);
 // }
 
-/* >>>>>>>>>>>>>> 4-For-in Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 4- For-in Loop >>>>>>>>>>>>>> */
 
 // let obj = {
 //     Ali: 90,
@@ -560,7 +550,7 @@ Symbol => unique
 //     console.log("Marks of " + a + " are " + obj[a])
 // }
 
-/* >>>>>>>>>>>>>> 5-For-of Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 5- For-of Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Notes: (let i of str) i is iterator -> Characters >>>>>>>>>>>>>> */
 
 // let str = "Kartoa";
@@ -569,7 +559,7 @@ Symbol => unique
 //     console.log("i=", i);
 // }
 
-/* >>>>>>>>>>>>>> 5-For-of Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> 5- For-of Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Notes: (let val of str) val is value >>>>>>>>>>>>>> */
 
 // let str = "Kartoa";
