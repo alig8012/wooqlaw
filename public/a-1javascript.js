@@ -447,6 +447,7 @@ Symbol => unique
 // }
 
 /* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> With Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
 
 // let sum = 0
@@ -460,7 +461,7 @@ Symbol => unique
 
 /* >>>>>>>>>>>>>> 1- For Loop >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> sum += (i+1); >>>>>>>>>>>>>> */
-/* >>>>>>>>>>>>>> or show >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> With Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> console.log((i+1), "+") >>>>>>>>>>>>>> */
 
 // let sum = 0
@@ -489,6 +490,7 @@ Symbol => unique
 /* >>>>>>>>>>>>>> Important Notes: in (while loop) last condition after curly bracket } (without semicolon;) not write semicolon; >> } <<  >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> and >>>>>>>>>>>>>> */
 /* >>>>>>>>>>>>>> Important Notes: in (do while loop) last condition after bracket ) (with semicolon;) write semicolon; >> }; <<  >>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>> With Prompt in Browser & Show in Console >>>>>>>>>>>>>> */
 
 // let n = prompt("Enter the value of n")
 // n = Number.parseInt(n)
