@@ -1,0 +1,59 @@
+*{
+    margin: 2%;
+    padding: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 1000px;
+    height: 600px;
+}
+.name{
+    font-size: larger;
+    color: deepskyblue;
+    text-align: center;
+}
+.instrucions{
+    font-size: medium;
+    color: black;
+    text-align: center;
+}
+.main{
+    display: flex;
+    border-top: 1px solid gray;
+    width: 400px;
+    height: 200px;
+    
+}
+.main:hover{
+    background-color: aqua;
+}
+.dot{
+    height: 12px;
+    width: 12px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}
+.meeting{
+    font-size: larger;
+    color: black;
+    font-weight: 600;
+}
+.next{
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+.cookie{
+    font-size: small;
+    color: deepskyblue;
+    margin-left: -1%;
+}
+.cookie:hover{
+    
+}
