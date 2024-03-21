@@ -7,65 +7,162 @@
     display: flex;
 }
 .container1{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid gray;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
-    width: 1000px;
-    height: 600px;
-}
-.name{
-    font-size: larger;
-    color: deepskyblue;
-    text-align: center;
-}
-.instrucions{
-    font-size: medium;
-    color: black;
-    text-align: center;
-}
-.main{
-    display: flex;
-    border-top: 1px solid gray;
     width: 400px;
-    height: 200px;
-    
+    height: 600px;
+    justify-content: space-between;
 }
-.main:hover{
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -10px;
+}
+.back-main{
+    display: flex;
+    padding: 4px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+.back-main:hover{
     background-color: aqua;
 }
-.dot{
-    height: 12px;
-    width: 12px;
-    background-color: green;
-    border-radius: 50%;
-    display: inline-block;
+.main1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.name{
+    font-size: medium;
+    color: deepskyblue;
+}
+.meeting{
+    font-size: larger;
+    font-weight: 600;
+    color: black;
+    margin-top: -8px;
+    width: 100%;
+}
+.main2{
+    display: flex;
+    align-items: center;
+}
+.clock{
+    /* color: deepskyblue; */
+}
+.minute{
+    font-size: medium;
+    color: deepskyblue;
+    margin-left: 4px;
 }
 .meeting{
     font-size: larger;
     color: black;
     font-weight: 600;
 }
-.next{
-    height: 25px;
-    width: 25px;
-    background-color: red;
-    border-radius: 50%;
-    display: inline-block;
+.cookie-report{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
 }
 .cookie{
     font-size: small;
     color: deepskyblue;
-    margin-left: -1%;
+}
+.report{
+    font-size: small;
+    color: black;
 }
 .cookie:hover{
     
 }
+
 .container2{
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border: 1px solid gray;
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    width: 1000px;
+    width: 400px;
     height: 600px;
+    justify-content: space-between;
 }
+.home2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: -10px;
+}
+.select{
+    font-size: medium;
+    color: black;
+    font-weight: 600;
+    width: 100%;
+}
+.next-back{
+    display: flex;
+    gap: 20%;
+}
+.back{
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(213, 249, 249);
+    justify-content: center;
+    align-items: center;
+}
+.back:hover{
+    background-color: aqua;
+}
+.march{
+    font-size: small;
+    color: black;
+}
+.next{
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(213, 249, 249);
+    justify-content: center;
+    align-items: center;
+}
+.next:hover{
+    background-color: aqua;
+}
+.time-zone{
+    display: flex;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(213, 249, 249);
+    justify-content: center;
+    align-items: center;
+}
+.time{
+
+}
+.zone{
+
+}
+.map-icone{
+
+}
+.location{
+
+}
+.select-zone{
+
+}
+
+

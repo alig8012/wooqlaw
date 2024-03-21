@@ -22,10 +22,11 @@
 }
 .main{
     display: flex;
+    background-color: white;
     border-top: 1px solid gray;
+    /* border: none; */
     width: 400px;
     height: 200px;
-    
 }
 .main:hover{
     background-color: aqua;
@@ -42,10 +43,9 @@
     color: black;
     font-weight: 600;
 }
-.next{
+.next-icon2{
     height: 25px;
     width: 25px;
-    background-color: red;
     border-radius: 50%;
     display: inline-block;
 }
