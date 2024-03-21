@@ -17,7 +17,7 @@
     height: 600px;
     justify-content: space-between;
 }
-.home{
+.home1{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -26,11 +26,11 @@
 .back-main{
     display: flex;
     padding: 4px;
-    border: 1px solid black;
+    border: 1px solid gray;
     border-radius: 50%;
     background-color: white;
     justify-content: center;
-    align-items: center;
+    cursor: pointer;
 }
 .back-main:hover{
     background-color: aqua;
@@ -81,8 +81,11 @@
     font-size: small;
     color: black;
 }
-.cookie:hover{
-    
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 
 .container2{
@@ -108,6 +111,9 @@
     font-weight: 600;
     width: 100%;
 }
+.calendar{
+
+}
 .next-back{
     display: flex;
     gap: 20%;
@@ -119,7 +125,7 @@
     border-radius: 50%;
     background-color: rgb(213, 249, 249);
     justify-content: center;
-    align-items: center;
+    cursor: pointer;
 }
 .back:hover{
     background-color: aqua;
@@ -135,25 +141,83 @@
     border-radius: 50%;
     background-color: rgb(213, 249, 249);
     justify-content: center;
-    align-items: center;
+    cursor: pointer;
 }
 .next:hover{
     background-color: aqua;
 }
-.time-zone{
+.week-day{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    font-size: small;
+    color: black; 
+}
+.week{
+    display: flex;
+    justify-content: center;
+}
+.day1{
+    display: flex;
+    gap: 12%;
+    justify-content: center;
+}
+.day2{
+    display: flex;
+    gap: 8%;
+    justify-content: center;
+}
+.day3{
+    display: flex;
+    gap: 7%;
+    justify-content: center;
+}
+.day4{
+    display: flex;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.day5{
+    display: flex;
+    gap: 8%;
+    justify-content: end;
+}
+.a22{
     display: flex;
     padding: 15px;
     border: none;
     border-radius: 50%;
     background-color: rgb(213, 249, 249);
     justify-content: center;
-    align-items: center;
 }
+.a22:hover{
+    background-color: aqua;
+}    
+.time-zone{
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;    
+}
+    
 .time{
 
 }
 .zone{
-
+    display: flex;
+    font-size: small;
+    color: black;
+    border: none;
+    border-radius: 50px;
+    background-color: white;
+    justify-content: center;
+    cursor: pointer;
+}
+.zone:hover{
+    background-color: aqua;
 }
 .map-icone{
 
@@ -161,7 +225,7 @@
 .location{
 
 }
-.select-zone{
+.close-icon{
 
 }
 

@@ -54,6 +54,9 @@
     color: deepskyblue;
     margin-left: -1%;
 }
-.cookie:hover{
-    
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
