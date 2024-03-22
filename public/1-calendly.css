@@ -1,6 +1,6 @@
 *{
-    margin: 2%;
-    padding: 2%;
+    margin: auto;
+    padding: 1%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
@@ -17,61 +17,66 @@
     align-items: center;
 }
 .name{
-    font-size: larger;
+    font-size: 14px;
+    font-weight: 600;
     color: deepskyblue;
     text-align: center;
     margin-top: -10px;
 }
 .instrucions{
-    font-size: medium;
+    font-size: 12px;
     color: black;
     text-align: center;
-    margin-top: -30px;
-    width: 400px;
-    word-spacing: 5px;
+    margin-top: -5px;
+    width: 300px;
+    word-spacing: 2px;
+    line-height: 20px;
 }
 .main{
     display: flex;
-    background-color: white;
+    border: none;
     border-top: 1px solid gray;
+    background-color: transparent;
     width: 400px;
     height: 200px;
+    margin-top: 10px;
     margin-left: 12%;
     justify-content: space-between;
+    cursor: pointer;
 }
 .main:hover{
     background-color: aqua;
 }
-.dotmeeting{
+.dot-meeting{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .dot{
-    height: 12px;
-    width: 12px;
+    display: flex;
+    height: 20px;
+    width: 20px;
     background-color: green;
     border-radius: 50%;
-    display: inline-block;
 }
 .meeting{
-    font-size: medium;
-    color: black;
+    font-size: 16px;
     font-weight: 600;
+    color: black;
 }
 .next-icon2{
+    display: flex;
     height: 25px;
     width: 25px;
     border-radius: 50%;
-    display: inline-block;
 }
 .pagefoot{
-    margin-top: 110px;
+    margin-top: 230px;
 }
 .cookie{
     font-size: small;
     color: deepskyblue;
-    margin-left: -5%;
+    margin-left: -1%;
     
 }
 a{

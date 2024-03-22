@@ -1,10 +1,11 @@
 *{
-    margin: 2%;
-    padding: 2%;
+    margin: auto;
+    padding: 1%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container1{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
     background-color: white;
     border: 1px solid gray;
     border-radius: 8px;
@@ -14,9 +15,8 @@
 .page1{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: -10px;
     justify-content: space-between;
+    align-items: center;
 }
 .home1{
     display: flex;
@@ -26,11 +26,8 @@
 }
 .back-main{
     display: flex;
-    padding: 4px;
     border: 1px solid gray;
     border-radius: 50%;
-    background-color: white;
-    justify-content: center;
     cursor: pointer;
 }
 .back-main:hover{
@@ -39,7 +36,6 @@
 .main1{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
 }
 .name{
     font-size: medium;
@@ -50,7 +46,7 @@
     font-weight: 600;
     color: black;
     margin-top: -8px;
-    width: 100%;
+    width: 300px;
 }
 .main2{
     display: flex;
@@ -62,6 +58,7 @@
 .minute{
     font-size: medium;
     color: deepskyblue;
+    width: 70px;
     margin-left: 4px;
 }
 .meeting{
@@ -72,7 +69,6 @@
 .cookie-report{
     display: flex;
     justify-content: space-between;
-    margin-bottom: -10px;
 }
 .cookie{
     font-size: small;
@@ -89,11 +85,22 @@ a:hover{
     text-decoration: underline;
 }
 
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*/
+
+.line{
+    display: flex;
+    border-left: 1px solid gray;
+    height: 634px;
+    margin-top: -100%;
+    margin-left: 100%;
+}
+
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.*/
 
 .page2{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: -10px;
 }
 .select{
@@ -103,11 +110,12 @@ a:hover{
     width: 100%;
 }
 .calendar{
-
+    display: flex;
+    flex-direction: column;
 }
 .next-back{
     display: flex;
-    gap: 20%;
+    align-items: center;
 }
 .back{
     display: flex;
@@ -188,36 +196,39 @@ a:hover{
 .time-zone{
     display: flex;
     flex-direction: column;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;    
 }
-    
 .time{
-
+    font-size: 16px;
+    color: black;
 }
 .zone{
     display: flex;
-    font-size: small;
-    color: black;
     border: none;
     border-radius: 50px;
-    background-color: white;
-    justify-content: center;
+    background-color: transparent;
+    align-items: center;
     cursor: pointer;
+    width: 350px;
+    margin-top: -5px;
 }
 .zone:hover{
     background-color: aqua;
 }
 .map-icone{
-
+    display: flex;
+    width: 20px;
+    height: 20px;
 }
 .location{
-
+    font-size: 12px;
+    color: black;
+    margin-left: -12px;
 }
 .close-icon{
-
+    display: flex;
+    width: 14px;
+    height: 14px;
+    margin-left: -12px;
 }
 
 
