@@ -10,26 +10,42 @@
     width: 1000px;
     height: 600px;
 }
+.pagehead{
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    align-items: center;
+}
 .name{
     font-size: larger;
     color: deepskyblue;
     text-align: center;
+    margin-top: -10px;
 }
 .instrucions{
     font-size: medium;
     color: black;
     text-align: center;
+    margin-top: -30px;
+    width: 400px;
+    word-spacing: 5px;
 }
 .main{
     display: flex;
     background-color: white;
     border-top: 1px solid gray;
-    /* border: none; */
     width: 400px;
     height: 200px;
+    margin-left: 12%;
+    justify-content: space-between;
 }
 .main:hover{
     background-color: aqua;
+}
+.dotmeeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .dot{
     height: 12px;
@@ -39,7 +55,7 @@
     display: inline-block;
 }
 .meeting{
-    font-size: larger;
+    font-size: medium;
     color: black;
     font-weight: 600;
 }
@@ -49,10 +65,14 @@
     border-radius: 50%;
     display: inline-block;
 }
+.pagefoot{
+    margin-top: 110px;
+}
 .cookie{
     font-size: small;
     color: deepskyblue;
-    margin-left: -1%;
+    margin-left: -5%;
+    
 }
 a{
     text-decoration: none;
