@@ -16,13 +16,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
 }
 .home1{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: -10px;
+    margin-top: -40px;
 }
 .back-main{
     display: flex;
@@ -38,45 +37,45 @@
     flex-direction: column;
 }
 .name{
-    font-size: medium;
+    font-size: 14px;
     color: deepskyblue;
 }
 .meeting{
-    font-size: larger;
+    font-size: 16px;
     font-weight: 600;
     color: black;
-    margin-top: -8px;
+    margin-top: -4px;
     width: 300px;
 }
 .main2{
     display: flex;
-    align-items: center;
+    margin-top: 20px;
 }
 .clock{
     /* color: deepskyblue; */
 }
 .minute{
-    font-size: medium;
+    font-size: 14px;
     color: deepskyblue;
     width: 70px;
     margin-left: 4px;
 }
-.meeting{
-    font-size: larger;
-    color: black;
-    font-weight: 600;
-}
 .cookie-report{
     display: flex;
     justify-content: space-between;
+    margin-left: 4px;
+    margin-top: 350px;
 }
 .cookie{
-    font-size: small;
+    font-size: 12px;
     color: deepskyblue;
+    width: 100px;
 }
 .report{
-    font-size: small;
+    font-size: 12px;
     color: black;
+    width: 100px;
+    margin-left: 100px;
 }
 a{
     text-decoration: none;
