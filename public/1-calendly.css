@@ -39,8 +39,8 @@
     background-color: transparent;
     width: 400px;
     height: 200px;
-    margin-top: 10px;
-    margin-left: 12%;
+    margin-top: 15px;
+    margin-left: 15%;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -51,6 +51,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+    margin-right: 140px;
 }
 .dot{
     display: flex;
@@ -63,12 +65,15 @@
     font-size: 16px;
     font-weight: 600;
     color: black;
+    margin-left: 2px;
+    width: 180px;
 }
 .next-icon2{
     display: flex;
     height: 25px;
     width: 25px;
     border-radius: 50%;
+    margin-top: 10px;
 }
 .pagefoot{
     margin-top: 230px;
