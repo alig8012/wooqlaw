@@ -1104,6 +1104,9 @@ select {
 .h-\[100dvh\] {
   height: 100dvh;
 }
+.h-\[539px\] {
+  height: 539px;
+}
 .h-\[calc\(100dvh-8rem\)\] {
   height: calc(100dvh - 8rem);
 }
@@ -1223,6 +1226,9 @@ select {
 }
 .w-96 {
   width: 24rem;
+}
+.w-\[427px\] {
+  width: 427px;
 }
 .w-auto {
   width: auto;
@@ -2022,6 +2028,9 @@ select {
 .p-10 {
   padding: 2.5rem;
 }
+.p-12 {
+  padding: 3rem;
+}
 .p-2 {
   padding: 0.5rem;
 }
@@ -2053,6 +2062,10 @@ select {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
+}
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 .px-14 {
   padding-left: 3.5rem;
