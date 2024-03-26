@@ -788,9 +788,6 @@ select {
 .top-1\/2 {
   top: 50%;
 }
-.top-10 {
-  top: 2.5rem;
-}
 .-z-10 {
   z-index: -10;
 }
@@ -1483,12 +1480,6 @@ select {
 }
 .gap-px {
   gap: 1px;
-}
-.gap-80 {
-  gap: 20rem;
-}
-.gap-40 {
-  gap: 10rem;
 }
 .gap-72 {
   gap: 18rem;
