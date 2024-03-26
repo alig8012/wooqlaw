@@ -13,9 +13,10 @@
             margin: 0; 
             padding: 0;
         }
-        body {
-            background: #ccc; 
-            font-family: arial, verdana, tahoma;
+        .container {
+            display: grid;
+            grid-template-columns: auto auto;
+            left: 260; right: 260;
         }
 
         /*Time to apply widths for accordian to work
@@ -80,9 +81,8 @@
         .image_title {
             background: rgba(0, 0, 0, 0.5);
             position: absolute;
-            left: -5; bottom: -5;
-            width: 640px;	
-
+            left: -1; bottom: -1;
+            width: 640px;
         }
         .image_title a {
             display: block;
@@ -91,57 +91,193 @@
             padding: 20px;
             font-size: 16px;
         }
+        /*Button styles*/
+        .btn {
+            display: flex;
+            position: absolute;
+            border: none;
+            left: 24px; bottom: 90px;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn:hover {
+          background-color: blue;
+          color: white;
+        }
+        .card2 {
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+            width: 280px;
+            height: 500px;
+            padding-left: 44px;  padding-right: 44px;
+            padding-top: 24px;  padding-bottom: 24px;
+            gap: 80px;
+            margin-top: 96px;
+            margin-left: -70px;
+            justify-content: space-between;
+            align-items: start;
+        }
+        /*Button Contact styles*/
+        .btn-contact {
+            display: flex;
+            position: absolute;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 20px;
+            margin-top: 430px;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn-contact:hover {
+          background-color: blue;
+          color: white;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+        .txt1 {
+            font-size: 30px;
+            font-weight: 500;
+            color: black;
+        }
+        .txt2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: black;
+            gap: 12px;
+        }
+        .txt3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: black;
+        }
     </style>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS-->
+    <!-- <link href="./css/style.css" rel="stylesheet" /> -->
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
 
 </head>
 
 <body>
-    <div class="accordian">
-        <ul>
-            <li>
-                <div class="image_title">
-                    <a href="#">General Immigration</a>
+    <!-- DV Services -->
+    <section class="dv-services">
+        <div class="container">
+            <div class="accordian">
+                <ul>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">General Immigration</a>
+                        </div>
+                        <a href="#">
+                            <img src="images/dv/general-immigration.jpg" alt="general-immigration">
+                        </a>
+                        <button class="btn">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Business Immigration</a>
+                        </div>
+                        <a href="#">
+                            <img src="images/dv/business-immigration.jpg" alt="business-immigration">
+                        </a>
+                        <button class="btn">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Property Law</a>
+                        </div>
+                        <a href="#">
+                            <img src="images/dv/property-law.jpg" alt="property-law">
+                        </a>
+                        <button class="btn">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Islamic Law</a>
+                        </div>
+                        <a href="#">
+                            <img src="images/dv/islamic-law.jpg" alt="islamic-law">
+                        </a>
+                        <button class="btn">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Standard Visas</a>
+                        </div>
+                        <a href="#">
+                            <img src="images/dv/standard-visas.jpg" alt="standard-visas">
+                        </a>
+                        <button class="btn">
+                            <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="card2 flex flex-col mt-24 px-11 py-6 gap-20 w-[427px] h-[539px] bg-gray-50 items-start justify-between">
+                <div class="main flex flex-col gap-20">
+                    <span class="txt1 text-base md:text-3xl font-medium text-black">
+                        Individual Matters or Organisational Support
+                    </span>
+                    <span class="txt2 flex flex-col gap-3 text-sm md:text-base font-medium text-black">
+                        Our passion for individuality remains at the helm of our diverse team of professionals. We pride ourselves on remaining trusted partners to individuals and organisations for decades.
+                        <span class="txt3 text-sm md:text-base font-medium text-black">
+                            We guide our clients throughout their journey with us, from an initial instruction to a pragmatic solution.
+                        </span>
+                    </span>
                 </div>
-                <a href="#">
-                    <img src="images/dv/frame-1.jpg" alt="general-immigration">
-                </a>
-            </li>
-            <li>
-                <div class="image_title">
-                    <a href="#">Business Immigration</a>
-                </div>
-                <a href="#">
-                    <img src="images/dv/frame-1.jpg" alt="business-immigration">
-                </a>
-            </li>
-            <li>
-                <div class="image_title">
-                    <a href="#">Property Law</a>
-                </div>
-                <a href="#">
-                    <img src="images/dv/frame-1.jpg" alt="property-law">
-                </a>
-            </li>
-            <li>
-                <div class="image_title">
-                    <a href="#">Islamic Law</a>
-                </div>
-                <a href="#">
-                    <img src="images/dv/frame-1.jpg" alt="islamic-law">
-                </a>
-            </li>
-            <li>
-                <div class="image_title">
-                    <a href="#">Standerd Visas/a>
-                </div>
-                <a href="#">
-                    <img src="images/dv/frame-1.jpg" alt="standerd-visas">
-                </a>
-            </li>
-        </ul>
-    </div>
+                <button class="btn-contact flex text-base font-medium text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
+                    Contact Us
+                    <span class="">
+                        <svg width="23" height="17" viewBox="0 0 23 17" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z"/>
+                        </svg> 
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
 
     <script type="text/javascript">
         
