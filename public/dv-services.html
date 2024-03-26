@@ -90,18 +90,15 @@
 
             /*Image title styles*/
         .image_title {
-            background: rgba(0, 0, 0, 0.5);
+            /* background: rgba(0, 0, 0, 0.5); */
             position: absolute;
             left: -5; bottom: -5;
             width: 640px;
-            width: 539px;
+            height: 539px;
         }
         .image_title a {
             display: block;
             color: #fff;
-            text-decoration: none;
-            padding: 20px;
-            font-size: 16px;
         }
     </style>
 
@@ -112,200 +109,111 @@
 <body>
     <!-- DV Services -->
     <section class="">
-        <div class="flex p-12 gap-1 items-start justify-center">
-            <!-- <div class="accordian">
-                <ul>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">General Immigration</a>
-                        </div>
-                        <a href="#">
-                            <img src="images/dv/frame-1.jpg" alt="frame-1">
-                        </a>
-                        <button class="flex text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                            <span class="">
-                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                                </svg> 
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Business Immigration</a>
-                        </div>
-                        <a href="#">
-                            <img src="images/dv/frame-1.jpg" alt="frame-1">
-                        </a>
-                        <button class="flex text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                            <span class="">
-                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                                </svg> 
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Property Law</a>
-                        </div>
-                        <a href="#">
-                            <img src="images/dv/frame-1.jpg" alt="frame-1">
-                        </a>
-                        <button class="flex text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                            <span class="">
-                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                                </svg> 
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Islamic Law</a>
-                        </div>
-                        <a href="#">
-                            <img src="images/dv/frame-1.jpg" alt="frame-1">
-                        </a>
-                        <button class="flex text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                            <span class="">
-                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                                </svg> 
-                            </span>
-                        </button>
-                    </li>
-                    <li>
-                        <div class="image_title">
-                            <a href="#">Standard Visas</a>
-                        </div>
-                        <a href="#">
-                            <img src="images/dv/frame-1.jpg" alt="frame-1">
-                        </a>
-                        <button class="flex text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                            <span class="">
-                                <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                                </svg> 
-                            </span>
-                        </button>
-                    </li>
-                </ul>
-            </div> -->
+        <div class="grid grid-cols-2 gap-72">
             <div class="accordian">
                 <ul class="flex gap-1">
                     <li class="relative flex">
-                        <div class="">
-                            <img src="images/dv/frame-321314401.png" alt="frame-321314401">
-                        </div>
-                        <div class="absolute w-full h-full p-6 flex flex-col justify-between">
-                            <div class="w-32 text-base md:text-xl font-normal text-black">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-col justify-between">
+                            <a href="" class="w-32 text-base md:text-xl font-normal text-black">
                                 General Immigration
-                            </div>
+                            </a>
                             <button class="flex text-white bg-blue-800 hover:bg-blue-700 w-16 h-16 justify-center items-center">
                                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
                                 </svg> 
                             </button>
                         </div>
-                    </li>
-
-                    <li>
-                        <div class="image_title">
-                            <a href="#">KungFu Panda</a>
-                        </div>
-                        <a href="#">
-                            <img src="http://thecodeplayer.com/uploads/media/3yiC6Yq.jpg"/>
+                        <a href="" class="">
+                            <!-- <img src="images/dv/frame-321314401.png" alt="frame-321314401"> -->
+                            <img src="images/dv/frame-1.jpg" alt="frame-1">
                         </a>
                     </li>
-
-
-
-
-
-
                     <li class="relative flex">
-                        <div class="">
-                            <img src="images/dv/frame-321314401.png" alt="frame-321314401">
-                        </div>
-                        <div class="absolute w-full h-full p-6 flex flex-col justify-between">
-                            <div class="w-32 text-base md:text-xl font-normal text-black">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-col justify-between">
+                            <a href="" class="w-32 text-base md:text-xl font-normal text-black">
                                 General Immigration
-                            </div>
+                            </a>
                             <button class="flex text-white bg-blue-800 hover:bg-blue-700 w-16 h-16 justify-center items-center">
                                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
                                 </svg> 
                             </button>
                         </div>
+                        <a href="" class="">
+                            <!-- <img src="images/dv/frame-321314401.png" alt="frame-321314401"> -->
+                            <img src="images/dv/frame-1.jpg" alt="frame-1">
+                        </a>
                     </li>
                     <li class="relative flex">
-                        <div class="">
-                            <img src="images/dv/frame-321314401.png" alt="frame-321314401">
-                        </div>
-                        <div class="absolute w-full h-full p-6 flex flex-col justify-between">
-                            <div class="w-32 text-base md:text-xl font-normal text-black">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-col justify-between">
+                            <a href="" class="w-32 text-base md:text-xl font-normal text-black">
                                 General Immigration
-                            </div>
+                            </a>
                             <button class="flex text-white bg-blue-800 hover:bg-blue-700 w-16 h-16 justify-center items-center">
                                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
                                 </svg> 
                             </button>
                         </div>
+                        <a href="" class="">
+                            <!-- <img src="images/dv/frame-321314401.png" alt="frame-321314401"> -->
+                            <img src="images/dv/frame-1.jpg" alt="frame-1">
+                        </a>
                     </li>
                     <li class="relative flex">
-                        <div class="">
-                            <img src="images/dv/frame-321314401.png" alt="frame-321314401">
-                        </div>
-                        <div class="absolute w-full h-full p-6 flex flex-col justify-between">
-                            <div class="w-32 text-base md:text-xl font-normal text-black">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-col justify-between">
+                            <a href="" class="w-32 text-base md:text-xl font-normal text-black">
                                 General Immigration
-                            </div>
+                            </a>
                             <button class="flex text-white bg-blue-800 hover:bg-blue-700 w-16 h-16 justify-center items-center">
                                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
                                 </svg> 
                             </button>
                         </div>
+                        <a href="" class="">
+                            <!-- <img src="images/dv/frame-321314401.png" alt="frame-321314401"> -->
+                            <img src="images/dv/frame-1.jpg" alt="frame-1">
+                        </a>
                     </li>
                     <li class="relative flex">
-                        <div class="">
-                            <img src="images/dv/frame-321314401.png" alt="frame-321314401">
-                        </div>
-                        <div class="absolute w-full h-full p-6 flex flex-col justify-between">
-                            <div class="w-32 text-base md:text-xl font-normal text-black">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-col justify-between">
+                            <a href="" class="w-32 text-base md:text-xl font-normal text-black">
                                 General Immigration
-                            </div>
+                            </a>
                             <button class="flex text-white bg-blue-800 hover:bg-blue-700 w-16 h-16 justify-center items-center">
                                 <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
                                 </svg> 
                             </button>
                         </div>
+                        <a href="" class="">
+                            <!-- <img src="images/dv/frame-321314401.png" alt="frame-321314401"> -->
+                            <img src="images/dv/frame-1.jpg" alt="frame-1">
+                        </a>
                     </li>
                 </ul>
               </div>
-            <div class="flex flex-col px-11 py-6 gap-20 w-[427px] h-[539px] bg-gray-50 items-start justify-between">
-            <div class="flex flex-col gap-20">
-                <span class="text-base md:text-3xl font-medium text-black">
-                    Individual Matters or Organisational Support
-                </span>
-                <span class="flex flex-col gap-3 text-sm md:text-base font-medium text-black">
-                    Our passion for individuality remains at the helm of our diverse team of professionals. We pride ourselves on remaining trusted partners to individuals and organisations for decades.
-                    <span class="text-sm md:text-base font-medium text-black">
-                        We guide our clients throughout their journey with us, from an initial instruction to a pragmatic solution.
+            <div class="flex flex-col mt-24 px-11 py-6 gap-20 w-[427px] h-[539px] bg-gray-50 items-start justify-between">
+                <div class="flex flex-col gap-20">
+                    <span class="text-base md:text-3xl font-medium text-black">
+                        Individual Matters or Organisational Support
                     </span>
-                </span>
-            </div>
-            <button class="flex text-base font-medium text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
-                Contact Us
-                <span class="">
-                    <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
-                    </svg> 
-                </span>
-            </button>
+                    <span class="flex flex-col gap-3 text-sm md:text-base font-medium text-black">
+                        Our passion for individuality remains at the helm of our diverse team of professionals. We pride ourselves on remaining trusted partners to individuals and organisations for decades.
+                        <span class="text-sm md:text-base font-medium text-black">
+                            We guide our clients throughout their journey with us, from an initial instruction to a pragmatic solution.
+                        </span>
+                    </span>
+                </div>
+                <button class="flex text-base font-medium text-white bg-blue-800 hover:bg-blue-700 p-5 gap-3 justify-center items-center">
+                    Contact Us
+                    <span class="">
+                        <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.2226 0.78923C13.5763 0.435491 14.1498 0.435491 14.5036 0.78923L21.75 8.03567C22.1038 8.3894 22.1038 8.96293 21.75 9.31667L14.5036 16.5631C14.1498 16.9168 13.5763 16.9168 13.2226 16.5631C12.8688 16.2094 12.8688 15.6358 13.2226 15.2821L18.9227 9.58197H1.78569C1.28543 9.58197 0.879883 9.17643 0.879883 8.67617C0.879883 8.1759 1.28543 7.77036 1.78569 7.77036H18.9227L13.2226 2.07023C12.8688 1.71649 12.8688 1.14297 13.2226 0.78923Z" fill="white"/>
+                        </svg> 
+                    </span>
+                </button>
             </div>
         </div>
     </section>
