@@ -1481,12 +1481,6 @@ select {
 .gap-px {
   gap: 1px;
 }
-.gap-72 {
-  gap: 18rem;
-}
-.gap-60 {
-  gap: 15rem;
-}
 .gap-x-2 {
   -moz-column-gap: 0.5rem;
        column-gap: 0.5rem;
@@ -2033,9 +2027,6 @@ select {
 }
 .p-10 {
   padding: 2.5rem;
-}
-.p-12 {
-  padding: 3rem;
 }
 .p-2 {
   padding: 0.5rem;

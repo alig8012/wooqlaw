@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DV Animation1</title>
+
+    <style>
+        /*Now the styles*/
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+        body {
+            background: #ccc; 
+            font-family: arial, verdana, tahoma;
+        }
+
+        /*Time to apply widths for accordian to work
+        Width of image = 640px
+        total images = 5
+        so width of hovered image = 640px
+        width of un-hovered image = 40px - you can set this to anything
+        so total container width = 640 + 40*4 = 800px;
+        default width = 800/5 = 160px;
+        */
+
+        .accordian {
+            width: 890px; height: 539px;
+            overflow: hidden;
+            
+            /*Time for some styling*/
+            margin: 100px auto;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+            -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        }
+
+        /*A small hack to prevent flickering on some browsers*/
+        .accordian ul {
+            width: 2000px;
+            /*This will give ample space to the last item to move
+            instead of falling down/flickering during hovers.*/
+        }
+
+        .accordian li {
+            position: relative;
+            display: block;
+            width: 178px;
+            float: left;
+            
+            border-left: 1px solid #888;
+            
+            box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            
+            /*Transitions to give animation effect*/
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            /*If you hover on the images now you should be able to 
+            see the basic accordian*/
+        }
+
+        /*Reduce with of un-hovered elements*/
+        .accordian ul:hover li {width: 40px;}
+        /*Lets apply hover effects now*/
+        /*The LI hover style should override the UL hover style*/
+        .accordian ul li:hover {width: 640px;}
+
+
+        .accordian li img {
+            display: block;
+        }
+
+        /*Image title styles*/
+        .image_title {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: -5; bottom: -5;
+            width: 640px;	
+
+        }
+        .image_title a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 16px;
+        }
+    </style>
+
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+
+</head>
+
+<body>
+    <div class="accordian">
+        <ul>
+            <li>
+                <div class="image_title">
+                    <a href="#">General Immigration</a>
+                </div>
+                <a href="#">
+                    <img src="images/dv/frame-1.jpg" alt="general-immigration">
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Business Immigration</a>
+                </div>
+                <a href="#">
+                    <img src="images/dv/frame-1.jpg" alt="business-immigration">
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Property Law</a>
+                </div>
+                <a href="#">
+                    <img src="images/dv/frame-1.jpg" alt="property-law">
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Islamic Law</a>
+                </div>
+                <a href="#">
+                    <img src="images/dv/frame-1.jpg" alt="islamic-law">
+                </a>
+            </li>
+            <li>
+                <div class="image_title">
+                    <a href="#">Standerd Visas/a>
+                </div>
+                <a href="#">
+                    <img src="images/dv/frame-1.jpg" alt="standerd-visas">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        
+    </script>
+
+</body>
+</html>
