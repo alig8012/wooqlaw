@@ -1342,6 +1342,9 @@ select {
 .cursor-pointer {
   cursor: pointer;
 }
+.resize {
+  resize: both;
+}
 .scroll-my-6 {
   scroll-margin-top: 1.5rem;
   scroll-margin-bottom: 1.5rem;

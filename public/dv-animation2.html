@@ -18,19 +18,14 @@
             grid-template-columns: auto auto;
             justify-content: center;
         }
-        @media (max-width:300px) {
-            .container{
-                display: block;
+        @media screen and (max-width:992px) {
+            .image {
+                width: 50%;
             }
         }
-        @media (min-width:300px) and (max-width:500px) {
-            .container{
-                display: block;
-            }
-        }
-        @media (min-width:500px) and (max-width:800px) {
-            .container{
-                display: block;
+        @media screen and (max-width:600px) {
+            .image {
+                width: 100%;
             }
         }
 
@@ -182,6 +177,40 @@
         }
     </style>
 
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create four equal columns that floats next to each other */
+    .column {
+      float: left;
+      width: 25%;
+      padding: 20px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* On screens that are 992px wide or less, go from four columns to two columns */
+    @media screen and (max-width: 992px) {
+      .column {
+        width: 50%;
+      }
+    }
+    
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+      }
+    }
+    </style>
+
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -199,12 +228,39 @@
 </head>
 
 <body>
+
+    
+    <h2>Responsive Four Column Layout</h2>
+    <p><strong>Resize the browser window to see the responsive effect.</strong> On screens that are 992px wide or less, the columns will resize from four columns to two columns. On screens that are 600px wide or less, the columns will stack on top of each other instead of next to eachother.</p>
+    
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Some text..</p>
+      </div>
+      
+      <div class="column" style="background-color:#ddd;">
+        <h2>Column 4</h2>
+        <p>Some text..</p>
+      </div>
+    </div>
+
     <!-- DV Services -->
     <section class="dv-services">
         <div class="container">
             <div class="accordian">
                 <ul>
-                    <li>
+                    <li class="image">
                         <div class="image_title">
                             <a href="#">General Immigration</a>
                         </div>
@@ -217,7 +273,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li>
+                    <li class="image">
                         <div class="image_title">
                             <a href="#">Business Immigration</a>
                         </div>
@@ -230,7 +286,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li>
+                    <li class="image">
                         <div class="image_title">
                             <a href="#">Property Law</a>
                         </div>
@@ -243,7 +299,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li>
+                    <li class="image">
                         <div class="image_title">
                             <a href="#">Islamic Law</a>
                         </div>
@@ -256,7 +312,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li>
+                    <li class="image">
                         <div class="image_title">
                             <a href="#">Standard Visas</a>
                         </div>
