@@ -1104,6 +1104,9 @@ select {
 .h-\[100dvh\] {
   height: 100dvh;
 }
+.h-\[380px\] {
+  height: 380px;
+}
 .h-\[539px\] {
   height: 539px;
 }
@@ -1227,8 +1230,8 @@ select {
 .w-96 {
   width: 24rem;
 }
-.w-\[427px\] {
-  width: 427px;
+.w-\[328px\] {
+  width: 328px;
 }
 .w-auto {
   width: auto;
@@ -2062,10 +2065,6 @@ select {
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
-}
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
 }
 .px-14 {
   padding-left: 3.5rem;
@@ -3382,6 +3381,10 @@ select {
     height: 2.25rem;
   }
 
+  .md\:h-\[539px\] {
+    height: 539px;
+  }
+
   .md\:h-\[calc\(100vh-4\.5rem\)\] {
     height: calc(100vh - 4.5rem);
   }
@@ -3494,6 +3497,10 @@ select {
     width: 24rem;
   }
 
+  .md\:w-\[427px\] {
+    width: 427px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -3601,6 +3608,10 @@ select {
 
   .md\:gap-2 {
     gap: 0.5rem;
+  }
+
+  .md\:gap-20 {
+    gap: 5rem;
   }
 
   .md\:gap-28 {
@@ -3737,6 +3748,11 @@ select {
     padding: 2rem;
   }
 
+  .md\:px-11 {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3825,6 +3841,11 @@ select {
   .md\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:py-8 {
