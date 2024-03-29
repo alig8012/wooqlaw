@@ -3724,11 +3724,6 @@ select {
     background-color: rgb(249 250 251 / var(--tw-bg-opacity));
   }
 
-  .md\:object-fill {
-    -o-object-fit: fill;
-       object-fit: fill;
-  }
-
   .md\:p-10 {
     padding: 2.5rem;
   }
@@ -4108,11 +4103,6 @@ select {
   .lg\:divide-gray-300 > :not([hidden]) ~ :not([hidden]) {
     --tw-divide-opacity: 1;
     border-color: rgb(209 213 219 / var(--tw-divide-opacity));
-  }
-
-  .lg\:object-cover {
-    -o-object-fit: cover;
-       object-fit: cover;
   }
 
   .lg\:p-4 {

@@ -179,11 +179,13 @@
         }
         /*Button Contact styles*/
         .btn-contact {
+            /* flex text-sm md:text-base font-medium text-white bg-blue-800 hover:bg-blue-700 w-full md:w-fit p-5 gap-3 justify-center items-center */
             display: flex;
             position: absolute;
             border: none;
             font-size: 16px;
             font-weight: 500;
+            width: fit-content;
             padding: 20px;
             margin-top: 430px;
             gap: 12px;
@@ -194,6 +196,11 @@
         .btn-contact:hover {
           background-color: blue;
           color: white;
+        }
+        .btn_icon {
+            /* w-5 h-5 md:w-6 md:h-6 */
+            width: 24px;
+            height: 24px;
         }
         .main {
             display: flex;
@@ -254,7 +261,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <!-- Tailwind CSS-->
-    <link href="./css/style.css" rel="stylesheet" />
+    <!-- <link href="./css/style.css" rel="stylesheet" /> -->
 
     <!-- Googel Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -363,9 +370,9 @@
                 </div>
                 <button class="btn-contact flex text-sm md:text-base font-medium text-white bg-blue-800 hover:bg-blue-700 w-full md:w-fit p-5 gap-3 justify-center items-center">
                     Contact Us
-                    <span class="w-5 h-5 md:w-6 md:h-6"> 
-                        <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3496 6.14588C14.6424 5.85299 15.1173 5.85299 15.4102 6.14588L21.4102 12.1459C21.7031 12.4388 21.7031 12.9136 21.4102 13.2065L15.4102 19.2065C15.1173 19.4994 14.6424 19.4994 14.3496 19.2065C14.0567 18.9136 14.0567 18.4388 14.3496 18.1459L19.0692 13.4262H4.87988C4.46567 13.4262 4.12988 13.0904 4.12988 12.6762C4.12988 12.262 4.46567 11.9262 4.87988 11.9262H19.0692L14.3496 7.20654C14.0567 6.91365 14.0567 6.43877 14.3496 6.14588Z" fill="white"/>
+                    <span class="btn_icon w-5 h-5 md:w-6 md:h-6"> 
+                        <svg class="btn_icon w-5 h-5 md:w-6 md:h-6" viewBox="0 0 25 25" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3496 6.14588C14.6424 5.85299 15.1173 5.85299 15.4102 6.14588L21.4102 12.1459C21.7031 12.4388 21.7031 12.9136 21.4102 13.2065L15.4102 19.2065C15.1173 19.4994 14.6424 19.4994 14.3496 19.2065C14.0567 18.9136 14.0567 18.4388 14.3496 18.1459L19.0692 13.4262H4.87988C4.46567 13.4262 4.12988 13.0904 4.12988 12.6762C4.12988 12.262 4.46567 11.9262 4.87988 11.9262H19.0692L14.3496 7.20654C14.0567 6.91365 14.0567 6.43877 14.3496 6.14588Z"/>
                         </svg>
                     </span>
                 </button>
