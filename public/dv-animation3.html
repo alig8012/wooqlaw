@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DV Animation3</title>
+
+    <!-- <style>
+        /*Now the styles*/
+    * {
+        margin: 0; 
+        padding: 0;
+    }
+
+        /*Time to apply widths for accordian to work
+        Width of image = 640px
+        total images = 5
+        so width of hovered image = 640px
+        width of un-hovered image = 40px - you can set this to anything
+        so total container width = 640 + 40*4 = 800px;
+        default width = 800/5 = 160px;
+        */
+
+    .accordian {
+        width: 890px; height: 539px;
+        overflow: hidden;
+        
+        /*Time for some styling*/
+        margin: 100px auto;
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+    }
+
+        /*A small hack to prevent flickering on some browsers*/
+    .accordian ul {
+        width: 2000px;
+        /*This will give ample space to the last item to move
+        instead of falling down/flickering during hovers.*/
+    }
+
+    .accordian li {
+        position: relative;
+        display: block;
+        width: 178px;
+        float: left;
+        border-left: 1px solid #888;
+        
+        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+        
+        /*Transitions to give animation effect*/
+        transition: all 0.5s;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        /*If you hover on the images now you should be able to 
+        see the basic accordian*/
+    }
+
+        /*Reduce with of un-hovered elements*/
+    .accordian ul:hover li {width: 178px;}
+        /*Lets apply hover effects now*/
+        /*The LI hover style should override the UL hover style*/
+    .accordian ul li:hover {width: 640px;}
+    
+
+
+    .accordian li img {
+        display: block;
+    }
+
+        /*Image title styles*/
+    .image_title {
+        /* background: rgba(0, 0, 0, 0.5); */
+        position: absolute;
+        left: -5; bottom: -5;
+        width: 640px;
+        height: 539px;
+    }
+    .image_title a {
+        display: block;
+        color: #fff;
+    }
+    </style> -->
+
+    <style>
+        @media (min-width: 768px) {
+            .info::before {
+                content: "";
+                height: 20%;
+                background: linear-gradient(180deg, #bdb4b4, #ffffffbf 50.17%);
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+            }
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            .info::before {
+                content: "";
+                height: 100%;
+                background: linear-gradient(45deg, #bdb4b4, #ffffffbf 50.17%);
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                width: 40%;
+            }
+        }
+    </style>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- Tailwind CSS-->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <!-- Googel Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="/scripts/snippet-javascript-console.min.js?v=1"></script>
+
+</head>
+
+<body>
+    <!-- DV Services -->
+    <section class="dv-services">
+        <div class="container flex flex-col md:flex-row px-4 md:px-0 py-32 md:py-52 gap-1">
+            <div class="accordian">
+                <ul class="flex flex-col md:flex-row gap-1">
+                    <li class="image relative flex flex-row md:flex-col">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
+                            <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
+                                General Immigration
+                            </a>
+                            <button class="btn flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4706 5.46967C13.7635 5.17678 14.2384 5.17678 14.5313 5.46967L20.5313 11.4697C20.8242 11.7626 20.8242 12.2374 20.5313 12.5303L14.5313 18.5303C14.2384 18.8232 13.7635 18.8232 13.4706 18.5303C13.1778 18.2374 13.1778 17.7626 13.4706 17.4697L18.1903 12.75H4.00098C3.58676 12.75 3.25098 12.4142 3.25098 12C3.25098 11.5858 3.58676 11.25 4.00098 11.25H18.1903L13.4706 6.53033C13.1778 6.23744 13.1778 5.76256 13.4706 5.46967Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/general-immigration.jpg" alt="general-immigration">
+                        </a>
+                    </li>
+                    <li class="image relative flex flex-row md:flex-col">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
+                            <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
+                                Business Immigration
+                            </a>
+                            <button class="btn flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4706 5.46967C13.7635 5.17678 14.2384 5.17678 14.5313 5.46967L20.5313 11.4697C20.8242 11.7626 20.8242 12.2374 20.5313 12.5303L14.5313 18.5303C14.2384 18.8232 13.7635 18.8232 13.4706 18.5303C13.1778 18.2374 13.1778 17.7626 13.4706 17.4697L18.1903 12.75H4.00098C3.58676 12.75 3.25098 12.4142 3.25098 12C3.25098 11.5858 3.58676 11.25 4.00098 11.25H18.1903L13.4706 6.53033C13.1778 6.23744 13.1778 5.76256 13.4706 5.46967Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/business-immigration.jpg" alt="business-immigration">
+                        </a>
+                    </li>
+                    <li class="image relative flex flex-row md:flex-col">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
+                            <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
+                                Property Law
+                            </a>
+                            <button class="btn flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4706 5.46967C13.7635 5.17678 14.2384 5.17678 14.5313 5.46967L20.5313 11.4697C20.8242 11.7626 20.8242 12.2374 20.5313 12.5303L14.5313 18.5303C14.2384 18.8232 13.7635 18.8232 13.4706 18.5303C13.1778 18.2374 13.1778 17.7626 13.4706 17.4697L18.1903 12.75H4.00098C3.58676 12.75 3.25098 12.4142 3.25098 12C3.25098 11.5858 3.58676 11.25 4.00098 11.25H18.1903L13.4706 6.53033C13.1778 6.23744 13.1778 5.76256 13.4706 5.46967Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/property-law.jpg" alt="property-law">
+                        </a>
+                    </li>
+                    <li class="image relative flex flex-row md:flex-col">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
+                            <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
+                                Islamic Law
+                            </a>
+                            <button class="btn flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4706 5.46967C13.7635 5.17678 14.2384 5.17678 14.5313 5.46967L20.5313 11.4697C20.8242 11.7626 20.8242 12.2374 20.5313 12.5303L14.5313 18.5303C14.2384 18.8232 13.7635 18.8232 13.4706 18.5303C13.1778 18.2374 13.1778 17.7626 13.4706 17.4697L18.1903 12.75H4.00098C3.58676 12.75 3.25098 12.4142 3.25098 12C3.25098 11.5858 3.58676 11.25 4.00098 11.25H18.1903L13.4706 6.53033C13.1778 6.23744 13.1778 5.76256 13.4706 5.46967Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/islamic-law.jpg" alt="islamic-law">
+                        </a>
+                    </li>
+                    <li class="image relative flex flex-row md:flex-col">
+                        <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
+                            <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
+                                Standard Visas
+                            </a>
+                            <button class="btn flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentcolor" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4706 5.46967C13.7635 5.17678 14.2384 5.17678 14.5313 5.46967L20.5313 11.4697C20.8242 11.7626 20.8242 12.2374 20.5313 12.5303L14.5313 18.5303C14.2384 18.8232 13.7635 18.8232 13.4706 18.5303C13.1778 18.2374 13.1778 17.7626 13.4706 17.4697L18.1903 12.75H4.00098C3.58676 12.75 3.25098 12.4142 3.25098 12C3.25098 11.5858 3.58676 11.25 4.00098 11.25H18.1903L13.4706 6.53033C13.1778 6.23744 13.1778 5.76256 13.4706 5.46967Z"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/standard-visas.jpg" alt="standard-visas">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card2 flex flex-col px-4 md:px-11 py-4 md:py-6 gap-1 md:gap-16 md:w-[427px] h-[380px] md:h-[539px] bg-gray-50 items-start justify-between">
+                <div class="main flex flex-col gap-5 md:gap-20">
+                    <span class="txt1 text-xl md:text-3xl font-medium text-black w-72 md:w-80">
+                        Individual Matters or Organisational Support
+                    </span>
+                    <span class="txt2 flex flex-col gap-3 text-sm md:text-base font-normal text-black">
+                        Our passion for individuality remains at the helm of our diverse team of professionals. We pride ourselves on remaining trusted partners to individuals and organisations for decades.
+                        <span class="txt3 text-sm md:text-base font-normal text-black">
+                            We guide our clients throughout their journey with us, from an initial instruction to a pragmatic solution.
+                        </span>
+                    </span>
+                </div>
+                <button class="btn-contact flex text-sm md:text-base font-medium text-white bg-blue-800 hover:bg-blue-700 w-full md:w-fit p-5 gap-3 justify-center items-center">
+                    Contact Us
+                    <span class="w-5 h-5 md:w-6 md:h-6"> 
+                        <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3496 6.14588C14.6424 5.85299 15.1173 5.85299 15.4102 6.14588L21.4102 12.1459C21.7031 12.4388 21.7031 12.9136 21.4102 13.2065L15.4102 19.2065C15.1173 19.4994 14.6424 19.4994 14.3496 19.2065C14.0567 18.9136 14.0567 18.4388 14.3496 18.1459L19.0692 13.4262H4.87988C4.46567 13.4262 4.12988 13.0904 4.12988 12.6762C4.12988 12.262 4.46567 11.9262 4.87988 11.9262H19.0692L14.3496 7.20654C14.0567 6.91365 14.0567 6.43877 14.3496 6.14588Z" fill="white"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript"></script>
+
+</body>
+</html>
