@@ -16,7 +16,7 @@
         .container {
             /* flex flex-col md:flex-row px-4 md:px-0 py-32 md:py-52 gap-1 */
             display: flex;
-            flex-direction: column;
+            /* flex-direction: column; */
             padding-left: 0px;
             padding-right: 0px;
             padding-top: 208px;
@@ -108,30 +108,46 @@
         .accordian li img {
             display: block;
         }
-        image_info flex flex-col md:flex-row gap-1
+        .image_info {
+            /* flex flex-col md:flex-row gap-1 */
+            display: flex;
+            gap: 4px;
+        }
+        .image {
+            /* relative flex flex-row md:flex-col */
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
         /*Image title styles*/
         .image_title {
-            background: rgba(0, 0, 0, 0.5);
+            /* absolute w-full h-full p-6 flex flex-row md:flex-col justify-between */
+            display: flex;
+            flex-direction: column;
             position: absolute;
-            left: -1; bottom: -1;
-            width: 640px;
+            justify-content: space-between;
+            padding: 24px;
+            width: 100%;
+            height: 100%;
         }
-        .image_title a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 20px;
+        .info {
+            /* z-0 w-16 text-base md:text-xl font-normal text-black */
             font-size: 20px;
-            width: 124;
+            font-weight: 400;
+            text-decoration: none;
+            color: black;
+            width: 64px;
+            z-index: 0;
         }
         /*Button styles*/
         .btn {
+            /* flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center */
             display: flex;
             position: absolute;
             border: none;
             left: 24px; bottom: 90px;
-            width: 60px;
-            height: 60px;
+            width: 64px;
+            height: 64px;
             justify-content: center;
             align-items: center;
             cursor: pointer;
@@ -261,7 +277,7 @@
                             </button>
                         </div>
                         <a href="#" class="w-full md:w-[178px] h-[96px] md:h-[539px]">
-                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fit lg:object-cover" src="images/dv/general-immigration.jpg" alt="general-immigration">
+                            <img class="w-full md:w-[178px] h-[96px] md:h-[539px] object-cover md:object-fill lg:object-cover" src="images/dv/general-immigration.jpg" alt="general-immigration">
                         </a>
                     </li>
                     <li class="image relative flex flex-row md:flex-col">
