@@ -7,12 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DV Animation3</title>
 
-    <!-- <style>
+    <style>
         /*Now the styles*/
-    * {
-        margin: 0; 
-        padding: 0;
-    }
+        * {
+            margin: 0; 
+            padding: 0;
+        }
+        .container {
+            /* flex flex-col md:flex-row px-4 md:px-0 py-32 md:py-52 gap-1 */
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-top: 208px;
+            padding-bottom: 208px;
+            gap: 4px;
+
+        }
+        /* @media (min-width: 768px) {
+            .md\:flex-row {
+                flex-direction: row;
+            }
+        } */
+
+
+        /* @media (min-width: 768px) {
+            .container .md\:flex-row {
+                flex-direction: row;
+            }
+        } */
+
+
+        /* @media (min-width: 768px) {
+            .container{
+                display: block;
+            }
+        }
+        @media (max-width: 767px) and (min-width: 320px) {
+            .container{
+                display: block;
+            }
+        } */
+
+
 
         /*Time to apply widths for accordian to work
         Width of image = 640px
@@ -23,68 +60,144 @@
         default width = 800/5 = 160px;
         */
 
-    .accordian {
-        width: 890px; height: 539px;
-        overflow: hidden;
-        
-        /*Time for some styling*/
-        margin: 100px auto;
-        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-        -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
-    }
+        .accordian {
+            width: 890px; height: 539px;
+            overflow: hidden;
+            
+            /*Time for some styling*/
+            margin: 100px auto;
+            box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+            -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+        }
 
         /*A small hack to prevent flickering on some browsers*/
-    .accordian ul {
-        width: 2000px;
-        /*This will give ample space to the last item to move
-        instead of falling down/flickering during hovers.*/
-    }
+        .accordian ul {
+            width: 2000px;
+            /*This will give ample space to the last item to move
+            instead of falling down/flickering during hovers.*/
+        }
 
-    .accordian li {
-        position: relative;
-        display: block;
-        width: 178px;
-        float: left;
-        border-left: 1px solid #888;
-        
-        box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-        -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-        -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
-        
-        /*Transitions to give animation effect*/
-        transition: all 0.5s;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        /*If you hover on the images now you should be able to 
-        see the basic accordian*/
-    }
+        .accordian li {
+            position: relative;
+            display: block;
+            width: 178px;
+            float: left;
+            
+            border-left: 1px solid #888;
+            
+            box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+            
+            /*Transitions to give animation effect*/
+            transition: all 0.5s;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            /*If you hover on the images now you should be able to 
+            see the basic accordian*/
+        }
 
         /*Reduce with of un-hovered elements*/
-    .accordian ul:hover li {width: 178px;}
+        .accordian ul:hover li {width: 40px;}
         /*Lets apply hover effects now*/
         /*The LI hover style should override the UL hover style*/
-    .accordian ul li:hover {width: 640px;}
-    
+        .accordian ul li:hover {width: 640px;}
 
 
-    .accordian li img {
-        display: block;
-    }
-
+        .accordian li img {
+            display: block;
+        }
+        image_info flex flex-col md:flex-row gap-1
         /*Image title styles*/
-    .image_title {
-        /* background: rgba(0, 0, 0, 0.5); */
-        position: absolute;
-        left: -5; bottom: -5;
-        width: 640px;
-        height: 539px;
-    }
-    .image_title a {
-        display: block;
-        color: #fff;
-    }
-    </style> -->
+        .image_title {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            left: -1; bottom: -1;
+            width: 640px;
+        }
+        .image_title a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            font-size: 20px;
+            width: 124;
+        }
+        /*Button styles*/
+        .btn {
+            display: flex;
+            position: absolute;
+            border: none;
+            left: 24px; bottom: 90px;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn:hover {
+          background-color: blue;
+          color: white;
+        }
+        .card2 {
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+            width: 280px;
+            height: 490px;
+            padding-left: 44px;  padding-right: 44px;
+            padding-top: 24px;  padding-bottom: 24px;
+            gap: 80px;
+            margin-top: 100px;
+            margin-left: 10px;
+            justify-content: space-between;
+            align-items: start;
+        }
+        /*Button Contact styles*/
+        .btn-contact {
+            display: flex;
+            position: absolute;
+            border: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 20px;
+            margin-top: 430px;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .btn-contact:hover {
+          background-color: blue;
+          color: white;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+        }
+        .txt1 {
+            font-size: 30px;
+            font-weight: 500;
+            color: black;
+        }
+        .txt2 {
+            display: flex;
+            flex-direction: column;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: black;
+            gap: 12px;
+        }
+        .txt3 {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 20px;
+            color: black;
+        }
+    </style>
 
     <style>
         @media (min-width: 768px) {
@@ -135,7 +248,7 @@
     <section class="dv-services">
         <div class="container flex flex-col md:flex-row px-4 md:px-0 py-32 md:py-52 gap-1">
             <div class="accordian">
-                <ul class="flex flex-col md:flex-row gap-1">
+                <ul class="image_info flex flex-col md:flex-row gap-1">
                     <li class="image relative flex flex-row md:flex-col">
                         <div class="image_title absolute w-full h-full p-6 flex flex-row md:flex-col justify-between">
                             <a href="#" class="info z-0 w-16 text-base md:text-xl font-normal text-black">
