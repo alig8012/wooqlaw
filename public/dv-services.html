@@ -87,7 +87,7 @@
     </style> -->
 
     <style>
-            @media (min-width: 768px) {
+        @media (min-width: 768px) {
             .info::before {
                 content: "";
                 height: 15%;
@@ -97,6 +97,18 @@
                 top: 0;
                 left: 0;
                 width: 100%;
+            }
+        }
+        @media (min-width: 320px) {
+            .info::before {
+                content: "";
+                height: 55%;
+                background: linear-gradient(45deg, #bdb4b4, #ffffffbf 50.17%);
+                z-index: -1;
+                position: absolute;
+                right: 0;
+                left: 0;
+                width: 40%;
             }
         }
     </style>

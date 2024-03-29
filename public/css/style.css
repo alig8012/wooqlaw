@@ -1110,14 +1110,17 @@ select {
 .h-\[380px\] {
   height: 380px;
 }
-.h-\[96px\] {
-  height: 96px;
+.h-\[539px\] {
+  height: 539px;
 }
 .h-\[calc\(100dvh-8rem\)\] {
   height: calc(100dvh - 8rem);
 }
 .h-full {
   height: 100%;
+}
+.h-\[96px\] {
+  height: 96px;
 }
 .max-h-\[100dvh\] {
   max-height: 100dvh;
@@ -1232,6 +1235,9 @@ select {
 }
 .w-96 {
   width: 24rem;
+}
+.w-\[328px\] {
+  width: 328px;
 }
 .w-auto {
   width: auto;
@@ -2158,10 +2164,6 @@ select {
   padding-top: 0.875rem;
   padding-bottom: 0.875rem;
 }
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2185,6 +2187,10 @@ select {
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
+}
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
@@ -3501,10 +3507,6 @@ select {
     width: 24rem;
   }
 
-  .md\:w-\[178px\] {
-    width: 178px;
-  }
-
   .md\:w-\[427px\] {
     width: 427px;
   }
@@ -3520,6 +3522,10 @@ select {
 
   .md\:w-full {
     width: 100%;
+  }
+
+  .md\:w-\[178px\] {
+    width: 178px;
   }
 
   .md\:max-w-2xl {
@@ -3851,11 +3857,6 @@ select {
     padding-bottom: 1.25rem;
   }
 
-  .md\:py-52 {
-    padding-top: 13rem;
-    padding-bottom: 13rem;
-  }
-
   .md\:py-6 {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
@@ -3864,6 +3865,11 @@ select {
   .md\:py-8 {
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  .md\:py-52 {
+    padding-top: 13rem;
+    padding-bottom: 13rem;
   }
 
   .md\:pb-10 {
