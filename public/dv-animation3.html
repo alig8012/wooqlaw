@@ -160,7 +160,7 @@
         }
         .info {
             /* z-0 w-16 text-base md:text-xl font-normal text-black */
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 400;
             text-decoration: none;
             color: black;
@@ -177,11 +177,10 @@
         .btn {
             /* flex bg-white hover:bg-blue-700 hover:text-white w-12 h-12 md:w-16 md:h-16 justify-center items-center */
             display: flex;
-            position: absolute;
             border: none;
             left: 24px; bottom: 90px;
-            width: 64px;
-            height: 64px;
+            width: 48px;
+            height: 48px;
             justify-content: center;
             align-items: center;
             cursor: pointer;
@@ -225,12 +224,12 @@
             background-color: lightcyan;
             /* width: 427px; */
             /* height: 539px; */
-            height: 539px;
+            height: 380x;
             padding-left: 16px;  padding-right: 16px;
-            padding-top: 24px;  padding-bottom: 24px;
+            padding-top: 16px;  padding-bottom: 16px;
             gap: 4px;
-            margin-top: 100px;
-            margin-left: 10px;
+            /* margin-top: 100px; */
+            /* margin-left: 10px; */
             justify-content: space-between;
             align-items: start;
         }
@@ -256,15 +255,20 @@
                 width: 427px;
             }
         }
+        @media (min-width: 768px) {
+            .md\:h-\[539px\] {
+                height: 539px;
+            }
+        }
         /*Button Contact styles*/
         .btn-contact {
             /* flex text-sm md:text-base font-medium text-white bg-blue-800 hover:bg-blue-700 w-full md:w-fit p-5 gap-3 justify-center items-center */
             display: flex;
             position: absolute;
             border: none;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
-            width: fit-content;
+            width: 100%;
             padding: 20px;
             margin-top: 430px;
             gap: 12px;
@@ -272,33 +276,75 @@
             align-items: center;
             cursor: pointer;
         }
+        @media (min-width: 768px) {
+            .md\:text-base {
+                font-size: 1rem/* 16px */;
+                line-height: 1.5rem/* 24px */;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:mt-\[5px\] {
+                margin-top: 5px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:w-fit {
+                width: fit-content;
+            }
+        }
         .btn-contact:hover {
           background-color: blue;
           color: white;
         }
         .btn_icon {
             /* w-5 h-5 md:w-6 md:h-6 */
-            width: 24px;
-            height: 24px;
+            width: 20px;
+            height: 20px;
+        }
+        @media (min-width: 768px) {
+            .md\:w-6 {
+                width: 24px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:h-6 {
+                height: 24px;
+            }
         }
         .main {
             /* flex flex-col gap-5 md:gap-20 */
             display: flex;
             flex-direction: column;
-            gap: 80px;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .md\:gap-20 {
+                gap: 80px;
+            }
         }
         .txt1 {
             /* text-xl md:text-3xl font-medium text-black w-64 md:w-80 */
-            font-size: 30px;
+            font-size: 20px;
             font-weight: 500;
             color: black;
-            width: 320px;
+            width: 256px;
+        }
+        @media (min-width: 768px) {
+            .md\:text-3xl {
+                font-size: 30px;
+                line-height: 36px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:w-80 {
+                width: 320px;
+            }
         }
         .txt2 {
             /* flex flex-col gap-3 text-sm md:text-base font-normal text-black */
             display: flex;
             flex-direction: column;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 400;
             /* line-height: 20px; */
             color: black;
