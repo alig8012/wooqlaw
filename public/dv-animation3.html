@@ -16,18 +16,30 @@
         .container {
             /* flex flex-col md:flex-row px-4 md:px-0 py-32 md:py-52 gap-1 */
             display: flex;
-            /* flex-direction: column; */
+            flex-direction: column;
             padding-left: 0px;
             padding-right: 0px;
             padding-top: 208px;
             padding-bottom: 208px;
             gap: 4px;
         }
-        /* @media (min-width: 768px) {
+        @media (min-width: 768px) {
             .md\:flex-row {
                 flex-direction: row;
             }
-        } */
+        }
+        @media (min-width: 768px) {
+            .md\:px-0 {
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:py-52 {
+                padding-top: 13rem/* 208px */;
+                padding-bottom: 13rem/* 208px */;
+            }
+        }
 
 
         /* @media (min-width: 768px) {
@@ -35,6 +47,7 @@
                 flex-direction: row;
             }
         } */
+        
 
 
         /* @media (min-width: 768px) {
@@ -110,24 +123,40 @@
         .image_info {
             /* flex flex-col md:flex-row gap-1 */
             display: flex;
+            flex-direction: column;
             gap: 4px;
+        }
+        @media (min-width: 768px) {
+            .md\:flex-row {
+                flex-direction: row;
+            }
         }
         .image {
             /* relative flex flex-row md:flex-col */
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             position: relative;
+        }
+        @media (min-width: 768px) {
+            .md\:flex-col {
+                flex-direction: column;
+            }
         }
         /*Image title styles*/
         .image_title {
             /* absolute w-full h-full p-6 flex flex-row md:flex-col justify-between */
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             position: absolute;
             justify-content: space-between;
             padding: 24px;
             width: 100%;
             height: 100%;
+        }
+        @media (min-width: 768px) {
+            .md\:flex-col {
+                flex-direction: column;
+            }
         }
         .info {
             /* z-0 w-16 text-base md:text-xl font-normal text-black */
@@ -137,6 +166,12 @@
             color: black;
             width: 64px;
             z-index: 0;
+        }
+        @media (min-width: 768px) {
+            .md\:text-xl {
+                font-size: 1.25rem/* 20px */;
+                line-height: 1.75rem/* 28px */;
+            }
         }
         /*Button styles*/
         .btn {
@@ -151,15 +186,37 @@
             align-items: center;
             cursor: pointer;
         }
+        @media (min-width: 768px) {
+            .md\:w-16 {
+                width: 64px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:h-16 {
+                height: 64px;
+            }
+        }
         .btn:hover {
           background-color: blue;
           color: white;
         }
         .image_bg {
             /* w-full md:w-[178px] h-[96px] md:h-[539px] object-cover */
-            width: 640px;
-            height: 539px;
+            /* width: 640px; */
+            /* height: 539px; */
+            width: 100%;
+            height: 96px;
             object-fit: cover;
+        }
+        @media (min-width: 768px) {
+            .md\:w-\[178px\] {
+                width: 178px;
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:h-\[539px\] {
+                height: 539px;
+            }
         }
         .card2 {
             /* flex flex-col px-4 md:px-11 py-4 md:py-6 gap-1 md:gap-16 md:w-[427px] h-[380px] md:h-[539px] bg-gray-50 items-start justify-between */
