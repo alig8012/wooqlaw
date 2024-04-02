@@ -2190,6 +2190,10 @@ select {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
